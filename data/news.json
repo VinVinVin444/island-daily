@@ -1,9 +1,9 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T12:03:33.486818+00:00",
+  "generated_at": "2026-10-18T12:16:27.648133+00:00",
   "ai_generated": false,
   "machine_translated": true,
-  "translation_complete": true,
+  "translation_complete": false,
   "demo": false,
   "items": [
     {
@@ -29,13 +29,54 @@
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 1.14.4 移动版（抢先体验）",
-      "summary": "包括 Obsidian Desktop 1.14.4 之前的所有新功能和错误修复。不再损坏的底座：修复了当每张卡都隐藏时看板视图不水平滚动的问题。基础：修复了触发下拉操作时表格视图丢失其水平滚动位置的问题。基础：修复了当键盘打开或关闭时在移动设备上调整看板列大小的问题。基础：打开视图配置页面不再自动聚焦视图名称。...",
-      "source": "Obsidian 官方更新日志",
-      "published_at": "2026-10-01T00:00:00+00:00",
-      "url": "https://obsidian.md/changelog/2026-10-01-mobile-v1.14.4/",
+      "title": "由 Cure53 和 Trail of Bits 进行的 Obsidian Sync 审核",
+      "summary": "Obsidian 定期与独立研究公司进行安全审计，以确保我们的代码和程序符合最高的安全标准。此前，我们分享了 2024 年 1 月和 2024 年 12 月对 Obsidian 桌面和移动应用程序的审计评估。我们的安全页面现在提供两项新的审核，评估 Obsidian Sync API、服务器和加密技术。这些由 Cure53 于 2024 年 10 月完成，Trail of Bits ……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-13T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/cure53-tob-sync-audits/",
       "image": "",
       "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 2026 年 10 月",
+      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，我们就......",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/2026-obsidian-october/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "插件命名空间？",
+      "summary": "我最近发现，如果本地创建的自定义插件（不用于发布）的 ID 恰好与已发布的社区插件的 ID 匹配，则本地插件将被“更新”，即在插件更新时被此社区插件覆盖。对我来说，这是出乎意料的，因为我的插件清单不包含外部 URL。好的，这在技术上不是一个错误，正如插件开发指南在步骤 4 中所说：“将 id 更改为唯一标识符......",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-10-17T21:17:35+00:00",
+      "url": "https://forum.obsidian.md/t/plugin-namespaces/119541",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "obsidian",
+      "title": "1.14.4",
+      "summary": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "source": "Obsidian GitHub 发行记录",
+      "published_at": "2026-10-05T17:03:28+00:00",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.14.4",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图：当前开发与计划（首次采集快照）",
+      "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。这是本站首次采集的路线图快照，不代表官方今天发布了更新。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-10-18T12:13:39.040874+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false
     },
     {
       "category": "ai",
@@ -193,6 +234,17 @@
     },
     {
       "category": "world",
+      "title": "抗议演变成骚乱和抢劫后，巴黎街道上的汽车被烧毁，玻璃被打碎",
+      "summary": "全国抗议活动爆发暴力和破坏行为后，约 1,800 人被捕。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T12:07:31+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
+      "is_recent": false,
+      "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
+    },
+    {
+      "category": "world",
       "title": "巴黎人醒来抗议商店遭到破坏和抢劫",
       "summary": "周六，在针对学校条件和生活成本的示威活动的最后一天，法国各地爆发了暴力事件。",
       "source": "BBC World",
@@ -200,20 +252,9 @@
       "url": "https://www.bbc.co.uk/news/videos/cmn5vey19q3go?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8791/live/7abdd380-cadd-11f1-bc2e-018d645d8d21.jpg",
       "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "抗议活动演变成骚乱和抢劫后，巴黎街道上的汽车被烧毁，玻璃被打碎",
-      "summary": "全国抗议活动爆发暴力和破坏行为后，约 1,800 人被捕。",
-      "source": "BBC World",
-      "published_at": "2026-10-18T10:53:54+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
-      "is_recent": false,
-      "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
     }
   ],
-  "count": 20,
-  "source_count": 14,
+  "count": 24,
+  "source_count": 18,
   "timezone": "Asia/Shanghai"
 }
