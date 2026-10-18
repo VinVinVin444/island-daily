@@ -27,7 +27,7 @@ function personalSpotlight(){
 }
 function card(a){
  const c=document.createElement('article');c.className='card';
- let header=text('div','','cmeta');let tag=text('span',`${TOPICS[a.category]?.icon||'📰'} ${TOPICS[a.category]?.name||'资讯'}`,'ctag');header.append(tag,text('span',tzDate(a.published_at),'ctime'));c.append(header);
+ let header=text('div','','cmeta');let tag=text('span',`${TOPICS[a.category]?.icon||'📰'} ${TOPICS[a.category]?.name||'资讯'}`,'ctag');header.append(tag,text('span',(a.date_kind==='observed'?'本站观察时间 · ':'发布时间 · ')+tzDate(a.published_at),'ctime'));c.append(header);
  {const impact=personalImpact(a);if(impact){const im=text('div','','impact');im.append(text('strong','✨ 与你有关'),document.createTextNode(impact));c.append(im)}}
  c.append(text('h3',a.title));
  if(a.image&&safeLink(a.image)!=='#'){let img=document.createElement('img');img.className='thumb';img.src=safeLink(a.image);img.alt='文章来源提供的配图';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>img.remove();c.append(img)}
@@ -40,7 +40,7 @@ function featured(a){
  let box=text('div','','featured');const meta=text('div','','feature-meta');meta.append(text('span','💎 OBSIDIAN WATCH','feat-kicker'),badge(a));box.append(meta);
  {const impact=personalImpact(a);if(impact){const im=text('div','','feature-impact');im.append(text('strong','✨ 与你有关'),document.createTextNode(impact));box.append(im)}}
  box.append(text('h2',a.title),text('p',a.summary));
- const foot=text('div','','featured-foot');foot.append(text('span',`${a.source||'Obsidian 官方'} · ${tzDate(a.published_at)}${a.is_recent?' · 历史更新回顾':''}`,'source-text'),link('查看官方来源 ↗',a.url,'feature-link'));box.append(foot);section.append(box)
+ const foot=text('div','','featured-foot');foot.append(text('span',`${a.source||'Obsidian 官方'} · ${a.date_kind==='observed'?'本站观察时间':'发布时间'} ${tzDate(a.published_at)}${a.is_recent?' · 历史更新回顾':''}`,'source-text'),link('查看官方来源 ↗',a.url,'feature-link'));box.append(foot);section.append(box)
 }
 function render(){if(!issue)return;personalSpotlight();const featuredItem=(issue.items||[]).find(x=>x.category==='obsidian');featured(featuredItem);const items=selection().filter(x=>!(featuredItem&&['all','obsidian'].includes(filter)&&!q&&x.url===featuredItem.url));const cards=$('#cards');cards.replaceChildren();items.forEach(a=>cards.append(card(a)));if(!items.length)cards.append(text('div',filter==='obsidian'&&featuredItem?'本期 Obsidian 专题已在上方展示。':'这个筛选条件下没有资讯。','empty'));$('#articles-title').textContent=filter==='obsidian'?'Obsidian 其他资讯':filter==='saved'?'收藏的新闻':filter==='all'?'六大领域最新资讯':TOPICS[filter]?.name||'今日资讯';$('#count').textContent=`${selection().length} 条内容`;
 const day=issue.date||'—';$('#issue-date').textContent=day.replace(/^(\d{4})-/,'').replace('-','月')+'日';$('#issue-weekday').textContent=issue.demo?'演示版 · 自动更新后替换':'最新已发布数据';let info=issue.demo?'当前是示例数据；尚未连接每日自动采集。上传至 GitHub 后运行一次“更新晨报数据”即可替换。':`上次成功生成：${tzDate(issue.generated_at)}（北京时间）。网站读取 GitHub 上已发布的内容，不会凭空生成新闻。`;
