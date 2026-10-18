@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T10:26:30.391644+00:00",
+  "generated_at": "2026-10-18T10:28:55.400329+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": true,
@@ -8,7 +8,7 @@
   "items": [
     {
       "category": "obsidian",
-      "title": "黑曜石 1.14 移动版（公共）",
+      "title": "Obsidian 1.14 移动版（公共）",
       "summary": "包括 Obsidian Desktop v1.14.4 之前的所有新功能和错误修复。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。 iOS 上的快速捕获 在 iOS 26 上，快速捕获可让您立即从锁定屏幕、控制中心、主屏幕小部件或快捷方式创建笔记，而无需等待保管库加载。自定义位置以捕获到 n...",
       "impact": "关注对小岛序号节点、Canvas 数据结构和移动端适配的影响。",
       "source": "Obsidian 官方更新日志",
