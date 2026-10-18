@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T11:21:04.779587+00:00",
+  "generated_at": "2026-10-18T12:03:33.486818+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": true,
@@ -152,6 +152,16 @@
     },
     {
       "category": "digital",
+      "title": "城市希望为机器人出租车安装后备箱",
+      "summary": "这是《The Stepback》，一份每周简讯，详细介绍了科技界的一个重要故事。有关自动驾驶汽车、政策和道路规则的更多信息，请关注 Andrew J. Hawkins。 《Stepback》将于美国东部时间上午 8 点到达我们订阅者的收件箱。在此处选择加入“后退”。它是如何开始第一个通过法律的州 [...]",
+      "source": "The Verge",
+      "published_at": "2026-10-18T12:00:00+00:00",
+      "url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
       "title": "Bose 的新款有线耳机非常简单",
       "summary": "2016 年，苹果勇敢地从 iPhone 上取消了耳机插孔后，大多数人都转而使用蓝牙耳机，并且再也没有回头。但他们的有线同行却坚持了下来，他们的销售额在经历了五年的下滑后，今年甚至出现了增长。复兴的部分原因可能是它们很酷 […]",
       "source": "The Verge",
@@ -172,13 +182,13 @@
       "is_recent": false
     },
     {
-      "category": "digital",
-      "title": "TikTok 禁止马斯克纪录片账户",
-      "summary": "就在亚历克斯·吉布尼 (Alex Gibney) 的马斯克纪录片大范围上映之前，TikTok 已在其平台上禁止了该电影的社交媒体帐户。 TikTok 没有立即回应置评请求。据《好莱坞报道》报道，该片的发行商布利克街周五下午被告知“永久停映”即将到来。布利克街有[...]",
-      "source": "The Verge",
-      "published_at": "2026-10-17T19:32:23+00:00",
-      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
-      "image": "",
+      "category": "world",
+      "title": "圣彼得堡石油设施在夜间遭遇致命袭击",
+      "summary": "袭击造成至少一人死亡，俄罗斯 Facebook 等公司使用的数据中心也遭到袭击。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T11:57:49+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4966/live/70482900-cad8-11f1-a64c-550be9e3c66b.jpg",
       "is_recent": false
     },
     {
@@ -193,7 +203,7 @@
     },
     {
       "category": "world",
-      "title": "抗议演变成骚乱和抢劫后，巴黎街道上的汽车被烧毁，玻璃被打碎",
+      "title": "抗议活动演变成骚乱和抢劫后，巴黎街道上的汽车被烧毁，玻璃被打碎",
       "summary": "全国抗议活动爆发暴力和破坏行为后，约 1,800 人被捕。",
       "source": "BBC World",
       "published_at": "2026-10-18T10:53:54+00:00",
@@ -201,16 +211,6 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
       "is_recent": false,
       "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
-    },
-    {
-      "category": "world",
-      "title": "加拿大军事基地发生重大火灾，造成多人死亡或受伤",
-      "summary": "官员们没有透露死因或死亡人数，称加拿大温赖特军事基地的局势“非常活跃和微妙”。",
-      "source": "BBC World",
-      "published_at": "2026-10-18T08:52:41+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/951a/live/d1508b70-cac9-11f1-9a39-31b474234113.jpg",
-      "is_recent": false
     }
   ],
   "count": 20,
