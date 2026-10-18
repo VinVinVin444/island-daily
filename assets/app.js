@@ -50,25 +50,45 @@ async function loadIssue(path){$('#cards').replaceChildren(text('div','正在读
 async function loadArchives(){try{const r=await fetch('data/archive/index.json',{cache:'no-store'});if(!r.ok)throw Error();const data=await r.json();archiveIndex=Array.isArray(data)?data:[];for(const a of archiveIndex){const o=document.createElement('option');o.value=a.path;o.textContent=a.date;$('#archive').append(o)}}catch{}}
 for(const b of document.querySelectorAll('.tab'))b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('.tab').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-selected',x===b?'true':'false')});render()});$('#search').addEventListener('input',e=>{q=e.target.value.trim();render()});$('#archive').addEventListener('change',e=>loadIssue(e.target.value==='latest'?'data/news.json':e.target.value));$('#reload').addEventListener('click',()=>{const path=$('#archive').value;loadIssue(path==='latest'?'data/news.json':path)});let dark=false;try{dark=localStorage.getItem('island-theme')==='dark'}catch{}document.documentElement.dataset.theme=dark?'dark':'light';$('#theme').textContent=dark?'☀':'☾';$('#theme').onclick=()=>{dark=!dark;document.documentElement.dataset.theme=dark?'dark':'light';$('#theme').textContent=dark?'☀':'☾';try{localStorage.setItem('island-theme',dark?'dark':'light')}catch{}};
 
-// 轻量访问码：只负责网页显示控制。公开仓库里的 impact 明文仍可被直接查看。
+// 轻量显示限制，不是数据加密：impact 明文仍存在公开 JSON 中。
+// 只保存已通过验证的 SHA-256 指纹，不保存用户输入的原始访问码。
+const PERSONAL_REMEMBER_KEY='island-daily-personal-unlock-sha256-v1';
 const privateDialog=$('#private-dialog');
 const unlock=$('#private-unlock');
+const privateInput=$('#private-password');
+const privateRemember=$('#private-remember');
+const privateMessage=$('#private-message');
+const storedPersonalProof=()=>{try{return localStorage.getItem(PERSONAL_REMEMBER_KEY)||''}catch{return ''}};
+const forgetPersonalProof=()=>{try{localStorage.removeItem(PERSONAL_REMEMBER_KEY)}catch{}};
+const savePersonalProof=hash=>{try{localStorage.setItem(PERSONAL_REMEMBER_KEY,hash)}catch{}};
+function lockPersonalAccess(){
+  accessGranted=false;
+  forgetPersonalProof();
+  unlock.textContent='🔒 与你有关';
+  if(issue)render();
+}
+function grantPersonalAccess(){
+  accessGranted=true;
+  unlock.textContent='🔓 已解锁 · 点击锁定';
+  if(issue)render();
+}
 unlock.addEventListener('click',()=>{
-  if(accessGranted){
-    accessGranted=false;unlock.textContent='🔒 与你有关';
-    render();return;
-  }
-  $('#private-message').textContent='';
-  if(typeof privateDialog.showModal==='function')privateDialog.showModal();else privateDialog.hidden=false;
-  $('#private-password').focus();
+  if(accessGranted){lockPersonalAccess();return}
+  privateMessage.textContent='';
+  if(typeof privateDialog.showModal==='function')privateDialog.showModal();
+  else privateDialog.hidden=false;
+  privateInput.focus();
 });
-$('#private-close').addEventListener('click',()=>{privateDialog.close?.();privateDialog.hidden=true;$('#private-password').value='';});
+$('#private-close').addEventListener('click',()=>{
+  if(typeof privateDialog.close==='function')privateDialog.close();
+  else privateDialog.hidden=true;
+  privateInput.value='';
+});
 $('#private-form').addEventListener('submit',async event=>{
   event.preventDefault();
-  const input=$('#private-password'),value=input.value;
-  input.value='';
-  const msg=$('#private-message');
-  msg.textContent='正在验证密钥…';
+  const value=privateInput.value;
+  privateInput.value='';
+  privateMessage.textContent='正在验证密钥…';
   try{
     if(!crypto?.subtle)throw Error('https');
     const res=await fetch('data/access.json',{cache:'no-store'});
@@ -77,12 +97,34 @@ $('#private-form').addEventListener('submit',async event=>{
     const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));
     const hash=Array.from(new Uint8Array(digest)).map(b=>b.toString(16).padStart(2,'0')).join('');
     if(!cfg.key_sha256 || hash!==cfg.key_sha256)throw Error('invalid');
-    accessGranted=true;msg.textContent='';
-    privateDialog.close?.();privateDialog.hidden=true;
-    unlock.textContent='🔓 隐藏私人分析';
-    render();
-  }catch(e){accessGranted=false;render();msg.textContent=e.message==='invalid'?'访问密钥不匹配。':e.message==='https'?'请通过 HTTPS 打开网页。':'暂时无法验证密钥。';}
+    if(privateRemember.checked)savePersonalProof(hash);
+    else forgetPersonalProof();
+    grantPersonalAccess();
+    privateMessage.textContent='';
+    if(typeof privateDialog.close==='function')privateDialog.close();
+    else privateDialog.hidden=true;
+  }catch(e){
+    accessGranted=false;
+    if(issue)render();
+    privateMessage.textContent=e.message==='invalid'?'访问密钥不匹配。':e.message==='https'?'请通过 HTTPS 打开网页。':'暂时无法验证密钥。';
+  }
 });
+// 每次打开页面从服务器检查当前配置。只有本地指纹与现用密钥匹配才自动解锁。
+// 如果管理员更换了密钥，旧本地记录会被清除。
+async function restorePersonalAccess(){
+  const proof=storedPersonalProof();
+  if(!/^[0-9a-f]{64}$/.test(proof))return;
+  try{
+    const res=await fetch('data/access.json',{cache:'no-store'});
+    if(!res.ok)return;
+    const cfg=await res.json();
+    if(cfg.key_sha256===proof)grantPersonalAccess();
+    else forgetPersonalProof();
+  }catch{
+    // 无法验证时保持锁定，不能离线绕过密钥配置。
+  }
+}
+restorePersonalAccess();
 
 // 手动更新任务从 Cloudflare Worker 触发；GitHub Token 只保存在 Worker 的 Secret。
 // GitHub Token 只在 Cloudflare Worker Secret 内。此处仅保存用户自愿记住的更新密码。

@@ -94,3 +94,10 @@
 ## Obsidian 多来源战略观察
 
 新增：[Obsidian 官方博客](https://obsidian.md/blog/)（RSS）、[CEO Steph Ango / kepano](https://stephango.com/about) 的个人 RSS（过滤 Obsidian 相关内容）、[官方开发者论坛](https://forum.obsidian.md/c/developers-api/14)（标为**社区讨论，不能等同官方决策**）、[GitHub 官方发行记录](https://github.com/obsidianmd/obsidian-releases/releases) Atom、以及[官方路线图](https://obsidian.md/roadmap/) HTML 快照变更检测，另保留官方 Changelog RSS。每个来源分别限额，优先展示近期更新，但 CEO 和产品战略会保留较长历史窗口并显示实际日期；旧观点不会冒充今日新闻。官方路线图首次采集只标记为『首次观察快照』，后续发生实际差异才标记『检测到变化』；观测时间不是官方发布时间。RSS、页面如不可用则跳过或沿用已知快照，绝不编造结果。源码使用 BeautifulSoup 解析路线图的 Active/Planned 标题；如官方页面结构变化会在日志警告。
+
+
+## 「与你有关」本地自动解锁
+
+首次输入访问码并成功验证后，默认选中「在此设备记住解锁」。本地 `localStorage` 仅记住通过验证的 SHA-256 指纹（不存储原始访问码），下次打开页面先重新读取 `data/access.json`，匹配当前指纹后自动显示个性化分析。取消勾选则不缓存；点击顶部「🔓 已解锁 · 点击锁定」会立即隐藏个人分析并清除本地记录；若站点访问码已更改则旧记录自动失效，无法联网验证时保持锁定。
+
+**重要：** 本站的新闻 JSON 含公开的 `impact` 明文，指纹也源自公开配置，因此这只是一项轻量页面显示限制，不属于真正的数据加密或账户权限系统。不要在共享电脑使用自动解锁，不要通过此功能保护敏感信息。与 `UPDATE_PASSWORD` 的本地记忆是两套相互独立的机制。
