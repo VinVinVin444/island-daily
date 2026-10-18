@@ -44,12 +44,25 @@ header{background:rgba(255,250,226,.94);border-bottom:1px solid #efe0bc;backdrop
 @media(max-width:800px){.intro{margin:0}.personal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){.wrap{padding:0 14px}.intro{padding:25px 20px;border-radius:22px}.intro h1{font-size:33px}.personal-section{padding:21px 16px 17px;margin-top:20px;border-radius:19px}.personal-head h2{font-size:25px}.personal-grid{grid-template-columns:1fr}.personal-item{padding:15px}.personal-item strong{font-size:19px}.controls{margin-top:21px}.tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;flex-wrap:initial;overflow:visible;padding:0}.tab{min-height:79px;padding:10px 3px;border-radius:15px;flex-shrink:initial}.tab-icon{font-size:24px}.tab-label{font-size:11px}.search{margin:0;width:100%}.featured{padding:22px 19px}.feature-impact{font-size:20px;padding:14px}.impact{font-size:18px}.card{padding:17px}}
 
+
+.personal-section[hidden]{display:none!important}
+.private-open{border:2px solid #debc86;border-radius:13px;background:#fff6dd;color:#68472c;font-size:13px;font-weight:800;padding:11px 13px;cursor:pointer}
+.private-open:hover{border-color:#e8755b}
+.private-dialog{width:min(92vw,440px);border:2px solid #d99b5e;background:#fff7e2;color:#60401f;border-radius:23px;padding:26px;box-shadow:0 16px 50px #0004}
+.private-dialog::backdrop{background:#243d36a8;backdrop-filter:blur(3px)}
+.private-dialog h2{font-size:23px;margin:0 0 12px}.private-dialog p{font-size:14px;line-height:1.65}
+.private-dialog label{display:block;font-weight:800;margin:20px 0 8px}
+.private-dialog input{display:block;width:100%;font:inherit;padding:13px 14px;border-radius:12px;border:2px solid #d99b5e;background:#fff}
+.private-dialog .private-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}
+.private-dialog .private-actions button{padding:11px 17px;border-radius:12px;border:1px solid #d99b5e;font-weight:800;cursor:pointer}
+.private-dialog .private-actions button[type=submit]{background:#ffe0b3;border-color:#e8755b}
+#private-message{color:#bb4532;min-height:24px}
 </style>
 </head>
 <body>
-<header><div class="wrap topbar"><div class="brand"><span class="brandmark">✧</span><div>岛屿晨报<small>ISLAND DAILY BRIEF</small></div></div><div class="top-actions"><span class="pill"><span class="dot"></span>每日 07:00 · 北京时间</span><button id="theme" class="iconbtn" aria-label="切换深色模式" title="切换深色模式">☾</button><button id="reload" class="iconbtn" aria-label="读取最新简报" title="读取最新简报">↻</button></div></div></header>
+<header><div class="wrap topbar"><div class="brand"><span class="brandmark">✧</span><div>岛屿晨报<small>ISLAND DAILY BRIEF</small></div></div><div class="top-actions"><span class="pill"><span class="dot"></span>每日 07:00 · 北京时间</span><button id="private-unlock" class="private-open" type="button" title="解锁私人分析">🔒 私人分析</button><button id="theme" class="iconbtn" aria-label="切换深色模式" title="切换深色模式">☾</button><button id="reload" class="iconbtn" aria-label="读取最新简报" title="读取最新简报">↻</button></div></div></header>
 <main class="wrap shell"><section class="intro"><div><div class="eyebrow">YOUR DAILY SIGNAL, NOT NOISE</div><h1>把重要的事，<br>每天看一点。</h1><p class="subtitle">AI、开发、投资、数码、世界，还有你最关心的 Obsidian。<br>每天六个领域，追踪真实更新，附原始来源。</p></div><div class="edition"><span>当前简报 · 中国时间</span><b id="issue-date">—</b><span id="issue-weekday">数据加载中</span></div></section>
-<section class="personal-section" id="personal-focus" aria-label="与你有关的今日重点"></section>
+<section class="personal-section" id="personal-focus" aria-label="仅解锁后显示的私人资讯" hidden></section>
 <div class="controls"><div class="tabs" role="tablist" aria-label="领域筛选">
 <button class="tab active" data-filter="all" aria-selected="true"><span class="tab-icon">📰</span><span class="tab-label">全部资讯</span></button>
 <button class="tab" data-filter="obsidian" aria-selected="false"><span class="tab-icon">💎</span><span class="tab-label">Obsidian</span></button>
@@ -59,8 +72,15 @@ header{background:rgba(255,250,226,.94);border-bottom:1px solid #efe0bc;backdrop
 <button class="tab" data-filter="digital" aria-selected="false"><span class="tab-icon">📱</span><span class="tab-label">数码科技</span></button>
 <button class="tab" data-filter="world" aria-selected="false"><span class="tab-icon">🌍</span><span class="tab-label">全球要闻</span></button>
 <button class="tab" data-filter="saved" aria-selected="false"><span class="tab-icon">⭐</span><span class="tab-label">我的收藏</span></button>
-</div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索资讯、来源或影响" aria-label="搜索资讯"></label></div>
-<div class="layout"><div class="maincol"><div id="notice">正在加载资讯…</div><section id="featured"></section><div class="sectionbar"><h2 id="articles-title">今日资讯</h2><span id="count">—</span></div><div class="cards" id="cards" aria-live="polite"><div class="loading">正在读取最新简报…</div></div><div class="updatebar" id="statusline"></div></div><aside class="side"><section class="panel"><h3>📆 往期简报</h3><p>可以回看以前的新闻，文章来源和发布日期一并保存。</p><select id="archive" class="archive" aria-label="选择简报日期"><option value="latest">最新一期</option></select><div class="updatebar" style="margin-top:12px">网页每天更新一次。如需立即生成新一期，请在 GitHub 的 Actions 页面手动运行。</div></section><section class="panel"><h3>💎 Obsidian 观察站</h3><div class="timeline"><div class="timeitem"><b>官方更新日志</b><span>跟踪桌面端、移动端、Bases、Canvas 和 API</span></div><div class="timeitem"><b>官方路线图</b><span>区分已发布、开发中和计划中</span></div><div class="timeitem"><b>对小岛的影响</b><span>聚焦六级序号、画布、插件兼容性</span></div></div><a class="linkline" href="https://obsidian.md/changelog/" target="_blank" rel="noopener noreferrer">官方更新日志 ↗</a><a class="linkline" href="https://obsidian.md/roadmap/" target="_blank" rel="noopener noreferrer">官方路线图 ↗</a><a class="linkline" href="https://docs.obsidian.md/" target="_blank" rel="noopener noreferrer">开发者文档 ↗</a></section><section class="panel"><h3>📡 关于这份简报</h3><p>从公开 RSS 和官方更新日志抓取信息，再可选通过 AI 生成中文摘要。</p><p>文章来源的发布时间和简报抓取时间是两回事；没有当天新消息时会明确标为近期回顾。</p><div class="note">本站仅展示摘要与来源链接，不构成投资建议。不在网页中保存 API 密钥。</div></section></aside></div>
+</div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索资讯、来源" aria-label="搜索资讯"></label></div>
+<div class="layout"><div class="maincol"><div id="notice">正在加载资讯…</div><section id="featured"></section><div class="sectionbar"><h2 id="articles-title">今日资讯</h2><span id="count">—</span></div><div class="cards" id="cards" aria-live="polite"><div class="loading">正在读取最新简报…</div></div><div class="updatebar" id="statusline"></div></div><aside class="side"><section class="panel"><h3>📆 往期简报</h3><p>可以回看以前的新闻，文章来源和发布日期一并保存。</p><select id="archive" class="archive" aria-label="选择简报日期"><option value="latest">最新一期</option></select><div class="updatebar" style="margin-top:12px">网页每天更新一次。如需立即生成新一期，请在 GitHub 的 Actions 页面手动运行。</div></section><section class="panel"><h3>💎 Obsidian 观察站</h3><div class="timeline"><div class="timeitem"><b>官方更新日志</b><span>跟踪桌面端、移动端、Bases、Canvas 和 API</span></div><div class="timeitem"><b>官方路线图</b><span>区分已发布、开发中和计划中</span></div><div class="timeitem"><b>兼容性观察</b><span>关注画布、插件与生态更新</span></div></div><a class="linkline" href="https://obsidian.md/changelog/" target="_blank" rel="noopener noreferrer">官方更新日志 ↗</a><a class="linkline" href="https://obsidian.md/roadmap/" target="_blank" rel="noopener noreferrer">官方路线图 ↗</a><a class="linkline" href="https://docs.obsidian.md/" target="_blank" rel="noopener noreferrer">开发者文档 ↗</a></section><section class="panel"><h3>📡 关于这份简报</h3><p>从公开 RSS 和官方更新日志抓取信息，再可选通过 AI 生成中文摘要。</p><p>文章来源的发布时间和简报抓取时间是两回事；没有当天新消息时会明确标为近期回顾。</p><div class="note">本站仅展示摘要与来源链接，不构成投资建议。不在网页中保存 API 密钥。</div></section></aside></div>
+<dialog id="private-dialog" class="private-dialog" aria-labelledby="private-dialog-title">
+<form id="private-form" method="dialog"><h2 id="private-dialog-title">🔐 解锁私人分析</h2>
+<p>仅在本机解密私人内容。没有正确密钥，公开网页和新闻文件不会显示私人分析。</p>
+<label for="private-password">私人访问密钥</label>
+<input id="private-password" type="password" autocomplete="off" spellcheck="false" placeholder="输入与推送端一致的密钥" required minlength="12"/>
+<p id="private-message" role="status" aria-live="polite"></p>
+<div class="private-actions"><button type="button" id="private-close">取消</button><button type="submit">解锁</button></div></form></dialog>
 <footer class="footer"><span>© 岛屿晨报 · 只读摘要 · 点击来源阅读完整内容</span><div class="source-links"><a href="https://openai.com/news/" target="_blank" rel="noopener noreferrer">OpenAI ↗</a><a href="https://github.blog/changelog/" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://obsidian.md/changelog/" target="_blank" rel="noopener noreferrer">Obsidian ↗</a></div></footer></main>
 <script src="assets/seed.js"></script><script src="assets/app.js" defer></script>
 </body></html>

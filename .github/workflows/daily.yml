@@ -33,17 +33,24 @@ jobs:
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
       - name: 从公开 RSS 更新最新简报
+        if: github.event_name != 'push'
         # 未配 AI 密钥时保留原文标题和摘要，不卡住部署。
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
         run: |
           python scripts/update_news.py || echo '本次采集未成功，将沿用已有数据。'
+      - name: 在运行器内加密私人简报（可选，绝不提交明文）
+        env:
+          ISLAND_PRIVATE_READ_TOKEN: ${{ secrets.ISLAND_PRIVATE_READ_TOKEN }}
+          ISLAND_PRIVATE_PASSWORD: ${{ secrets.ISLAND_PRIVATE_PASSWORD }}
+          ISLAND_PRIVATE_REPO: VinVinVin444/island-daily-private
+        run: python scripts/encrypt_private.py
       - name: 存档已生成的 JSON
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/news.json data/archive/ || true
+          git add data/news.json data/archive/ data/private/ || true
           if ! git diff --cached --quiet; then
             git commit -m 'news: daily brief update'
             # 运行期间可能有其他提交，先同步远程分支再推送。

@@ -1,6 +1,6 @@
 # ✧ 岛屿晨报 · 每日资讯网站
 
-一个响应式静态网站，每天自动展示六个领域的新闻：**AI、GitHub/开源、纳指/投资、数码、国际新闻和 Obsidian 专栏**。面向喜欢 Obsidian、正在开发插件的个人用户设计。
+一个响应式静态网站，每天自动展示六个领域的新闻：**AI、GitHub/开源、纳指/投资、数码、国际新闻和 Obsidian 专栏**。面向关注科技动态的读者。
 
 ## 先看网页
 
@@ -20,7 +20,7 @@
 
 **不配置 API**：免费抓取公开 RSS、显示来源标题/摘要（部分为英语），标记原始发布时间和近期回顾。网站不需要服务器。
 
-**需要每天自动生成完整的中文摘要和「与你有关」分析**：在仓库 **Settings → Secrets and variables → Actions → New repository secret** 添加：
+**需要通过 API 生成公开新闻的中文摘要**：在仓库 **Settings → Secrets and variables → Actions → New repository secret** 添加：
 
 - Name：`OPENAI_API_KEY`
 - Secret：你自己的 OpenAI API 密钥
