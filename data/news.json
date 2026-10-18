@@ -1,68 +1,77 @@
 {
-  "demo": true,
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T07:00:00+08:00",
+  "generated_at": "2026-10-18T09:55:09.648176+00:00",
   "ai_generated": false,
+  "demo": false,
   "items": [
     {
       "category": "obsidian",
-      "title": "Obsidian 1.14：Bases 看板、六种高亮与库外 Markdown",
-      "summary": "Obsidian 10 月 5 日发布的 1.14 正式版，为 Bases 引入看板视图，可拖拽卡片和调整分组。同时新增六种高亮颜色，并支持直接打开库外 Markdown 文件。今天没有新的正式版，本条属于近期更新回顾。",
-      "impact": "关注 Bases 与小岛现有看板功能的重叠；六级序号和自由画布仍是差异化方向。",
-      "source": "Obsidian 官方",
-      "published_at": "2026-10-05T12:00:00+08:00",
-      "url": "https://obsidian.md/changelog/",
+      "title": "Obsidian 1.14 Mobile (Public)",
+      "summary": "Includes all new features and bug fixes up to Obsidian Desktop v1.14.4 . While you’re here… Tell us about your favorite plugins, themes, tools, and ways to use Obsidian: take the State of Obsidian 2026 survey . Quick Capture on iOS On iOS 26, Quick Capture lets you instantly create notes from the Lock Screen , Control Center , Home Screen widgets, or Shortcuts without waiting for your vault to load. Customize Locations to capture to a new note, today’s daily note, a bookmarked note, or any note you choose, with optional templates. Improvements Text and interface elements now scale with your sy…",
+      "impact": "关注对小岛序号节点、Canvas 数据结构和移动端适配的影响。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
+      "image": "",
       "is_recent": true
     },
     {
       "category": "ai",
-      "title": "Replit 将 OpenAI 设为默认 AI 编程模型提供商",
-      "summary": "据 10 月 17 日 TechCrunch 报道，Replit 首席执行官表示，平台选择 OpenAI 主要考虑模型表现、成本与合作关系。该消息反映 AI 编程工具正在更频繁地比较和选择底层模型。",
-      "impact": "开发「我的小岛」时，可以用相同任务比较 Codex 与其他模型的代码质量和返工成本。",
-      "source": "TechCrunch",
-      "published_at": "2026-10-18T02:48:00+08:00",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "is_recent": false
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+      "impact": "重点关注实际编程表现与投入成本，可以在小岛项目中进行对照测试。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-14T12:00:00+00:00",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "image": "",
+      "is_recent": true
     },
     {
       "category": "dev",
-      "title": "GitHub 正式推出企业级开源许可证合规检查",
-      "summary": "GitHub 10 月 16 日公告，企业可通过规则检查新引入的软件依赖是否符合许可证政策，降低供应链与商业合规风险。这项能力主要面向启用 GitHub Code Security 的 Enterprise Cloud。",
-      "impact": "已经商业化的 Obsidian 插件应记录第三方依赖许可证，区分可商用与附带义务的开源协议。",
+      "title": "Open source license compliance generally available",
+      "summary": "Enterprises can now manage their dependencies’ licenses at scale with sophisticated, ruleset-based checks that enforce a centralized policy. Open source license compliance is now generally available for GitHub Enterprise Cloud… The post Open source license compliance generally available appeared first on The GitHub Blog .",
+      "impact": "留意插件兼容性、商业授权和安全发布流程；必要时先在测试分支验证。",
       "source": "GitHub Changelog",
-      "published_at": "2026-10-16T12:00:00+08:00",
-      "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/",
+      "published_at": "2026-10-16T14:00:32+00:00",
+      "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
+      "image": "",
       "is_recent": true
     },
     {
       "category": "market",
-      "title": "下周科技股财报将检验 AI 投资回报预期",
-      "summary": "路透社 10 月 16 日的市场前瞻指出，新一轮公司业绩披露和科技企业资本支出，将影响投资者对 AI 相关股票估值的判断。周末美国股票现货市场休市，本条不是新的股指收盘行情。",
-      "impact": "观察美债收益率和科技公司盈利，QDII 实际盈亏以基金净值为准。",
-      "source": "Reuters",
-      "published_at": "2026-10-16T12:00:00+08:00",
-      "url": "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-10-16/",
-      "is_recent": true
+      "title": "AI stocks plunge. Inflation heats up. Where we're still finding opportunities",
+      "summary": "The sinking AI trade rattled last week's market. But solid bank earnings and a rotation beyond tech gave us reasons for optimism.",
+      "impact": "观察科技股盈利和资金成本；QDII 申赎应以基金实际净值与规则为准。",
+      "source": "CNBC",
+      "published_at": "2026-10-17T15:42:34+00:00",
+      "url": "https://www.cnbc.com/investingclub/2026/10/17/ai-stocks-plunge-inflation-heats-up-where-were-still-finding-opportunities.html",
+      "image": "",
+      "is_recent": false
     },
     {
       "category": "digital",
-      "title": "英伟达 RTX Spark 笔记本首周评测：本地 AI 能力与续航仍有取舍",
-      "summary": "The Verge 10 月 17 日的体验报道关注搭载 NVIDIA RTX Spark 的 Windows 笔记本，其大容量统一内存有助于本地 AI，但价格、发热、续航和 CPU 表现仍需权衡。",
-      "impact": "购买开发用电脑时，应先看剪辑、编程及本地模型实际需求，不必为了尝鲜过早换机。",
+      "title": "Bose’s new wired earbuds are simple in the best way",
+      "summary": "After Apple courageously removed the headphone jack from the iPhone in 2016, most people switched to Bluetooth earbuds and never looked back. But their wired counterparts have stuck around, and their sales even went up this year after five years of decline. Part of the resurgence can be tied to the fact that they're cool […]",
+      "impact": "先核对实际价格、兼容性与测试表现，不必仅凭新产品发布决定换机。",
       "source": "The Verge",
-      "published_at": "2026-10-17T12:00:00+08:00",
-      "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
-      "is_recent": true
+      "published_at": "2026-10-17T13:00:00+00:00",
+      "url": "https://www.theverge.com/tech/1013320/bose-noise-cancelling-wired-earbuds-review",
+      "image": "",
+      "is_recent": false
     },
     {
       "category": "world",
-      "title": "IMF 会议关注全球经济韧性与冲突风险",
-      "summary": "路透社 10 月 17 日报道，国际货币与金融委员会会议讨论能源安全、政府债务及 AI 带来的风险。多方同时强调支持经济增长与维护金融稳定的必要性。",
-      "impact": "能源价格和利率预期可能间接影响纳斯达克估值，但不能简单用于预测短期涨跌。",
-      "source": "Reuters",
-      "published_at": "2026-10-17T12:00:00+08:00",
-      "url": "https://www.reuters.com/world/china/delegates-walked-out-imf-steering-committee-meeting-when-russian-official-spoke-2026-10-17/",
-      "is_recent": true
+      "title": "After Dubois' dominant win, what's next for heavyweight boxing?",
+      "summary": "After world champion Daniel Dubois' emphatic win over Fabio Wardley, what's next for the heavyweight division?",
+      "impact": "关注其对通胀、供应链及投资市场的间接影响，避免用单一新闻预测行情。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-10-18T05:39:47+00:00",
+      "url": "https://www.bbc.co.uk/sport/boxing/articles/ck3r59ywz99ro?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/587d/live/cc426aa0-ca82-11f1-8970-b5075080a16a.jpg",
+      "is_recent": false
     }
-  ]
+  ],
+  "count": 6,
+  "source_count": 14,
+  "timezone": "Asia/Shanghai"
 }
