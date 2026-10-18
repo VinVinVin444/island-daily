@@ -84,5 +84,41 @@ $('#private-form').addEventListener('submit',async event=>{
   }catch(e){accessGranted=false;render();msg.textContent=e.message==='invalid'?'访问密钥不匹配。':e.message==='https'?'请通过 HTTPS 打开网页。':'暂时无法验证密钥。';}
 });
 
+const manualLink=$('#manual-refresh-news');
+const manualState=$('#manual-refresh-state');
+let manualPollId=null,manualPollCount=0;
+manualLink.addEventListener('click',()=>{
+  if(manualPollId)clearInterval(manualPollId);
+  const before=issue?.generated_at||'';
+  manualPollCount=0;
+  manualState.textContent='已打开 GitHub。登录后点击 Run workflow → Run workflow。任务完成后，本页将在约 5 分钟内自动检查新内容。';
+  manualPollId=setInterval(async()=>{
+    manualPollCount++;
+    try{
+      const response=await fetch('data/news.json?refresh='+Date.now(),{cache:'no-store'});
+      if(response.ok){
+        const data=await response.json();
+        if(Array.isArray(data.items) && data.generated_at && data.generated_at!==before){
+          issue=data;
+          $('#archive').value='latest';
+          render();
+          manualState.textContent='✅ 已检测到新一期新闻并刷新页面。';
+          clearInterval(manualPollId);manualPollId=null;
+          return;
+        }
+      }
+    }catch{}
+    if(manualPollCount>=20){
+      clearInterval(manualPollId);manualPollId=null;
+      manualState.textContent='暂未检测到新简报。请检查 GitHub Actions 是否出现绿色成功标志，再点击「刷新已发布内容」。';
+    }
+  },15000);
+});
+$('#manual-read-latest').addEventListener('click',()=>{
+  $('#archive').value='latest';
+  loadIssue('data/news.json');
+  manualState.textContent='已重新读取网站上最新发布的数据；此操作不会启动新闻采集。';
+});
+
 loadIssue('data/news.json');loadArchives();
 })();
