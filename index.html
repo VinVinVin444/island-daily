@@ -76,6 +76,11 @@ header{background:rgba(255,250,226,.94);border-bottom:1px solid #efe0bc;backdrop
 @media(max-width:570px){.news-refresh-panel{padding:15px;margin-top:15px}.news-refresh-actions{width:100%}.news-refresh-primary,.news-refresh-secondary{flex:1 1 auto;padding:11px 9px;font-size:12px}}
 .news-refresh-primary:disabled{opacity:.6;cursor:wait}
 #refresh-feedback{color:#b15b3a;min-height:18px}
+.refresh-remember{display:flex!important;align-items:center;gap:9px;margin:13px 0 0!important;cursor:pointer;font-size:14px;font-weight:700}
+.refresh-remember input{width:18px!important;height:18px!important;accent-color:#e8755b}
+.refresh-security-note{font-size:12px!important;color:#927655;margin-top:6px!important}
+.forget-refresh-password{border:0;background:none;text-decoration:underline;font-size:12px;padding:0;margin:0;color:#936244;cursor:pointer}
+.forget-refresh-password:hover{color:#dd6e4d}
 </style>
 </head>
 <body>
@@ -84,7 +89,8 @@ header{background:rgba(255,250,226,.94);border-bottom:1px solid #efe0bc;backdrop
 <section class="news-refresh-panel" aria-label="手动更新新闻">
  <div class="news-refresh-copy"><strong>📰 想现在获取新新闻？</strong><span>输入密码即可在本站启动 GitHub 云端采集，完成后自动读取最新一期。</span></div>
  <div class="news-refresh-actions"><button id="manual-refresh-news" class="news-refresh-primary" type="button">⟳ 立即采集新新闻</button><button id="manual-read-latest" class="news-refresh-secondary" type="button">刷新已发布内容</button></div>
- <p id="manual-refresh-state" role="status" aria-live="polite">此处使用 Cloudflare Worker 的更新密码，与「与你有关」解锁密钥不同。</p>
+ <p id="manual-refresh-state" role="status" aria-live="polite">首次验证成功后可记住更新密码，下次直接一键触发；记住的密码仅留在当前设备浏览器。</p>
+ <button id="forget-refresh-password" type="button" class="forget-refresh-password" hidden>清除已记住的密码</button>
 </section>
 <section class="personal-section" id="personal-focus" aria-label="仅解锁后显示的私人资讯" hidden></section>
 <div class="controls"><div class="tabs" role="tablist" aria-label="领域筛选">
@@ -102,6 +108,8 @@ header{background:rgba(255,250,226,.94);border-bottom:1px solid #efe0bc;backdrop
 <form id="refresh-form"><h2 id="refresh-dialog-title">⟳ 更新岛屿晨报</h2>
 <p>使用 Cloudflare Worker 的 <strong>UPDATE_PASSWORD</strong> 触发新闻采集。此处<strong>不要输入 GitHub Token</strong>。</p>
 <label for="refresh-password">更新密码</label><input id="refresh-password" type="password" autocomplete="off" spellcheck="false" maxlength="256" placeholder="请输入新闻更新密码" required/>
+<label class="refresh-remember"><input type="checkbox" id="refresh-remember" checked/> 在这台设备记住更新密码</label>
+<p class="refresh-security-note">仅建议在自己的电脑上开启。密码会保存在此浏览器的本地存储中，可随时清除；这不是加密保险箱。</p>
 <p id="refresh-feedback" role="status" aria-live="polite"></p>
 <div class="private-actions"><button id="refresh-cancel" type="button">取消</button><button id="refresh-submit" type="submit">开始更新</button></div>
 </form></dialog>

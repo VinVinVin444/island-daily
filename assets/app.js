@@ -85,29 +85,39 @@ $('#private-form').addEventListener('submit',async event=>{
 });
 
 // 手动更新任务从 Cloudflare Worker 触发；GitHub Token 只保存在 Worker 的 Secret。
+// GitHub Token 只在 Cloudflare Worker Secret 内。此处仅保存用户自愿记住的更新密码。
 const UPDATE_ENDPOINT='https://island-daily-refresh.evinvin486.workers.dev/refresh';
+const REMEMBER_KEY='island-daily-update-password-v1';
 const manualState=$('#manual-refresh-state');
 const manualButton=$('#manual-refresh-news');
+const forgetButton=$('#forget-refresh-password');
 const refreshDialog=$('#refresh-dialog');
 const refreshForm=$('#refresh-form');
 const refreshInput=$('#refresh-password');
+const refreshRemember=$('#refresh-remember');
 const refreshFeedback=$('#refresh-feedback');
 const refreshSubmit=$('#refresh-submit');
-let manualPollId=null,manualPollCount=0;
+let manualPollId=null,manualPollCount=0,requestBusy=false;
+const rememberedPassword=()=>{try{return localStorage.getItem(REMEMBER_KEY)||''}catch{return ''}};
+const forgetRemembered=()=>{try{localStorage.removeItem(REMEMBER_KEY)}catch{};forgetButton.hidden=true};
+const syncRememberedButton=()=>{forgetButton.hidden=!rememberedPassword()};
+syncRememberedButton();
 
 function closeUpdateDialog(){
   refreshInput.value='';
   if(typeof refreshDialog.close==='function')refreshDialog.close();
   else refreshDialog.removeAttribute('open');
 }
-manualButton.addEventListener('click',()=>{
-  refreshInput.value='';
-  refreshFeedback.textContent='';
+function showUpdateDialog(reason=''){
+  refreshInput.value='';refreshFeedback.textContent=reason;
   if(typeof refreshDialog.showModal==='function')refreshDialog.showModal();
   else refreshDialog.setAttribute('open','');
   refreshInput.focus();
+}
+forgetButton.addEventListener('click',()=>{
+  forgetRemembered();
+  manualState.textContent='已清除当前浏览器保存的更新密码。下次采集时需要重新输入。';
 });
-$('#refresh-cancel').addEventListener('click',closeUpdateDialog);
 
 function watchForPublishedNews(previousVersion){
   if(manualPollId)clearInterval(manualPollId);
@@ -119,9 +129,7 @@ function watchForPublishedNews(previousVersion){
       if(r.ok){
         const updated=await r.json();
         if(Array.isArray(updated.items)&&updated.generated_at&&updated.generated_at!==previousVersion){
-          issue=updated;
-          $('#archive').value='latest';
-          render();
+          issue=updated;$('#archive').value='latest';render();
           manualState.textContent='✅ 新闻已更新，本期共 '+updated.items.length+' 条。';
           clearInterval(manualPollId);manualPollId=null;return;
         }
@@ -134,50 +142,65 @@ function watchForPublishedNews(previousVersion){
   },15000);
 }
 
-refreshForm.addEventListener('submit',async e=>{
-  e.preventDefault();
-  if(refreshSubmit.disabled)return;
-  const password=refreshInput.value;
-  refreshInput.value='';
-  if(!password){refreshFeedback.textContent='请输入更新密码。';return}
-  refreshSubmit.disabled=true;
-  manualButton.disabled=true;
+async function submitUpdate(password, remember, fromCache=false){
+  if(requestBusy||!password)return;
+  requestBusy=true;
+  manualButton.disabled=true;refreshSubmit.disabled=true;
   refreshFeedback.textContent='正在联系 Cloudflare Worker…';
+  manualState.textContent='正在验证并提交更新任务…';
   const previousVersion=issue?.generated_at||'';
   try{
     const r=await fetch(UPDATE_ENDPOINT,{
-      method:'POST',
-      mode:'cors',
-      credentials:'omit',
-      cache:'no-store',
+      method:'POST',mode:'cors',credentials:'omit',cache:'no-store',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({password})
     });
     let result=null;try{result=await r.json()}catch{}
     if(!r.ok||result?.success!==true){
-      let msg=result?.error||'Worker 没有返回预期数据，请确认已部署更新接口。';
+      let msg=result?.error||'Worker 未返回预期数据，请确认已部署更新接口。';
       if(r.status===401)msg='更新密码错误，请重新输入。';
       if(r.status===503)msg='Worker 的两个 Secret 尚未生效。';
       if(r.status===502)msg='Worker 触发 GitHub 失败，请检查 GitHub Token 的 Actions 权限。';
-      throw new Error(msg);
+      const error=new Error(msg);
+      error.status=r.status;throw error;
     }
+    if(remember){try{localStorage.setItem(REMEMBER_KEY,password)}catch{}}
+    else forgetRemembered();
+    syncRememberedButton();
     closeUpdateDialog();
-    manualState.textContent='✅ 已成功提交更新任务，正在等待 GitHub 发布新一期新闻（最多自动检查约5分钟）。';
+    manualState.textContent='✅ 已提交更新任务，正在等待 GitHub 发布（自动检查约5分钟）。';
     watchForPublishedNews(previousVersion);
   }catch(err){
-    refreshFeedback.textContent=err instanceof TypeError
+    const msg=err instanceof TypeError
       ? '无法连接 Worker，请检查 Worker 的代码部署和 CORS 设置。'
       : err.message||'请求失败，请稍后重试。';
+    if(fromCache){
+      // 密码失效时自动丢弃缓存，其他连接错误仍允许稍后重试。
+      if(err.status===401){forgetRemembered();showUpdateDialog('已保存的密码失效，请重新输入。')}
+      else manualState.textContent=msg;
+    }else refreshFeedback.textContent=msg;
   }finally{
-    refreshSubmit.disabled=false;
-    manualButton.disabled=false;
+    requestBusy=false;manualButton.disabled=false;refreshSubmit.disabled=false;
   }
-});
+}
 
+manualButton.addEventListener('click',()=>{
+  if(requestBusy)return;
+  const saved=rememberedPassword();
+  if(saved){submitUpdate(saved,true,true);return}
+  showUpdateDialog();
+});
+$('#refresh-cancel').addEventListener('click',closeUpdateDialog);
+refreshForm.addEventListener('submit',e=>{
+  e.preventDefault();
+  const password=refreshInput.value;
+  refreshInput.value='';
+  if(!password){refreshFeedback.textContent='请输入更新密码。';return}
+  submitUpdate(password,refreshRemember.checked,false);
+});
 $('#manual-read-latest').addEventListener('click',()=>{
-  $('#archive').value='latest';
-  loadIssue('data/news.json');
-  manualState.textContent='已重新读取当前发布的数据。此操作不会执行新一轮新闻采集。';
+  $('#archive').value='latest';loadIssue('data/news.json');
+  manualState.textContent='已重新读取当前发布的数据；没有执行新一轮新闻采集。';
 });
 
 loadIssue('data/news.json');loadArchives();

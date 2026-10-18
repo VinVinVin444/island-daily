@@ -84,3 +84,8 @@
 
 必须先在 Cloudflare 的 Edit code 部署对应的 Worker 代码，并在生产环境 Secret 设置 `UPDATE_PASSWORD` 与 `GITHUB_TOKEN`。更新按钮以 Worker 返回 `success:true` 作为启动成功条件；按钮状态不代表新闻最终抓取、翻译或 GitHub Pages 发布已成功。
 
+
+
+## 更新密码的本地记忆（可选）
+
+首次输入 `UPDATE_PASSWORD` 且 Worker 返回成功后，若勾选「在这台设备记住更新密码」（默认勾选），网站会将更新密码存入该浏览器 `localStorage`，下一次点击「立即采集」便直接触发 Worker，无需再输入。页面提供「清除已记住的密码」按钮。密码错误（HTTP 401）时自动删除本地记录并要求重新输入；网络故障不自动清除。公开网页源码或仓库内**不写入实际更新密码或 GitHub Token**。本地存储不是强加密，不应在公用电脑启用，也应知晓同源脚本、浏览器扩展或获得本机访问的人可能读取这段密码。
