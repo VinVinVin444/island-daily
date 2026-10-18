@@ -1,0 +1,29 @@
+{
+  "hash": "0b1737092847cb0acd089095a6cfc7d4c79c1c58cfd229dc4f0eb765416c20f9",
+  "sections": {
+    "active": [
+      "Improved Mermaid diagrams",
+      "Mobile PDF export",
+      "Obsidian for Work"
+    ],
+    "planned": [
+      "Background Sync on mobile",
+      "Bases support for Publish",
+      "Calendar view for Bases",
+      "Canvas support for Publish",
+      "Multiplayer",
+      "PDF annotation",
+      "Sort search results by relevance"
+    ]
+  },
+  "article": {
+    "category": "obsidian",
+    "title": "Obsidian 官方路线图：当前开发与计划（首次采集快照）",
+    "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。这是本站首次采集的路线图快照，不代表官方今天发布了更新。",
+    "source": "Obsidian 官方路线图（自动观察）",
+    "published_at": "2026-10-18T12:13:39.040874+00:00",
+    "date_kind": "observed",
+    "url": "https://obsidian.md/roadmap/",
+    "image": ""
+  }
+}
