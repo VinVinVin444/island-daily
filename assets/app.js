@@ -84,40 +84,100 @@ $('#private-form').addEventListener('submit',async event=>{
   }catch(e){accessGranted=false;render();msg.textContent=e.message==='invalid'?'访问密钥不匹配。':e.message==='https'?'请通过 HTTPS 打开网页。':'暂时无法验证密钥。';}
 });
 
-const manualLink=$('#manual-refresh-news');
+// 手动更新任务从 Cloudflare Worker 触发；GitHub Token 只保存在 Worker 的 Secret。
+const UPDATE_ENDPOINT='https://island-daily-refresh.evinvin486.workers.dev/refresh';
 const manualState=$('#manual-refresh-state');
+const manualButton=$('#manual-refresh-news');
+const refreshDialog=$('#refresh-dialog');
+const refreshForm=$('#refresh-form');
+const refreshInput=$('#refresh-password');
+const refreshFeedback=$('#refresh-feedback');
+const refreshSubmit=$('#refresh-submit');
 let manualPollId=null,manualPollCount=0;
-manualLink.addEventListener('click',()=>{
+
+function closeUpdateDialog(){
+  refreshInput.value='';
+  if(typeof refreshDialog.close==='function')refreshDialog.close();
+  else refreshDialog.removeAttribute('open');
+}
+manualButton.addEventListener('click',()=>{
+  refreshInput.value='';
+  refreshFeedback.textContent='';
+  if(typeof refreshDialog.showModal==='function')refreshDialog.showModal();
+  else refreshDialog.setAttribute('open','');
+  refreshInput.focus();
+});
+$('#refresh-cancel').addEventListener('click',closeUpdateDialog);
+
+function watchForPublishedNews(previousVersion){
   if(manualPollId)clearInterval(manualPollId);
-  const before=issue?.generated_at||'';
   manualPollCount=0;
-  manualState.textContent='已打开 GitHub。登录后点击 Run workflow → Run workflow。任务完成后，本页将在约 5 分钟内自动检查新内容。';
   manualPollId=setInterval(async()=>{
     manualPollCount++;
     try{
-      const response=await fetch('data/news.json?refresh='+Date.now(),{cache:'no-store'});
-      if(response.ok){
-        const data=await response.json();
-        if(Array.isArray(data.items) && data.generated_at && data.generated_at!==before){
-          issue=data;
+      const r=await fetch('data/news.json?refresh='+Date.now(),{cache:'no-store'});
+      if(r.ok){
+        const updated=await r.json();
+        if(Array.isArray(updated.items)&&updated.generated_at&&updated.generated_at!==previousVersion){
+          issue=updated;
           $('#archive').value='latest';
           render();
-          manualState.textContent='✅ 已检测到新一期新闻并刷新页面。';
-          clearInterval(manualPollId);manualPollId=null;
-          return;
+          manualState.textContent='✅ 新闻已更新，本期共 '+updated.items.length+' 条。';
+          clearInterval(manualPollId);manualPollId=null;return;
         }
       }
     }catch{}
     if(manualPollCount>=20){
       clearInterval(manualPollId);manualPollId=null;
-      manualState.textContent='暂未检测到新简报。请检查 GitHub Actions 是否出现绿色成功标志，再点击「刷新已发布内容」。';
+      manualState.textContent='尚未检测到新的公开数据。请稍后刷新，或查看 GitHub Actions 是否成功。';
     }
   },15000);
+}
+
+refreshForm.addEventListener('submit',async e=>{
+  e.preventDefault();
+  if(refreshSubmit.disabled)return;
+  const password=refreshInput.value;
+  refreshInput.value='';
+  if(!password){refreshFeedback.textContent='请输入更新密码。';return}
+  refreshSubmit.disabled=true;
+  manualButton.disabled=true;
+  refreshFeedback.textContent='正在联系 Cloudflare Worker…';
+  const previousVersion=issue?.generated_at||'';
+  try{
+    const r=await fetch(UPDATE_ENDPOINT,{
+      method:'POST',
+      mode:'cors',
+      credentials:'omit',
+      cache:'no-store',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({password})
+    });
+    let result=null;try{result=await r.json()}catch{}
+    if(!r.ok||result?.success!==true){
+      let msg=result?.error||'Worker 没有返回预期数据，请确认已部署更新接口。';
+      if(r.status===401)msg='更新密码错误，请重新输入。';
+      if(r.status===503)msg='Worker 的两个 Secret 尚未生效。';
+      if(r.status===502)msg='Worker 触发 GitHub 失败，请检查 GitHub Token 的 Actions 权限。';
+      throw new Error(msg);
+    }
+    closeUpdateDialog();
+    manualState.textContent='✅ 已成功提交更新任务，正在等待 GitHub 发布新一期新闻（最多自动检查约5分钟）。';
+    watchForPublishedNews(previousVersion);
+  }catch(err){
+    refreshFeedback.textContent=err instanceof TypeError
+      ? '无法连接 Worker，请检查 Worker 的代码部署和 CORS 设置。'
+      : err.message||'请求失败，请稍后重试。';
+  }finally{
+    refreshSubmit.disabled=false;
+    manualButton.disabled=false;
+  }
 });
+
 $('#manual-read-latest').addEventListener('click',()=>{
   $('#archive').value='latest';
   loadIssue('data/news.json');
-  manualState.textContent='已重新读取网站上最新发布的数据；此操作不会启动新闻采集。';
+  manualState.textContent='已重新读取当前发布的数据。此操作不会执行新一轮新闻采集。';
 });
 
 loadIssue('data/news.json');loadArchives();

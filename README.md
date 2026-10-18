@@ -78,8 +78,9 @@
 抓取程序每次最多选择 **20 条**（AI 4、开发 3、市场 4、数码 3、国际 3、Obsidian 3），缺少合格新闻不填充虚假条目。RSS 抓取的新新闻没有个性化分析时不会自动补造固定建议。
 
 
-## 网页手动更新
+## 网站内手动更新新闻
 
-网页首页有「立即采集新新闻」按钮，它会打开仓库的 GitHub Actions `daily.yml` 页面。仓库所有者登录后选择 **Run workflow → main → Run workflow**，由 GitHub 服务器执行 RSS 重新抓取与 Pages 部署。网页自动检查新发布的数据（最多约5分钟）；「刷新已发布内容」只是重新读取已有的 `data/news.json`，不会触发采集。
+新增 `立即采集新新闻` 功能：使用 `UPDATE_PASSWORD` 在网页内发送 `POST https://island-daily-refresh.evinvin486.workers.dev/refresh`，由 Cloudflare Worker 在服务端验证密码后，携带 Worker Secret `GITHUB_TOKEN` 调用 GitHub REST `workflow_dispatch`，触发仓库 `daily.yml`。前端**不会**接触 GitHub Token，也不会把更新密码持久化存储。任务被接受后前端在约五分钟内定期检测新 JSON。另一个「刷新已发布内容」只负责刷新显示。
 
-这是纯静态站的免费可靠方案；GitHub Pages **无法安全地直接在浏览器中启动有写权限的 Actions**，不要将 GitHub Token 放进 JavaScript、HTML 或公开仓库。如要完全不跳 GitHub 的真正一键采集，需要额外搭建具备鉴权和限流的服务端代理。
+必须先在 Cloudflare 的 Edit code 部署对应的 Worker 代码，并在生产环境 Secret 设置 `UPDATE_PASSWORD` 与 `GITHUB_TOKEN`。更新按钮以 Worker 返回 `success:true` 作为启动成功条件；按钮状态不代表新闻最终抓取、翻译或 GitHub Pages 发布已成功。
+
