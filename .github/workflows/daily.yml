@@ -46,7 +46,14 @@ jobs:
           git add data/news.json data/archive/ || true
           if ! git diff --cached --quiet; then
             git commit -m 'news: daily brief update'
-            git push
+            # 运行期间可能有其他提交，先同步远程分支再推送。
+            git fetch origin main
+            if git rebase -X theirs origin/main; then
+              git push origin HEAD:main || echo '远程分支已更新，跳过本次存档推送（不影响网页部署）'
+            else
+              git rebase --abort || true
+              echo '无法自动合并新闻存档，本次仍继续部署当前生成的数据'
+            fi
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
