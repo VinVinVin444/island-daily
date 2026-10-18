@@ -1,0 +1,57 @@
+name: 更新晨报数据并发布网页
+on:
+  schedule:
+    # 北京时间每天早上 07:00 = UTC 前一天 23:00；GitHub Actions 可能略有延迟。
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: island-daily-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: 从公开 RSS 更新最新简报
+        # 未配 AI 密钥时保留原文标题和摘要，不卡住部署。
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+        run: |
+          python scripts/update_news.py || echo '本次采集未成功，将沿用已有数据。'
+      - name: 存档已生成的 JSON
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/news.json data/archive/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'news: daily brief update'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: 发布 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
