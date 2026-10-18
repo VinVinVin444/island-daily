@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T10:29:53.831385+00:00",
+  "generated_at": "2026-10-18T11:21:04.779587+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": true,
@@ -18,6 +18,26 @@
       "impact": "Obsidian 移动端快速记录和兼容性变化，值得测试「我的小岛」序号节点在手机上的触控与适配；这条并未表明官方推出了与你相同的序号功能。"
     },
     {
+      "category": "obsidian",
+      "title": "Obsidian 1.14 桌面版（公共）",
+      "summary": "此更新引入了对打开单个 Markdown 文件、Bases 的看板视图以及突出显示颜色的支持。重要提示：打开 Markdown 文件需要最新的安装程序。从我们的网站下载 Obsidian 并重新安装该应用程序。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。打开单独的 Markdown 文件 您现在可以打开单独的 Mar...",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14.4 移动版（抢先体验）",
+      "summary": "包括 Obsidian Desktop 1.14.4 之前的所有新功能和错误修复。不再损坏的底座：修复了当每张卡都隐藏时看板视图不水平滚动的问题。基础：修复了触发下拉操作时表格视图丢失其水平滚动位置的问题。基础：修复了当键盘打开或关闭时在移动设备上调整看板列大小的问题。基础：打开视图配置页面不再自动聚焦视图名称。...",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-01-mobile-v1.14.4/",
+      "image": "",
+      "is_recent": true
+    },
+    {
       "category": "ai",
       "title": "Amp 让 AI 代理能够通过 OpenAI 模型超越代码进行工作",
       "summary": "了解 Amp 如何利用 GPT-6 Astra、Ultrafast、GPT-Live-1 和 ChatGPT 登录来拓展代理功能的前沿。",
@@ -27,6 +47,36 @@
       "image": "",
       "is_recent": true,
       "impact": "这类 AI Agent 跨场景能力，可以用于你的小岛插件测试、文档生成和发布流程，但是否比 Codex 更好仍应拿真实项目做对照。"
+    },
+    {
+      "category": "ai",
+      "title": "Third Moment Research 如何运行 10,000 个代理长达 36 个小时以上",
+      "summary": "借助用于网络安全的 GPT-6 Astra 和 GPT-6.1 Sol、Codex 和 Daybreak，该 AI 实验室构建了能够持续关注并随着使用不断改进的代理。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "url": "https://openai.com/index/third-moment-research",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Itaú 如何为其整个客户群构建生成式人工智能",
+      "summary": "借助对话界面 ia.i 和 IARA 治理平台，Itaú 正在将其人工智能优先战略应用于巴西监管最严格的行业之一的客户和员工。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T19:00:00+00:00",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Stack Overflow for Agents 使用 ChatGPT 插件使注册人数增加了三倍",
+      "summary": "两名工程师在几周内与 Codex 一起发布了 Stack Overflow for Agents，其 ChatGPT 插件帮助推动代理创建量增长了 10 倍。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "image": "",
+      "is_recent": true
     },
     {
       "category": "dev",
@@ -40,6 +90,26 @@
       "impact": "你的 Obsidian 插件已有商业授权，因此第三方依赖的许可证义务值得提前整理；这项 GitHub 功能主要面向企业账户，不必为了它购买企业服务。"
     },
     {
+      "category": "dev",
+      "title": "Xcode 27 运行程序镜像正式可用",
+      "summary": "现在，您可以使用普遍可用的 Xcode 27 运行程序映像在 GitHub Actions 中构建和测试您的 Apple 应用程序。之前在公共预览版中，此 GitHub 托管的图像运行于... 普遍可用的 Xcode 27 运行程序图像首先出现在 GitHub 博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-16T04:36:30+00:00",
+      "url": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "dev",
+      "title": "将 GitHub 代码质量许可证使用情况下载为 CSV",
+      "summary": "您现在可以下载 GitHub 代码质量许可证使用情况的 CSV 报告，以便将您的许可证计数与您自己的记录进行核对。该报告包括： 每个活跃的提交者...... 以 CSV 形式下载 GitHub 代码质量许可证使用情况的帖子首先出现在 GitHub 博客 上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-15T20:11:26+00:00",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "image": "",
+      "is_recent": true
+    },
+    {
       "category": "market",
       "title": "人工智能股暴跌。通货膨胀升温。我们仍在寻找机会的地方",
       "summary": "人工智能交易的下滑扰乱了上周的市场。但稳健的银行盈利和科技以外的轮动给了我们乐观的理由。",
@@ -49,6 +119,36 @@
       "image": "",
       "is_recent": false,
       "impact": "这次科技股回调与你纳指 QDII 的回撤风险直接相关。按预设规则部分止盈可以降低已兑现收益的波动，但限购期间卖出后可能难以买回。"
+    },
+    {
+      "category": "market",
+      "title": "为什么对冲基金更有可能引发债券市场震荡",
+      "summary": "英国央行副行长警告称，对冲基金的活动可能会增加全球债券市场冲击的风险。",
+      "source": "CNBC",
+      "published_at": "2026-10-18T06:13:05+00:00",
+      "url": "https://www.cnbc.com/2026/10/18/hedge-funds-bond-market-turmoil.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "韩国财政部长表示，半导体市场“至少到明年”将保持稳定",
+      "summary": "韩国财政部长表示，尽管全球芯片抛售，但供应仍然紧张，半导体增长至少可以持续到 2027 年。",
+      "source": "CNBC",
+      "published_at": "2026-10-18T11:10:44+00:00",
+      "url": "https://www.cnbc.com/2026/10/17/south-korea-semiconductor-outlook-lee-hyoung-il.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "选民前往投票站时解释经济状况的 3 张图表",
+      "summary": "通货膨胀率很高，消费者支出强劲，似乎一切都取决于人工智能的发展。",
+      "source": "NYT Business",
+      "published_at": "2026-10-18T09:00:50+00:00",
+      "url": "https://www.nytimes.com/2026/10/18/business/economy/economy-midterm-elections.html",
+      "image": "https://static01.nyt.com/images/2026/10/16/multimedia/2026-10-16-econ-elex-topper-index/2026-10-16-econ-elex-topper-index-mediumSquareAt3X-v5.png",
+      "is_recent": false
     },
     {
       "category": "digital",
@@ -62,18 +162,58 @@
       "impact": "这款有线耳机不是你目前剪映、AE 或本地 AI 电脑升级的核心需求；可以作为数码趋势了解，不必因此改变现有购机预算。"
     },
     {
+      "category": "digital",
+      "title": "警方称，不会就巴勒斯坦行动帖子对政府顾问的妻子采取进一步行动",
+      "summary": "乔纳森·鲍威尔的妻子莎拉·赫尔姆正在回应有关作家莎莉·鲁尼的讨论。",
+      "source": "BBC Technology",
+      "published_at": "2026-10-17T20:24:32+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cv8ez40yz950o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a4d/live/defb13e0-ca5a-11f1-852c-2b93a8fc4799.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "TikTok 禁止马斯克纪录片账户",
+      "summary": "就在亚历克斯·吉布尼 (Alex Gibney) 的马斯克纪录片大范围上映之前，TikTok 已在其平台上禁止了该电影的社交媒体帐户。 TikTok 没有立即回应置评请求。据《好莱坞报道》报道，该片的发行商布利克街周五下午被告知“永久停映”即将到来。布利克街有[...]",
+      "source": "The Verge",
+      "published_at": "2026-10-17T19:32:23+00:00",
+      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "巴黎人醒来抗议商店遭到破坏和抢劫",
+      "summary": "周六，在针对学校条件和生活成本的示威活动的最后一天，法国各地爆发了暴力事件。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T10:58:39+00:00",
+      "url": "https://www.bbc.co.uk/news/videos/cmn5vey19q3go?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8791/live/7abdd380-cadd-11f1-bc2e-018d645d8d21.jpg",
+      "is_recent": false
+    },
+    {
       "category": "world",
       "title": "抗议演变成骚乱和抢劫后，巴黎街道上的汽车被烧毁，玻璃被打碎",
       "summary": "全国抗议活动爆发暴力和破坏行为后，约 1,800 人被捕。",
       "source": "BBC World",
-      "published_at": "2026-10-18T09:56:45+00:00",
+      "published_at": "2026-10-18T10:53:54+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
       "is_recent": false,
       "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
+    },
+    {
+      "category": "world",
+      "title": "加拿大军事基地发生重大火灾，造成多人死亡或受伤",
+      "summary": "官员们没有透露死因或死亡人数，称加拿大温赖特军事基地的局势“非常活跃和微妙”。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T08:52:41+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/951a/live/d1508b70-cac9-11f1-9a39-31b474234113.jpg",
+      "is_recent": false
     }
   ],
-  "count": 6,
+  "count": 20,
   "source_count": 14,
   "timezone": "Asia/Shanghai"
 }
