@@ -158,6 +158,11 @@ def select_six(all_articles, previous):
     chosen, used = [], set()
     for category in ('obsidian', 'ai', 'dev', 'market', 'digital', 'world'):
         items = [x for x in all_articles if x['category'] == category and x['url'] not in used]
+        # 世界新闻排除体育赛况，并要求标题或摘要具有国际事务意义。
+        if category == 'world':
+            sport = re.compile(r'\\b(?:boxing|heavyweight|premier league|football|cricket|tennis|basketball|nba|nfl|fifa|formula one|f1|grand prix|champions league|world cup|olympics|dubois|wardley|match report|transfer news)\\b', re.I)
+            geopolitical = re.compile(r'\\b(?:ukraine|russia|israel|gaza|iran|middle east|oil|energy|climate|tariff|trade|economy|inflation|government|parliament|president|election|sanctions?|ceasefire|united nations|military|diplomatic|china|united states|europe|war|conflict|security|protests?|earthquake|floods?)\\b', re.I)
+            items = [x for x in items if not sport.search(x['title']) and geopolitical.search(x['title'] + ' ' + x['summary'])]
         horizon = timedelta(days=65 if category == 'obsidian' else 5)
         items = [x for x in items if NOW - datetime.fromisoformat(x['published_at']) <= horizon]
         items.sort(key=relevance, reverse=True)
@@ -233,6 +238,10 @@ def machine_translate(items):
             try:
                 value=task.result()
                 if has_chinese(value):
+                    # 品牌/产品名保留英文，避免把 Obsidian 错译成“黑曜石”。
+                    if items[i].get('category') == 'obsidian':
+                        for incorrect in ('黑曜石笔记','黑曜石','奥布西迪安','欧布西迪安'):
+                            value = value.replace(incorrect, 'Obsidian')
                     items[i][field]=value
                     success+=1
             except Exception as e:
