@@ -177,6 +177,69 @@ def select_six(all_articles, previous):
     return chosen
 
 
+
+def has_chinese(value):
+    return bool(re.search(r'[\u4e00-\u9fff]', str(value or '')))
+
+
+def free_translate(text_value):
+    """尽力翻译公开 RSS 摘要；非官方公共接口可能限流或不可用。
+    仅返回真正含汉字的结果；不把原英文伪称为译文。
+    """
+    raw = clean(text_value, 440)
+    if not raw or has_chinese(raw):
+        return raw
+    try:
+        resp = requests.get('https://translate.googleapis.com/translate_a/single',
+            params={'client':'gtx', 'sl':'auto', 'tl':'zh-CN', 'dt':'t', 'q':raw},
+            timeout=12, headers={'User-Agent':'Mozilla/5.0 (compatible; IslandDaily/1.1)'})
+        resp.raise_for_status()
+        parts = resp.json()[0]
+        translated = ''.join(part[0] for part in parts if part and isinstance(part[0],str))
+        if has_chinese(translated):
+            return clean(translated, 600)
+    except Exception as exc:
+        logging.info('免费翻译主接口不可用: %s',str(exc)[:110])
+    # 备用翻译通道：MyMemory 的免费用量有限，失败时保留真实原文。
+    try:
+        resp = requests.get('https://api.mymemory.translated.net/get',
+            params={'q':raw[:450], 'langpair':'en|zh-CN'}, timeout=12,
+            headers={'User-Agent':'IslandDaily/1.1 (public RSS headlines)'})
+        resp.raise_for_status()
+        data=resp.json()
+        translated=html.unescape(str(data.get('responseData',{}).get('translatedText','')))
+        if has_chinese(translated) and data.get('responseStatus') == 200:
+            return clean(translated, 600)
+    except Exception as exc:
+        logging.info('免费翻译备用接口不可用: %s',str(exc)[:110])
+    return raw
+
+
+def machine_translate(items):
+    """优先将标题与摘要翻译成中文，impact 保持编辑过的中文建议。
+    翻译服务存在可用性和质量限制，不推断 RSS 未包含的事实。
+    """
+    work=[]
+    for i,entry in enumerate(items):
+        for field in ('title','summary'):
+            original=entry.get(field,'')
+            if original and not has_chinese(original): work.append((i,field,original))
+    if not work: return True, len(items)
+    success=0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        jobs={executor.submit(free_translate,raw):(i,field) for i,field,raw in work}
+        for task in concurrent.futures.as_completed(jobs):
+            i,field=jobs[task]
+            try:
+                value=task.result()
+                if has_chinese(value):
+                    items[i][field]=value
+                    success+=1
+            except Exception as e:
+                logging.warning('自动翻译失败 %s/%s: %s',i,field,e)
+    logging.info('免费机器翻译完成 %d/%d 个英文文本片段',success,len(work))
+    return success == len(work), success
+
 def ai_translate(items):
     api_key = os.getenv('OPENAI_API_KEY', '').strip()
     if not api_key:
@@ -241,16 +304,20 @@ def main():
         if re.fullmatch(r'\d{4}-\d{2}-\d{2}',prior_day):
             prior_file=archive/(prior_day+'.json')
             if not prior_file.exists(): prior_file.write_text(json.dumps(previous,ensure_ascii=False,indent=2),encoding='utf-8')
-    localized=ai_translate(chosen)
+    # 有 AI API 密钥时优先生成高质量中文摘要；无密钥时尝试免费的逐段机器翻译。
+    localized=ai_translate(chosen) if os.getenv('OPENAI_API_KEY','').strip() else False
+    free_completed,translated_count=(False,0)
+    if not localized:
+        free_completed,translated_count=machine_translate(chosen)
     today=NOW.astimezone(SHANGHAI).date().isoformat()
-    new_data=dict(date=today,generated_at=NOW.isoformat(),ai_generated=localized,demo=False,
+    new_data=dict(date=today,generated_at=NOW.isoformat(),ai_generated=localized,machine_translated=(not localized and translated_count>0),translation_complete=(localized or free_completed),demo=False,
                   items=chosen, count=len(chosen), source_count=len(jobs), timezone='Asia/Shanghai')
     current_path.write_text(json.dumps(new_data,ensure_ascii=False,indent=2),encoding='utf-8')
     dates=[]
     for p in sorted(archive.glob('????-??-??.json'),reverse=True)[:120]:
         dates.append({'date':p.stem,'path':'data/archive/'+p.name})
     (archive/'index.json').write_text(json.dumps(dates,ensure_ascii=False,indent=2),encoding='utf-8')
-    logging.info('已生成 %s; %d 条新闻; 中文摘要: %s', today, len(chosen),localized)
+    logging.info('已生成 %s; %d 条新闻; AI 中文摘要: %s; 免费翻译条目: %d; 全部翻译完成: %s', today, len(chosen),localized,translated_count,free_completed)
     return 0
 
 if __name__=='__main__':sys.exit(main())
