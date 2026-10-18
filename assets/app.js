@@ -32,7 +32,7 @@ function card(a){
  c.append(text('h3',a.title));
  if(a.image&&safeLink(a.image)!=='#'){let img=document.createElement('img');img.className='thumb';img.src=safeLink(a.image);img.alt='文章来源提供的配图';img.loading='lazy';img.referrerPolicy='no-referrer';img.onerror=()=>img.remove();c.append(img)}
  c.append(text('p',a.summary,'desc'));
- const foot=text('div','','card-foot');const source=text('div','','');source.append(link((a.source||'原始来源')+' ↗',a.url,'read'));foot.append(source);
+ const foot=text('div','','card-foot');const source=text('div','','');source.append(link((a.source||'原始来源')+(a.author?' · '+a.author:'')+' ↗',a.url,'read'));foot.append(source);
  const btn=text('button',saved.includes(a.url)?'★':'☆','save'+(saved.includes(a.url)?' saved':''));btn.type='button';btn.setAttribute('aria-label',saved.includes(a.url)?'取消收藏':'收藏新闻');btn.onclick=()=>{saved=saved.includes(a.url)?saved.filter(x=>x!==a.url):[...saved,a.url];try{localStorage.setItem('island-saved',JSON.stringify(saved))}catch{}render()};foot.append(btn);c.append(foot);return c
 }
 function featured(a){

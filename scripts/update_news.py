@@ -139,9 +139,15 @@ def fetch_one(category, source, feed_url):
                 r'\b(plugin|api|canvas|bases|sync|roadmap|release|mobile|security|developer|integration|compatib|review|license|community)\b',
                 headline+' '+summary, re.I):
                 continue
-            result.append(dict(category=category, title=headline, summary=summary,
-                               source=source, published_at=published.isoformat(),
-                               url=url, image=feed_image(e)))
+            article=dict(category=category, title=headline, summary=summary,
+                         source=source, published_at=published.isoformat(),
+                         url=url, image=feed_image(e))
+            if category=='obsidian':
+                author=clean(e.get('author',''),72)
+                if source=='Obsidian 官方博客' and url.rstrip('/')=='https://obsidian.md/blog/future-of-plugins':
+                    author='kepano（CEO）'  # 已由官方博客原文署名核实
+                if author:article['author']=author
+            result.append(article)
         logging.info('%s: %s 条, %s', source, len(result), feed_url)
         return result
     except Exception as e:
@@ -243,6 +249,14 @@ def select_news(all_articles, previous):
         items.sort(key=lambda x: x['published_at'] if source in
                    ('Obsidian 官方更新日志','Obsidian 官方路线图（自动观察）') else relevance(x),
                    reverse=True)
+        if source=='Obsidian 官方博客' and items:
+            # 优先1条最新博客和1条插件/战略方向文章；旧文章保持真实发布时间。
+            newest=max(items,key=lambda x:x['published_at'])
+            strategic=[x for x in items if x['url']!=newest['url'] and re.search(
+                r'future|plugin|developer|policy|community|roadmap|canvas|bases|strategy|direction',
+                x['title'],re.I)]
+            strategic.sort(key=relevance,reverse=True)
+            items=[newest]+strategic+[x for x in items if x['url']!=newest['url'] and x not in strategic]
         count=0
         for item in items:
             if count>=quota:break
