@@ -14,7 +14,8 @@
       "published_at": "2026-10-05T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
       "image": "",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "Obsidian 移动端快速记录和兼容性变化，值得测试「我的小岛」序号节点在手机上的触控与适配；这条并未表明官方推出了与你相同的序号功能。"
     },
     {
       "category": "ai",
@@ -24,7 +25,8 @@
       "published_at": "2026-10-14T12:00:00+00:00",
       "url": "https://openai.com/index/amp-beyond-coding",
       "image": "",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "这类 AI Agent 跨场景能力，可以用于你的小岛插件测试、文档生成和发布流程，但是否比 Codex 更好仍应拿真实项目做对照。"
     },
     {
       "category": "dev",
@@ -34,7 +36,8 @@
       "published_at": "2026-10-16T14:00:32+00:00",
       "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
       "image": "",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "你的 Obsidian 插件已有商业授权，因此第三方依赖的许可证义务值得提前整理；这项 GitHub 功能主要面向企业账户，不必为了它购买企业服务。"
     },
     {
       "category": "market",
@@ -44,7 +47,8 @@
       "published_at": "2026-10-17T15:42:34+00:00",
       "url": "https://www.cnbc.com/investingclub/2026/10/17/ai-stocks-plunge-inflation-heats-up-where-were-still-finding-opportunities.html",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "这次科技股回调与你纳指 QDII 的回撤风险直接相关。按预设规则部分止盈可以降低已兑现收益的波动，但限购期间卖出后可能难以买回。"
     },
     {
       "category": "digital",
@@ -54,7 +58,8 @@
       "published_at": "2026-10-17T13:00:00+00:00",
       "url": "https://www.theverge.com/tech/1013320/bose-noise-cancelling-wired-earbuds-review",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "这款有线耳机不是你目前剪映、AE 或本地 AI 电脑升级的核心需求；可以作为数码趋势了解，不必因此改变现有购机预算。"
     },
     {
       "category": "world",
@@ -64,7 +69,8 @@
       "published_at": "2026-10-18T09:56:45+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
     }
   ],
   "count": 6,

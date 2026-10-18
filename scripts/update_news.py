@@ -145,33 +145,41 @@ def relevance(article):
     return point
 
 
-def select_six(all_articles, previous):
-    chosen, used = [], set()
-    for category in ('obsidian', 'ai', 'dev', 'market', 'digital', 'world'):
-        items = [x for x in all_articles if x['category'] == category and x['url'] not in used]
-        # 世界新闻排除体育赛况，并要求标题或摘要具有国际事务意义。
-        if category == 'world':
-            sport = re.compile(r'\b(?:boxing|heavyweight|premier league|football|cricket|tennis|basketball|nba|nfl|fifa|formula one|f1|grand prix|champions league|world cup|olympics|dubois|wardley|match report|transfer news)\b', re.I)
-            geopolitical = re.compile(r'\b(?:ukraine|russia|israel|gaza|iran|middle east|oil|energy|climate|tariff|trade|economy|inflation|government|parliament|president|election|sanctions?|ceasefire|united nations|military|diplomatic|china|united states|europe|war|conflict|security|protests?|earthquake|floods?)\b', re.I)
-            items = [x for x in items if not sport.search(x['title']) and geopolitical.search(x['title'] + ' ' + x['summary'])]
-        horizon = timedelta(days=65 if category == 'obsidian' else 5)
-        items = [x for x in items if NOW - datetime.fromisoformat(x['published_at']) <= horizon]
-        items.sort(key=relevance, reverse=True)
-        if category == 'obsidian' and items:
-            # 官方更新日志按真实发布日期排序，不能让评分把旧版本顶到最新之前。
-            items.sort(key=lambda x:x['published_at'], reverse=True)
-        current = items[0].copy() if items else None
-        if not current:
-            older = next((a for a in previous.get('items', []) if a.get('category') == category and secure_url(a.get('url'))), None)
-            if older:
-                current = older.copy()
-                logging.warning('%s: 使用历史条目兜底，请确认时间', category)
-        if current:
-            age = NOW - datetime.fromisoformat(current['published_at'])
-            current['is_recent'] = age > timedelta(hours=26)
-            chosen.append(current); used.add(current['url'])
+def select_news(all_articles, previous):
+    """每个领域尽量选多条新消息；数量是上限，不拿旧新闻填配额。"""
+    limits={'obsidian':3, 'ai':4, 'dev':3, 'market':4, 'digital':3, 'world':3}
+    chosen,used,seen_titles=[],set(),set()
+    # 官方更新、AI及纳指优先，但都受各自领域数量上限约束。
+    for category,limit in limits.items():
+        items=[x for x in all_articles if x['category']==category]
+        if category=='world':
+            sport=re.compile(r'\b(?:boxing|heavyweight|premier league|football|cricket|tennis|basketball|nba|nfl|fifa|formula one|f1|grand prix|champions league|world cup|olympics|match report|transfer news)\b',re.I)
+            geopolitics=re.compile(r'\b(?:ukraine|russia|israel|gaza|iran|middle east|oil|energy|climate|tariff|trade|economy|inflation|government|parliament|president|election|sanctions?|ceasefire|united nations|military|diplomatic|china|united states|europe|war|conflict|security|protests?|earthquake|floods?)\b',re.I)
+            items=[x for x in items if not sport.search(x['title']) and geopolitics.search(x['title']+' '+x['summary'])]
+        if category=='market':
+            topics=re.compile(r'\b(?:nasdaq|stocks?|nvidia|amd|tech|wall street|interest rates?|fed|inflation|markets?|earnings?|bonds?|shares?|semiconductor|s&p 500|ai investments?)\b',re.I)
+            items=[x for x in items if topics.search(x['title']+' '+x['summary'])]
+        horizon=timedelta(days=65 if category=='obsidian' else 5)
+        items=[x for x in items if timedelta(0)<=NOW-datetime.fromisoformat(x['published_at'])<=horizon]
+        items.sort(key=(lambda x:x['published_at']) if category=='obsidian' else relevance,reverse=True)
+        count=0
+        for article in items:
+            if count>=limit:break
+            norm=re.sub(r'[^\w]+','',article['title'].lower())[:85]
+            if article['url'] in used or not norm or norm in seen_titles:continue
+            current=article.copy()
+            age=NOW-datetime.fromisoformat(current['published_at'])
+            current['is_recent']=age>timedelta(hours=26) # 前端 true 表示近期回顾
+            chosen.append(current);used.add(current['url']);seen_titles.add(norm);count+=1
+        if not count:
+            # 没有可核实的新条目，只回退该领域最近一条旧闻并显示真实时间。
+            older=next((a for a in previous.get('items',[]) if a.get('category')==category and secure_url(a.get('url'))),None)
+            if older and older['url'] not in used:
+                current=older.copy()
+                current['is_recent']=True
+                chosen.append(current);used.add(current['url'])
+                logging.warning('%s 无近期新消息，回退一条标明日期的旧闻',category)
     return chosen
-
 
 
 def has_chinese(value):
@@ -292,10 +300,11 @@ def main():
     if not articles:
         logging.error('全部 RSS 失败，保留现有数据且不伪称已更新。')
         return 1
-    chosen=select_six(articles, previous)
-    # 隐私保护：公开简报绝不包含个人背景、个性化影响或密钥。
-    for entry in chosen: entry.pop('impact', None)
-    for entry in previous.get('items',[]): entry.pop('impact', None)
+    chosen=select_news(articles, previous)
+    # 如 ChatGPT 之前针对同一个新闻 URL 写了个人分析，采集时保留；新增新闻不填充固定空话。
+    impacts={x.get('url'):x.get('impact') for x in previous.get('items',[]) if isinstance(x,dict) and isinstance(x.get('impact'),str) and x.get('impact')}
+    for entry in chosen:
+        if entry.get('url') in impacts: entry['impact']=impacts[entry['url']]
     if len(chosen) < 3:
         logging.error('有效类别不足 3 个，保留原数据。实际仅 %d 个。',len(chosen))
         return 1
