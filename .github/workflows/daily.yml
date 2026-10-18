@@ -41,6 +41,7 @@ jobs:
         run: |
           python scripts/update_news.py || echo '本次采集未成功，将沿用已有数据。'
       - name: 在运行器内加密私人简报（可选，绝不提交明文）
+        if: github.actor != 'github-actions[bot]'
         env:
           ISLAND_PRIVATE_READ_TOKEN: ${{ secrets.ISLAND_PRIVATE_READ_TOKEN }}
           ISLAND_PRIVATE_PASSWORD: ${{ secrets.ISLAND_PRIVATE_PASSWORD }}
