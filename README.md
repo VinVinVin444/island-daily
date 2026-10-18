@@ -75,7 +75,7 @@
 
 每天 ChatGPT 定时简报若有 GitHub 写入权限，可直接将新闻与个人分析更新到 `data/news.json`；无需创建私库。若要更换访问码，计算新密钥的 SHA-256 后替换 `data/access.json` 的 `key_sha256`，再由 GitHub Pages 自动部署。无需在 ChatGPT 聊天中输入新密码。
 
-抓取程序每次最多选择 **20 条**（AI 4、开发 3、市场 4、数码 3、国际 3、Obsidian 3），缺少合格新闻不填充虚假条目。RSS 抓取的新新闻没有个性化分析时不会自动补造固定建议。
+抓取程序每次最多选择 **25 条**（AI 4、开发 3、市场 4、数码 3、国际 3、Obsidian 最多 8），缺少合格新闻不填充虚假条目。RSS 抓取的新新闻没有个性化分析时不会自动补造固定建议。
 
 
 ## 网站内手动更新新闻
@@ -89,3 +89,8 @@
 ## 更新密码的本地记忆（可选）
 
 首次输入 `UPDATE_PASSWORD` 且 Worker 返回成功后，若勾选「在这台设备记住更新密码」（默认勾选），网站会将更新密码存入该浏览器 `localStorage`，下一次点击「立即采集」便直接触发 Worker，无需再输入。页面提供「清除已记住的密码」按钮。密码错误（HTTP 401）时自动删除本地记录并要求重新输入；网络故障不自动清除。公开网页源码或仓库内**不写入实际更新密码或 GitHub Token**。本地存储不是强加密，不应在公用电脑启用，也应知晓同源脚本、浏览器扩展或获得本机访问的人可能读取这段密码。
+
+
+## Obsidian 多来源战略观察
+
+新增：[Obsidian 官方博客](https://obsidian.md/blog/)（RSS）、[CEO Steph Ango / kepano](https://stephango.com/about) 的个人 RSS（过滤 Obsidian 相关内容）、[官方开发者论坛](https://forum.obsidian.md/c/developers-api/14)（标为**社区讨论，不能等同官方决策**）、[GitHub 官方发行记录](https://github.com/obsidianmd/obsidian-releases/releases) Atom、以及[官方路线图](https://obsidian.md/roadmap/) HTML 快照变更检测，另保留官方 Changelog RSS。每个来源分别限额，优先展示近期更新，但 CEO 和产品战略会保留较长历史窗口并显示实际日期；旧观点不会冒充今日新闻。官方路线图首次采集只标记为『首次观察快照』，后续发生实际差异才标记『检测到变化』；观测时间不是官方发布时间。RSS、页面如不可用则跳过或沿用已知快照，绝不编造结果。源码使用 BeautifulSoup 解析路线图的 Active/Planned 标题；如官方页面结构变化会在日志警告。

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import calendar
 import concurrent.futures
+import hashlib
 import html
 import json
 import logging
@@ -19,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 import feedparser
 import requests
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data'
@@ -50,6 +52,10 @@ FEEDS = {
     ],
     'obsidian': [
         ('Obsidian 官方更新日志', 'https://obsidian.md/changelog.xml'),
+        ('Obsidian 官方博客', 'https://obsidian.md/feed.xml'),
+        ('Steph Ango · Obsidian CEO', 'https://stephango.com/feed'),
+        ('Obsidian 开发者论坛·社区讨论', 'https://forum.obsidian.md/c/developers-api/14.rss'),
+        ('Obsidian GitHub 发行记录', 'https://github.com/obsidianmd/obsidian-releases/releases.atom'),
     ],
 }
 KEYWORDS = {
@@ -121,7 +127,18 @@ def fetch_one(category, source, feed_url):
             headline = clean(e.get('title', ''), 180)
             if not headline:
                 continue
+
             summary = clean(e.get('summary', '') or e.get('description', ''), 600)
+            # CEO 的个人博客不是每篇都关于 Obsidian。只保留明确相关的观点。
+            if source == 'Steph Ango · Obsidian CEO' and not re.search(
+                r'obsidian|\bplugins?\b|\bcanvas\b|\bbases\b|local.first|\bmarkdown\b|note.taking',
+                headline+' '+summary, re.I):
+                continue
+            # 论坛是社区讨论，不把普通建议和猜测当成官方确定方向。
+            if source == 'Obsidian 开发者论坛·社区讨论' and not re.search(
+                r'\b(plugin|api|canvas|bases|sync|roadmap|release|mobile|security|developer|integration|compatib|review|license|community)\b',
+                headline+' '+summary, re.I):
+                continue
             result.append(dict(category=category, title=headline, summary=summary,
                                source=source, published_at=published.isoformat(),
                                url=url, image=feed_image(e)))
@@ -145,12 +162,94 @@ def relevance(article):
     return point
 
 
+def roadmap_snapshot():
+    """定期检查官方路线图；首次记录=采集快照，发生差异=观察到变化，不捏造发布日期。"""
+    path=DATA/'obsidian_roadmap_state.json'
+    previous={}
+    if path.exists():
+        try: previous=json.loads(path.read_text(encoding='utf-8'))
+        except Exception: pass
+    try:
+        resp=requests.get('https://obsidian.md/roadmap/',timeout=22,
+            headers={'User-Agent':'IslandDaily/1.2 (public roadmap watch)'})
+        resp.raise_for_status()
+        soup=BeautifulSoup(resp.text,'html.parser')
+        sections={'active':[],'planned':[]}
+        section=''
+        for heading in soup.find_all(['h2','h3']):
+            heading_text=clean(heading.get_text(' ',strip=True),120)
+            if heading.name=='h2':
+                lower=heading_text.lower()
+                section='active' if lower=='active' else 'planned' if lower=='planned' else ''
+            elif heading.name=='h3' and section and heading_text:
+                if heading_text not in sections[section]:
+                    sections[section].append(heading_text)
+        if not sections['active'] and not sections['planned']:
+            logging.warning('官方路线图结构未识别，沿用此前有效快照')
+            return previous.get('article')
+        sections={k:v[:15] for k,v in sections.items()}
+        digest=hashlib.sha256(json.dumps(sections,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+        changed=previous.get('hash')!=digest
+        if not changed:
+            return previous.get('article')
+        before=previous.get('sections',{})
+        if before:
+            adds=[x for key in ('active','planned') for x in sections[key] if x not in before.get(key,[])]
+            moved=[x for key in ('active','planned') for x in before.get(key,[]) if x not in sections[key]]
+            detail='观察到列表变化。'+(' 新出现：'+'、'.join(adds[:4])+'。' if adds else '')+(' 移出旧列表：'+'、'.join(moved[:4])+'。' if moved else '')
+            headline='Obsidian 官方路线图：检测到状态列表变化（非发布日期）'
+        else:
+            detail='这是本站首次采集的路线图快照，不代表官方今天发布了更新。'
+            headline='Obsidian 官方路线图：当前开发与计划（首次采集快照）'
+        text='正在进行：'+('、'.join(sections['active'][:5]) or '未列出')+'；计划中：'+('、'.join(sections['planned'][:6]) or '未列出')+'。'+detail
+        article={'category':'obsidian','title':headline,'summary':text,
+                 'source':'Obsidian 官方路线图（自动观察）',
+                 'published_at':NOW.isoformat(),'date_kind':'observed',
+                 'url':'https://obsidian.md/roadmap/','image':''}
+        path.write_text(json.dumps({'hash':digest,'sections':sections,'article':article},
+                         ensure_ascii=False,indent=2),encoding='utf-8')
+        return article
+    except Exception as exc:
+        logging.warning('官方路线图检测未成功：%s',exc)
+        return previous.get('article')
+
+
 def select_news(all_articles, previous):
-    """每个领域尽量选多条新消息；数量是上限，不拿旧新闻填配额。"""
-    limits={'obsidian':3, 'ai':4, 'dev':3, 'market':4, 'digital':3, 'world':3}
+    """普通领域按热度选；Obsidian 保留来源多样性，避免被同一类版本日志刷屏。"""
+    limits={'obsidian':8,'ai':4,'dev':3,'market':4,'digital':3,'world':3}
     chosen,used,seen_titles=[],set(),set()
-    # 官方更新、AI及纳指优先，但都受各自领域数量上限约束。
+
+    def add_article(article):
+        norm=re.sub(r'[^\w]+','',article['title'].lower())[:85]
+        if article['url'] in used or not norm or norm in seen_titles:return False
+        current=article.copy()
+        age=NOW-datetime.fromisoformat(current['published_at'])
+        current['is_recent']=age>timedelta(hours=26)
+        chosen.append(current);used.add(current['url']);seen_titles.add(norm)
+        return True
+
+    source_budgets=[
+        ('Obsidian 官方更新日志',2,70),
+        ('Obsidian 官方博客',2,240),
+        ('Steph Ango · Obsidian CEO',1,365),
+        ('Obsidian 开发者论坛·社区讨论',1,30),
+        ('Obsidian GitHub 发行记录',1,70),
+        ('Obsidian 官方路线图（自动观察）',1,365),
+    ]
+    obsidian=[x for x in all_articles if x['category']=='obsidian']
+    for source,quota,days in source_budgets:
+        items=[x for x in obsidian if x['source']==source and
+               timedelta(0)<=NOW-datetime.fromisoformat(x['published_at'])<=timedelta(days=days)]
+        items.sort(key=lambda x:x['published_at'] if source in
+                   ('Obsidian 官方更新日志','Obsidian 官方路线图（自动观察）') else relevance,
+                   reverse=True)
+        count=0
+        for item in items:
+            if count>=quota:break
+            if add_article(item):count+=1
+
     for category,limit in limits.items():
+        if category=='obsidian':continue
         items=[x for x in all_articles if x['category']==category]
         if category=='world':
             sport=re.compile(r'\b(?:boxing|heavyweight|premier league|football|cricket|tennis|basketball|nba|nfl|fifa|formula one|f1|grand prix|champions league|world cup|olympics|match report|transfer news)\b',re.I)
@@ -159,26 +258,21 @@ def select_news(all_articles, previous):
         if category=='market':
             topics=re.compile(r'\b(?:nasdaq|stocks?|nvidia|amd|tech|wall street|interest rates?|fed|inflation|markets?|earnings?|bonds?|shares?|semiconductor|s&p 500|ai investments?)\b',re.I)
             items=[x for x in items if topics.search(x['title']+' '+x['summary'])]
-        horizon=timedelta(days=65 if category=='obsidian' else 5)
-        items=[x for x in items if timedelta(0)<=NOW-datetime.fromisoformat(x['published_at'])<=horizon]
-        items.sort(key=(lambda x:x['published_at']) if category=='obsidian' else relevance,reverse=True)
+        items=[x for x in items if timedelta(0)<=NOW-datetime.fromisoformat(x['published_at'])<=timedelta(days=5)]
+        items.sort(key=relevance,reverse=True)
         count=0
-        for article in items:
+        for item in items:
             if count>=limit:break
-            norm=re.sub(r'[^\w]+','',article['title'].lower())[:85]
-            if article['url'] in used or not norm or norm in seen_titles:continue
-            current=article.copy()
-            age=NOW-datetime.fromisoformat(current['published_at'])
-            current['is_recent']=age>timedelta(hours=26) # 前端 true 表示近期回顾
-            chosen.append(current);used.add(current['url']);seen_titles.add(norm);count+=1
+            if add_article(item):count+=1
         if not count:
-            # 没有可核实的新条目，只回退该领域最近一条旧闻并显示真实时间。
             older=next((a for a in previous.get('items',[]) if a.get('category')==category and secure_url(a.get('url'))),None)
-            if older and older['url'] not in used:
-                current=older.copy()
-                current['is_recent']=True
-                chosen.append(current);used.add(current['url'])
-                logging.warning('%s 无近期新消息，回退一条标明日期的旧闻',category)
+            if older and add_article(older):
+                chosen[-1]['is_recent']=True
+                logging.warning('%s 无近期新消息，回退一条注明旧日期的消息',category)
+
+    if not any(x['category']=='obsidian' for x in chosen):
+        older=next((x for x in previous.get('items',[]) if x.get('category')=='obsidian' and secure_url(x.get('url'))),None)
+        if older and add_article(older):chosen[-1]['is_recent']=True
     return chosen
 
 
@@ -296,7 +390,9 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         futures=[executor.submit(fetch_one,*j) for j in jobs]
         for f in concurrent.futures.as_completed(futures): articles.extend(f.result())
-    # 源失败时不允许造 6 条“今日新闻”，必要时保留旧数据。
+    roadmap=roadmap_snapshot()
+    if roadmap:articles.append(roadmap)
+    # 源失败时不允许编造新闻，必要时保留已知有效数据。
     if not articles:
         logging.error('全部 RSS 失败，保留现有数据且不伪称已更新。')
         return 1
