@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T12:16:27.648133+00:00",
+  "generated_at": "2026-10-18T12:21:23.655482+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": false,
@@ -29,22 +29,24 @@
     },
     {
       "category": "obsidian",
-      "title": "由 Cure53 和 Trail of Bits 进行的 Obsidian Sync 审核",
-      "summary": "Obsidian 定期与独立研究公司进行安全审计，以确保我们的代码和程序符合最高的安全标准。此前，我们分享了 2024 年 1 月和 2024 年 12 月对 Obsidian 桌面和移动应用程序的审计评估。我们的安全页面现在提供两项新的审核，评估 Obsidian Sync API、服务器和加密技术。这些由 Cure53 于 2024 年 10 月完成，Trail of Bits ……",
-      "source": "Obsidian 官方博客",
-      "published_at": "2026-05-13T00:00:00+00:00",
-      "url": "https://obsidian.md/blog/cure53-tob-sync-audits/",
-      "image": "",
-      "is_recent": true
-    },
-    {
-      "category": "obsidian",
       "title": "Obsidian 2026 年 10 月",
-      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，我们就......",
+      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，新的……",
       "source": "Obsidian 官方博客",
       "published_at": "2026-10-01T00:00:00+00:00",
       "url": "https://obsidian.md/blog/2026-obsidian-october/",
       "image": "",
+      "author": "silver",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件的未来",
+      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自 2020 年 Obsidian API 发布以来，我们出色的社区已经创建了 4,000 多个插件和主题。令人难以置信的是，Obsidian 插件的总下载量已超过 1.2 亿！我们的目标是让任何人都能轻松、安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "author": "kepano（CEO）",
       "is_recent": true
     },
     {
@@ -55,6 +57,7 @@
       "published_at": "2026-10-17T21:17:35+00:00",
       "url": "https://forum.obsidian.md/t/plugin-namespaces/119541",
       "image": "",
+      "author": "goncharovdk",
       "is_recent": false
     },
     {
@@ -65,6 +68,7 @@
       "published_at": "2026-10-05T17:03:28+00:00",
       "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.14.4",
       "image": "",
+      "author": "lishid",
       "is_recent": true
     },
     {
@@ -193,16 +197,6 @@
     },
     {
       "category": "digital",
-      "title": "城市希望为机器人出租车安装后备箱",
-      "summary": "这是《The Stepback》，一份每周简讯，详细介绍了科技界的一个重要故事。有关自动驾驶汽车、政策和道路规则的更多信息，请关注 Andrew J. Hawkins。 《Stepback》将于美国东部时间上午 8 点到达我们订阅者的收件箱。在此处选择加入“后退”。它是如何开始第一个通过法律的州 [...]",
-      "source": "The Verge",
-      "published_at": "2026-10-18T12:00:00+00:00",
-      "url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
-      "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "digital",
       "title": "Bose 的新款有线耳机非常简单",
       "summary": "2016 年，苹果勇敢地从 iPhone 上取消了耳机插孔后，大多数人都转而使用蓝牙耳机，并且再也没有回头。但他们的有线同行却坚持了下来，他们的销售额在经历了五年的下滑后，今年甚至出现了增长。复兴的部分原因可能是它们很酷 […]",
       "source": "The Verge",
@@ -223,6 +217,16 @@
       "is_recent": false
     },
     {
+      "category": "digital",
+      "title": "TikTok 禁止马斯克纪录片账户",
+      "summary": "就在亚历克斯·吉布尼 (Alex Gibney) 的马斯克纪录片大范围上映之前，TikTok 已在其平台上禁止了该电影的社交媒体帐户。 TikTok 没有立即回应置评请求。据《好莱坞报道》报道，该片的发行商布利克街周五下午被告知“永久停映”即将到来。布利克街有[...]",
+      "source": "The Verge",
+      "published_at": "2026-10-17T19:32:23+00:00",
+      "url": "https://www.theverge.com/tech/1013453/tiktok-bans-alex-gibneys-musk-documentary",
+      "image": "",
+      "is_recent": false
+    },
+    {
       "category": "world",
       "title": "圣彼得堡石油设施在夜间遭遇致命袭击",
       "summary": "袭击造成至少一人死亡，俄罗斯 Facebook 等公司使用的数据中心也遭到袭击。",
@@ -230,6 +234,16 @@
       "published_at": "2026-10-18T11:57:49+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4966/live/70482900-cad8-11f1-a64c-550be9e3c66b.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "欧洲外交官在约旦河西岸遭到以色列定居者袭击",
+      "summary": "以色列军方谴责暴力行为，但总理办公室表示这是“抹黑”活动的一部分。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T12:16:14+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/15c7/live/4f318350-ca52-11f1-852c-2b93a8fc4799.jpg",
       "is_recent": false
     },
     {
@@ -242,16 +256,6 @@
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d285/live/4704a830-cacd-11f1-b5ff-6fb710f59c84.jpg",
       "is_recent": false,
       "impact": "这条国际社会事件与你的 Obsidian 开发没有直接关系；除非出现明确的能源、经济或市场传导证据，不应据此调整纳指 QDII 投资决定。"
-    },
-    {
-      "category": "world",
-      "title": "巴黎人醒来抗议商店遭到破坏和抢劫",
-      "summary": "周六，在针对学校条件和生活成本的示威活动的最后一天，法国各地爆发了暴力事件。",
-      "source": "BBC World",
-      "published_at": "2026-10-18T10:58:39+00:00",
-      "url": "https://www.bbc.co.uk/news/videos/cmn5vey19q3go?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8791/live/7abdd380-cadd-11f1-bc2e-018d645d8d21.jpg",
-      "is_recent": false
     }
   ],
   "count": 24,
