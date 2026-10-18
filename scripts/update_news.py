@@ -240,8 +240,8 @@ def select_news(all_articles, previous):
     for source,quota,days in source_budgets:
         items=[x for x in obsidian if x['source']==source and
                timedelta(0)<=NOW-datetime.fromisoformat(x['published_at'])<=timedelta(days=days)]
-        items.sort(key=lambda x:x['published_at'] if source in
-                   ('Obsidian 官方更新日志','Obsidian 官方路线图（自动观察）') else relevance,
+        items.sort(key=lambda x: x['published_at'] if source in
+                   ('Obsidian 官方更新日志','Obsidian 官方路线图（自动观察）') else relevance(x),
                    reverse=True)
         count=0
         for item in items:

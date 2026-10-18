@@ -37,13 +37,13 @@ jobs:
           python -m py_compile scripts/update_news.py
           node --check assets/app.js
       - name: 从公开 RSS 更新最新简报
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[refresh]')
         # 未配 AI 密钥时保留原文标题和摘要，不卡住部署。
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
         run: |
-          python scripts/update_news.py || echo '本次采集未成功，将沿用已有数据。'
+          python scripts/update_news.py
       - name: 存档已生成的 JSON
         run: |
           git config user.name 'github-actions[bot]'
