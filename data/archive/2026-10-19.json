@@ -1,0 +1,261 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T00:35:02.025112+00:00",
+  "ai_generated": false,
+  "machine_translated": true,
+  "translation_complete": false,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14移动版（公共）",
+      "summary": "包括Obsidian Desktop v1.14.4之前的所有新功能和错误修复。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。iOS上的快速捕获在iOS 26上，快速捕获可让您从锁定屏幕、控制中心、主屏幕小部件或快捷方式即时创建笔记，而无需等待保管库加载。自定义位置以捕获到n…",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Obsidian 移动端快速记录和兼容性变化，值得测试「我的小岛」序号节点在手机上的触控与适配；这条并未表明官方推出了与你相同的序号功能。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14台式机（公共）",
+      "summary": "此更新引入了对打开单个Markdown文件、基础的看板视图和高亮颜色的支持。重要提示：打开Markdown文件需要安装最新的安装程序。从我们的网站下载Obsidian并重新安装应用。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。打开单个Markdown文件您现在可以打开单个Markdown文件…",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian2026年10月",
+      "summary": "O_O回来了！每年10月，Obsidian社区都会将“我应该做到这一点”转变为“我做到了！“无论您是在修补插件、主题、保管库、指南还是视频，这个月都是您完成和分享的月份。今年，Obsidian团队也将致力于我们自己的项目，这是一项我们称之为Obsidian状态的新调查。以Obsidian现状调查为例5月，我们推出了新的Obsidian社区，从那时起， NU…",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/2026-obsidian-october/",
+      "image": "",
+      "author": "silver",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件的未来",
+      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自2020年Obsidian API发布以来，我们令人惊叹的社区已经创建了4,000多个插件和主题。令人难以置信的是， Obsidian插件的总下载量已经超过了1.2亿次！我们的目标是让任何人都能轻松安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "author": "kepano（CEO）",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "插件命名空间？",
+      "summary": "我最近发现，如果本地创建的自定义插件（不打算发布）的ID恰好与已发布社区插件的ID匹配，则本地插件将被“更新” ，即在插件更新时用此社区插件覆盖。对我来说，这是出乎意料的，因为我的插件的清单不包含外部URL。好吧，这在技术上并不是一个错误，正如插件开发指南在步骤4中所说： “将id更改为唯一标识符……",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-10-17T21:17:35+00:00",
+      "url": "https://forum.obsidian.md/t/plugin-namespaces/119541",
+      "image": "",
+      "author": "goncharovdk",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "1.14.4",
+      "summary": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "source": "Obsidian GitHub 发行记录",
+      "published_at": "2026-10-05T17:03:28+00:00",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.14.4",
+      "image": "",
+      "author": "lishid",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图：当前开发与计划（首次采集快照）",
+      "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。这是本站首次采集的路线图快照，不代表官方今天发布了更新。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-10-18T12:13:39.040874+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "AMP使AI代理能够使用OpenAI模型进行超越代码的工作",
+      "summary": "了解Amp如何突破代理商使用GPT-6 Astra、Ultrafast、GPT-Live-1和使用ChatGPT登录所能做的事情的前沿。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-14T12:00:00+00:00",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "image": "",
+      "is_recent": true,
+      "impact": "这类 AI Agent 跨场景能力，可以用于你的小岛插件测试、文档生成和发布流程，但是否比 Codex 更好仍应拿真实项目做对照。"
+    },
+    {
+      "category": "ai",
+      "title": "Third Moment Research如何在超过36小时的时间内运行10,000名客服代表",
+      "summary": "借助用于网络安全的GPT-6 Astra和GPT-6.1 Sol、Codex和Daybreak ，该人工智能实验室构建了专注于数天并随着使用而改进的代理。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-14T07:00:00+00:00",
+      "url": "https://openai.com/index/third-moment-research",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Stack Overflow for Agents使用ChatGPT插件将注册增加三倍",
+      "summary": "两位工程师通过Codex在几周内推出了Stack Overflow for Agents ，其ChatGPT插件帮助推动了高达10倍的代理创建增长。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Itaú如何为整个客户群构建生成式人工智能",
+      "summary": "借助对话界面ia.i和IARA治理平台， Itaú正在将其AI First战略应用于巴西监管最严格的行业之一的客户和员工。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T19:00:00+00:00",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "dev",
+      "title": "开源许可证合规性正式推出",
+      "summary": "企业现在可以通过执行集中策略的复杂、基于规则集的检查来大规模管理其依赖关系的许可证。开源许可证合规性现已普遍适用于GitHub Enterprise Cloud……开源后许可证合规性首次出现在GitHub博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-16T14:00:32+00:00",
+      "url": "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available",
+      "image": "",
+      "is_recent": true,
+      "impact": "你的 Obsidian 插件已有商业授权，因此第三方依赖的许可证义务值得提前整理；这项 GitHub 功能主要面向企业账户，不必为了它购买企业服务。"
+    },
+    {
+      "category": "dev",
+      "title": "Xcode 27 Runner镜像正式提供",
+      "summary": "现在，您可以使用通用的Xcode 27运行器映像在GitHub Actions中构建和测试Apple应用程序。此前在公开预览中，此GitHub托管的映像运行在... Xcode 27后运行程序映像通常首次出现在GitHub博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-16T04:36:30+00:00",
+      "url": "https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "dev",
+      "title": "以CSV格式下载GitHub代码质量许可证使用情况",
+      "summary": "您现在可以下载GitHub代码质量许可证使用情况的CSV报告，以协调您的许可证数量与您自己的记录。该报告包括：每个活跃的提交者......将GitHub代码质量许可证使用情况作为CSV下载的帖子首先出现在GitHub博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-15T20:11:26+00:00",
+      "url": "https://github.blog/changelog/2026-10-15-download-github-code-quality-license-usage-as-a-csv",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "market",
+      "title": "印度财政部长将股市表现不佳归咎于轻松退出和流动性过剩",
+      "summary": "印度财政部长表示，持续的资本外流是该国在2027年面临的最大风险之一。",
+      "source": "CNBC",
+      "published_at": "2026-10-18T23:00:01+00:00",
+      "url": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "华尔街顶级分析师看好这3只股票的增长潜力",
+      "summary": "由于担心加息和油价上涨，投资者可以放眼波动，跟踪街头分析师挑选的具有强劲长期增长潜力的股票。",
+      "source": "CNBC",
+      "published_at": "2026-10-18T12:34:51+00:00",
+      "url": "https://www.cnbc.com/2026/10/18/top-analysts-are-bullish-on-the-growth-potential-of-these-3-stocks.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "在公交车上大声播放音乐的人可能会面临100 £的罚款",
+      "summary": "在英格兰，公交车上的反社会行为可能导致罚款，同时还针对火车发起了一项新的运动。正在发起一项全国性的运动，要求铁路乘客“共享车厢，而不是噪音”。",
+      "source": "BBC Business",
+      "published_at": "2026-10-19T00:22:20+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/db1b/live/55c58490-cb0c-11f1-8d4d-2553b65f173b.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "微软退出英国最大的人工智能数据中心",
+      "summary": "科技公司Nscale表示，它仍然致力于在埃塞克斯建造该网站。",
+      "source": "BBC Business",
+      "published_at": "2026-10-18T16:46:42+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c9m26kl5y7epo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/46c0/live/18b0c090-cb13-11f1-a9ef-8b4e735f71f0.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "不要上当受骗-如何保护自己免受人工智能诈骗",
+      "summary": "交易标准官员表示，人工智能正在通过克隆和虚假网站“超级收费”现有诈骗。",
+      "source": "BBC Technology",
+      "published_at": "2026-10-18T23:24:59+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c60rl1xvjv89o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8f70/live/9a6f8400-c98c-11f1-adc3-01d8629f0470.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "一名萨凡纳警察将她的Flock登录名交给了她的ICE特工丈夫",
+      "summary": "现在，前萨凡纳警官琥珀·哈普（ Amber Harpe ）在部门调查后于8月被解雇，调查发现她与ICE特工丈夫泰勒·哈普（ Tyler Harpe ）分享了她的Flock登录信息。SPD不与ICE共享其Flock数据，并表示共享对该系统的访问违反了该部门的安全协议。而他[…]",
+      "source": "The Verge",
+      "published_at": "2026-10-18T22:20:53+00:00",
+      "url": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "《风琴先生》是我见过的最令人不安的纪录片之一",
+      "summary": "《风琴先生》没有达到《杀戮法》的社会恐惧程度，也没有达到《当心瘦长者》令人毛骨悚然的犯罪可怕程度，但迈克尔·风琴和他对每一个进入他生活的人的亲密恐怖活动都令人深感不安。《风琴先生》是新西兰奥克兰记者David Farrier的纪录片。[…]",
+      "source": "The Verge",
+      "published_at": "2026-10-18T19:30:00+00:00",
+      "url": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "在俄罗斯境内反普京破坏的阴暗世界中",
+      "summary": "两名男子讲述了他们在战争期间为支持乌克兰情报部门所做的工作。",
+      "source": "BBC World",
+      "published_at": "2026-10-19T00:06:25+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c6pwgzkj8zzgo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b9f8/live/f9937b60-c943-11f1-a64c-550be9e3c66b.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "钢铁老板表示，欧盟针对中国打击乌克兰的关税",
+      "summary": "乌克兰最大的钢铁公司之一的老板表示，该国已经“捆绑在一起” ，采取旨在遏制廉价进口的措施。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T23:28:45+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/29eb/live/c667f2d0-c96f-11f1-80fc-ab418b149008.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "特朗普表示，暂停对俄罗斯的制裁是为了保持和平谈判的进行",
+      "summary": "美国总统在制裁生效前两天阻止了对俄罗斯的多项制裁。",
+      "source": "BBC World",
+      "published_at": "2026-10-18T23:20:15+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4644/live/461bcc30-cb38-11f1-8a27-2de4c72fadc2.jpg",
+      "is_recent": false
+    }
+  ],
+  "count": 24,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
