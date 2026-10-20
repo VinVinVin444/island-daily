@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "generated_at": "2026-10-19T18:52:07.345587+00:00",
+  "generated_at": "2026-10-20T01:20:32.102746+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": false,
@@ -84,6 +84,26 @@
     },
     {
       "category": "ai",
+      "title": "推进低资源编程语言的编码",
+      "summary": "了解 OpenAI 如何通过针对软件工程、SQLite 和 COBOL 迁移的新评估，跨低资源编程语言改进 ChatGPT。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-19T12:00:00+00:00",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "TorchNeuron：在 AWS Trainium 上运行 HF 模型比以往更容易",
+      "summary": "",
+      "source": "Hugging Face",
+      "published_at": "2026-10-19T00:00:00+00:00",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
       "title": "Stack Overflow for Agents 使用 ChatGPT 插件使注册人数增加了三倍",
       "summary": "两名工程师在几周内与 Codex 一起发布了 Stack Overflow for Agents，其 ChatGPT 插件帮助推动代理创建量增长了 10 倍。",
       "source": "OpenAI 官方",
@@ -103,24 +123,24 @@
       "is_recent": true
     },
     {
-      "category": "ai",
-      "title": "Benefit Street Partners 通过 Codex 更快地回答问题",
-      "summary": "Anant Kumar 构建了比较贷款估值和分析信贷协议的工具，使用 Codex 进行代码审查和更快的跟进。",
-      "source": "OpenAI 官方",
-      "published_at": "2026-10-16T00:00:00+00:00",
-      "url": "https://openai.com/index/benefit-street-partners",
+      "category": "dev",
+      "title": "GitHub Copilot 模型已于 2026 年 10 月 19 日弃用",
+      "summary": "截至今天，即 2026 年 10 月 19 日，我们已在大多数 GitHub Copilot 体验（包括 Copilot Chat、内联编辑、询问和代理模式以及代码完成）中弃用了以下模型。这些……2026 年 10 月 19 日弃用的 GitHub Copilot 模型的帖子首先出现在 GitHub 博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-19T21:27:10+00:00",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
       "image": "",
-      "is_recent": true
+      "is_recent": false
     },
     {
-      "category": "ai",
-      "title": "将 GPT-Rosalind 引入学术研究实验室",
-      "summary": "推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 赞助访问权限和推进生命科学研究的工具。",
-      "source": "OpenAI 官方",
-      "published_at": "2026-10-15T19:00:00+00:00",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "category": "dev",
+      "title": "适用于企业、组织和团队的 Copilot 模型策略 API",
+      "summary": "您现在可以使用 REST API 检索和更新企业、企业团队、企业应用程序和组织的 Copilot 模型策略。现在有什么新的 GET 和 PATCH 端点...适用于企业、组织和团队的后 Copilot 模型策略 API 首先出现在 GitHub 博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-19T21:32:18+00:00",
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
       "image": "",
-      "is_recent": true
+      "is_recent": false
     },
     {
       "category": "dev",
@@ -133,39 +153,39 @@
       "is_recent": false
     },
     {
-      "category": "dev",
-      "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话",
-      "summary": "了解如何将代理会话从 GitHub Copilot 应用移至 VS Code，而不会丢失对话、代码更改或工作上下文。如何在 VS Code 中继续 GitHub Copilot 应用程序会话一文首先出现在 GitHub 博客上。",
-      "source": "GitHub Blog",
-      "published_at": "2026-10-19T18:47:22+00:00",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
-      "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "dev",
-      "title": "某些基于 HTTPS 的 Git 可能暂时需要身份验证",
-      "summary": "在流量异常期间，GitHub 可能会暂时要求对某些克隆进行身份验证并通过 HTTPS 获取公共存储库，以帮助保护 github.com 的可用性。如果某个操作受到影响，... 这篇文章 Some Git over HTTPS may暂时需要身份验证首先出现在 GitHub 博客上。",
-      "source": "GitHub Changelog",
-      "published_at": "2026-10-19T10:37:30+00:00",
-      "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
+      "category": "market",
+      "title": "科技股重挫反弹——此外，新的医生调查让我们对礼来公司持乐观态度",
+      "summary": "每个工作日，投资俱乐部都会发布最后冲刺；下午交易最后一小时的可行更新。",
+      "source": "CNBC",
+      "published_at": "2026-10-19T19:13:00+00:00",
+      "url": "https://www.cnbc.com/investingclub/2026/10/19/crushed-tech-stocks-bounce-new-doctor-survey-keeps-us-positive-on-lilly.html",
       "image": "",
       "is_recent": false
     },
     {
       "category": "market",
-      "title": "法国的骚乱加剧了债务危机的担忧。巴黎上市股票、债券和欧元下跌",
-      "summary": "一位分析师对 CNBC 表示：“看起来要么是债券市场骚乱，要么是人民骚乱，或者两者兼而有之。”",
-      "source": "CNBC",
-      "published_at": "2026-10-19T12:59:13+00:00",
-      "url": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html",
-      "image": "",
+      "title": "埃隆·马斯克表示，他将把 SpaceX 的股份送给“美国的每个孩子”",
+      "summary": "Anthropic，一个 A.I. SpaceX 的竞争对手早些时候表示，将成立一个“公共福利基金”，其他科技巨头也为儿童储蓄账户捐款。",
+      "source": "NYT Business",
+      "published_at": "2026-10-19T22:12:02+00:00",
+      "url": "https://www.nytimes.com/2026/10/19/technology/elon-musk-spacex-stock-anthropic-giveaway.html",
+      "image": "https://static01.nyt.com/images/2026/10/19/multimedia/19biz-musk-shares-vfqm/19biz-musk-shares-vfqm-mediumSquareAt3X.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "由于与中国的技术紧张局势持续，美国禁止政府使用 DeepSeek AI",
+      "summary": "DeepSeek是中国推出的一种功能强大、流行且相对便宜的人工智能模型。",
+      "source": "BBC Business",
+      "published_at": "2026-10-19T18:21:54+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/76fb/live/a102f4a0-cbe9-11f1-ad7b-fd8c269705fe.jpg",
       "is_recent": false
     },
     {
       "category": "market",
       "title": "埃隆·马斯克 (Elon Musk) 表示，明年他将向美国每个孩子发放 SpaceX 的股份",
-      "summary": "这位 SpaceX 老板周一表示，明年他将向美国的每个孩子分发一份公司股票。他没有透露股份赠予将如何进行。",
+      "summary": "这位 SpaceX 老板周一表示，明年他将把一份公司股票送给美国的每个孩子。他没有透露股份赠予将如何发生。",
       "source": "CNBC",
       "published_at": "2026-10-19T16:58:20+00:00",
       "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
@@ -173,33 +193,23 @@
       "is_recent": false
     },
     {
-      "category": "market",
-      "title": "Anthropic是AI行业今年大规模IPO的最后一个大希望",
-      "summary": "在 Kalshi 上，Anthropic 被视为继 OpenAI 推迟公开市场首次亮相后 2026 年最后一家大型 IPO。其他人也推迟了。",
-      "source": "CNBC",
-      "published_at": "2026-10-19T16:42:14+00:00",
-      "url": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
-      "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "market",
-      "title": "埃隆·马斯克表示，他将把 SpaceX 的股份送给“美国的每个孩子”",
-      "summary": "Anthropic，一个 A.I. SpaceX 的竞争对手，早些时候表示将成立一个“公共福利基金”，其他科技巨头也为儿童储蓄账户捐款。",
-      "source": "NYT Business",
-      "published_at": "2026-10-19T14:23:08+00:00",
-      "url": "https://www.nytimes.com/2026/10/19/business/elon-musk-spacex-stock-anthropic-giveaway.html",
-      "image": "https://static01.nyt.com/images/2026/10/19/multimedia/19biz-musk-shares-vfqm/19biz-musk-shares-vfqm-mediumSquareAt3X.jpg",
+      "category": "digital",
+      "title": "法庭文件称，被指控种植设备的前 OpenAI 员工得到了沙特的支持",
+      "summary": "沙特政府没有立即回应英国广播公司的置评请求。",
+      "source": "BBC Technology",
+      "published_at": "2026-10-19T21:12:30+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad18/live/95af9980-cbd2-11f1-aba9-2bb2608f11d9.png",
       "is_recent": false
     },
     {
       "category": "digital",
-      "title": "法庭文件显示，被指控种植设备的前 OpenAI 员工得到了沙特的支持",
-      "summary": "沙特政府没有立即回应英国广播公司的置评请求。",
-      "source": "BBC Technology",
-      "published_at": "2026-10-19T16:22:12+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad18/live/95af9980-cbd2-11f1-aba9-2bb2608f11d9.png",
+      "title": "我尝试了一款 99 美元的插头，它承诺跟踪你的汽车并在需要时发送帮助 - 而不出售你的数据",
+      "summary": "我 15 岁的女儿刚刚获得了学习驾照，因此当有人向我推销一款专为青少年司机设计的新设备时，我很感兴趣。 Miles Plug 是一款小型设备，可插入汽车的 OBD-II 端口并监控位置、驾驶习惯和车辆健康状况，以及紧急事故响应和路边援助。这个想法[…]",
+      "source": "The Verge",
+      "published_at": "2026-10-19T21:00:17+00:00",
+      "url": "https://www.theverge.com/tech/1013918/miles-plug-vehicle-tracking-data-privacy-specs-price-launch-date",
+      "image": "",
       "is_recent": false
     },
     {
@@ -213,36 +223,6 @@
       "is_recent": false
     },
     {
-      "category": "digital",
-      "title": "Apple 配备 M4 的最新一代 Mac Mini 立减 150 美元",
-      "summary": "百思买 (Best Buy) 在当天剩余时间里推出了 M4 Mac Mini 基本型号的超值优惠，该型号配备 16GB RAM 和 256GB SSD。通常情况下，考虑到更新、更快的 M6 版本已经上市，以 799 美元的价格购买 M4 型号并没有多大意义 [...]",
-      "source": "The Verge",
-      "published_at": "2026-10-19T14:41:48+00:00",
-      "url": "https://www.theverge.com/gadgets/1013645/apple-mac-mini-m4-lg-c6-oled-deal-sale",
-      "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "观察：法国骚乱是否预示着一场激烈的选举即将到来？",
-      "summary": "上周末，法国各地的抗议活动失控，骚乱、抢劫和破坏行为席卷了法国。",
-      "source": "BBC Top Stories",
-      "published_at": "2026-10-19T13:43:27+00:00",
-      "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/145f/live/7a0d3230-cbcf-11f1-a64c-550be9e3c66b.jpg",
-      "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "由于与中国的技术紧张局势持续，美国禁止政府使用 DeepSeek AI",
-      "summary": "DeepSeek是中国推出的一种功能强大、流行且相对便宜的人工智能模型。",
-      "source": "BBC Top Stories",
-      "published_at": "2026-10-19T18:21:54+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/76fb/live/a102f4a0-cbe9-11f1-ad7b-fd8c269705fe.jpg",
-      "is_recent": false
-    },
-    {
       "category": "world",
       "title": "地方当局称，胡塞武装对也门营地进行导弹袭击，造成 50 名新兵死亡",
       "summary": "三枚导弹击中了政府控制的沙布瓦省的一个营地，官员称该营地被用作新兵训练中心。",
@@ -250,6 +230,26 @@
       "published_at": "2026-10-19T16:20:51+00:00",
       "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9320/live/759508d0-cbd5-11f1-aba9-2bb2608f11d9.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "“法国的修正”和“工党削减陆军 20 亿英镑”",
+      "summary": "周二的报纸报道称，法国的暴力骚乱仍在继续，国防部取消了对前线军用车辆的资助。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-10-19T23:35:32+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7y0vkz2yno?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e0f/live/3b330f50-cc09-11f1-bc2e-018d645d8d21.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "法院裁定加泰罗尼亚前叛乱总统可以返回西班牙",
+      "summary": "法院维持了解除对卡尔斯·普伊格德蒙特 (Carles Puigdemont) 的逮捕令的决定，该逮捕令与他在 2017 年领导的独立运动有关。",
+      "source": "BBC World",
+      "published_at": "2026-10-19T14:06:53+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae13/live/2d561f90-cba4-11f1-9ee2-f74dfb8e54e5.jpg",
       "is_recent": false
     }
   ],

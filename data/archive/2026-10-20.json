@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-19T18:52:07.345587+00:00",
+  "ai_generated": false,
+  "machine_translated": true,
+  "translation_complete": false,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14 移动版（公共）",
+      "summary": "包括 Obsidian Desktop v1.14.4 之前的所有新功能和错误修复。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。 iOS 上的快速捕获 在 iOS 26 上，快速捕获可让您立即从锁定屏幕、控制中心、主屏幕小部件或快捷方式创建笔记，而无需等待保管库加载。自定义位置以捕获到 n...",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Obsidian 移动端快速记录和兼容性变化，值得测试「我的小岛」序号节点在手机上的触控与适配；这条并未表明官方推出了与你相同的序号功能。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14 桌面版（公共）",
+      "summary": "此更新引入了对打开单个 Markdown 文件、Bases 的看板视图以及突出显示颜色的支持。重要提示：打开 Markdown 文件需要最新的安装程序。从我们的网站下载 Obsidian 并重新安装该应用程序。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。打开单独的 Markdown 文件 您现在可以打开单独的 Mar...",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 2026 年 10 月",
+      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，新的……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/2026-obsidian-october/",
+      "image": "",
+      "author": "silver",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件的未来",
+      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自 2020 年 Obsidian API 发布以来，我们出色的社区已经创建了 4,000 多个插件和主题。令人难以置信的是，Obsidian 插件的总下载量已超过 1.2 亿！我们的目标是让任何人都能轻松、安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "author": "kepano（CEO）",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "社区插件移动付费解锁：Obsidian政策和推荐的许可流程？",
+      "summary": "我维护阅读标记，这是一个现有的免费Obsidian社区插件。我正在计划一个移动版本：桌面仍然免费，移动阅读和跳转到标记仍然免费。移动标记创建/编辑、注释、导航控制和导出将通过可选的年度许可证（目前考虑 10 元/年）解锁。我还没有发布付费移动版本。插件公告的未来称外部许可证密钥......",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-10-10T07:35:36+00:00",
+      "url": "https://forum.obsidian.md/t/community-plugin-mobile-paid-unlocks-obsidian-policy-and-recommended-licensing-flow/119271",
+      "image": "",
+      "author": "ptwm",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "1.14.4",
+      "summary": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "source": "Obsidian GitHub 发行记录",
+      "published_at": "2026-10-05T17:03:28+00:00",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.14.4",
+      "image": "",
+      "author": "lishid",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图：当前开发与计划（首次采集快照）",
+      "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。这是本站首次采集的路线图快照，不代表官方今天发布了更新。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-10-18T12:13:39.040874+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Stack Overflow for Agents 使用 ChatGPT 插件使注册人数增加了三倍",
+      "summary": "两名工程师在几周内与 Codex 一起发布了 Stack Overflow for Agents，其 ChatGPT 插件帮助推动代理创建量增长了 10 倍。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Itaú 如何为其整个客户群构建生成式人工智能",
+      "summary": "借助对话界面 ia.i 和 IARA 治理平台，Itaú 正在将其人工智能优先战略应用于巴西监管最严格的行业之一的客户和员工。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T19:00:00+00:00",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "Benefit Street Partners 通过 Codex 更快地回答问题",
+      "summary": "Anant Kumar 构建了比较贷款估值和分析信贷协议的工具，使用 Codex 进行代码审查和更快的跟进。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "url": "https://openai.com/index/benefit-street-partners",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "ai",
+      "title": "将 GPT-Rosalind 引入学术研究实验室",
+      "summary": "推出 Rosalind 学术计划，为符合条件的学术实验室提供 GPT-Rosalind 赞助访问权限和推进生命科学研究的工具。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-15T19:00:00+00:00",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "dev",
+      "title": "macOS 27、Xcode 27 和 Swift 6.4 的 CodeQL 更改",
+      "summary": "从 macOS 27 和 Xcode 27 开始，Apple 不再在 CodeQL 依赖于跟踪构建的某些系统二进制文件和库中包含 Intel (x86_64) 代码。正如……针对 macOS 27、Xcode 27 和 Swift 6.4 的 CodeQL 更改后首先出现在 GitHub 博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-19T10:29:09+00:00",
+      "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "dev",
+      "title": "如何在 VS Code 中继续 GitHub Copilot 应用程序会话",
+      "summary": "了解如何将代理会话从 GitHub Copilot 应用移至 VS Code，而不会丢失对话、代码更改或工作上下文。如何在 VS Code 中继续 GitHub Copilot 应用程序会话一文首先出现在 GitHub 博客上。",
+      "source": "GitHub Blog",
+      "published_at": "2026-10-19T18:47:22+00:00",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "dev",
+      "title": "某些基于 HTTPS 的 Git 可能暂时需要身份验证",
+      "summary": "在流量异常期间，GitHub 可能会暂时要求对某些克隆进行身份验证并通过 HTTPS 获取公共存储库，以帮助保护 github.com 的可用性。如果某个操作受到影响，... 这篇文章 Some Git over HTTPS may暂时需要身份验证首先出现在 GitHub 博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-19T10:37:30+00:00",
+      "url": "https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "法国的骚乱加剧了债务危机的担忧。巴黎上市股票、债券和欧元下跌",
+      "summary": "一位分析师对 CNBC 表示：“看起来要么是债券市场骚乱，要么是人民骚乱，或者两者兼而有之。”",
+      "source": "CNBC",
+      "published_at": "2026-10-19T12:59:13+00:00",
+      "url": "https://www.cnbc.com/2026/10/19/france-protests-bond-yields-markets.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "埃隆·马斯克 (Elon Musk) 表示，明年他将向美国每个孩子发放 SpaceX 的股份",
+      "summary": "这位 SpaceX 老板周一表示，明年他将向美国的每个孩子分发一份公司股票。他没有透露股份赠予将如何进行。",
+      "source": "CNBC",
+      "published_at": "2026-10-19T16:58:20+00:00",
+      "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "Anthropic是AI行业今年大规模IPO的最后一个大希望",
+      "summary": "在 Kalshi 上，Anthropic 被视为继 OpenAI 推迟公开市场首次亮相后 2026 年最后一家大型 IPO。其他人也推迟了。",
+      "source": "CNBC",
+      "published_at": "2026-10-19T16:42:14+00:00",
+      "url": "https://www.cnbc.com/2026/10/19/anthropic-ipo-ai-trade.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "埃隆·马斯克表示，他将把 SpaceX 的股份送给“美国的每个孩子”",
+      "summary": "Anthropic，一个 A.I. SpaceX 的竞争对手，早些时候表示将成立一个“公共福利基金”，其他科技巨头也为儿童储蓄账户捐款。",
+      "source": "NYT Business",
+      "published_at": "2026-10-19T14:23:08+00:00",
+      "url": "https://www.nytimes.com/2026/10/19/business/elon-musk-spacex-stock-anthropic-giveaway.html",
+      "image": "https://static01.nyt.com/images/2026/10/19/multimedia/19biz-musk-shares-vfqm/19biz-musk-shares-vfqm-mediumSquareAt3X.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "法庭文件显示，被指控种植设备的前 OpenAI 员工得到了沙特的支持",
+      "summary": "沙特政府没有立即回应英国广播公司的置评请求。",
+      "source": "BBC Technology",
+      "published_at": "2026-10-19T16:22:12+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ad18/live/95af9980-cbd2-11f1-aba9-2bb2608f11d9.png",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "苹果预告下周 MacBook Pro 发布会",
+      "summary": "Apple 已发出本月第二次产品发布会的邀请，发布会定于美国东部时间 10 月 28 日下午 1 点在洛杉矶举行。据彭博社报道，苹果将在此次活动中发布新款 Mac 和更新的 iPad Mini。预计此次重大发布将是一款配备 OLED 的新款 MacBook Pro [...]",
+      "source": "The Verge",
+      "published_at": "2026-10-19T16:04:29+00:00",
+      "url": "https://www.theverge.com/tech/1013028/apple-second-october-product-launch-announcement",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "Apple 配备 M4 的最新一代 Mac Mini 立减 150 美元",
+      "summary": "百思买 (Best Buy) 在当天剩余时间里推出了 M4 Mac Mini 基本型号的超值优惠，该型号配备 16GB RAM 和 256GB SSD。通常情况下，考虑到更新、更快的 M6 版本已经上市，以 799 美元的价格购买 M4 型号并没有多大意义 [...]",
+      "source": "The Verge",
+      "published_at": "2026-10-19T14:41:48+00:00",
+      "url": "https://www.theverge.com/gadgets/1013645/apple-mac-mini-m4-lg-c6-oled-deal-sale",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "观察：法国骚乱是否预示着一场激烈的选举即将到来？",
+      "summary": "上周末，法国各地的抗议活动失控，骚乱、抢劫和破坏行为席卷了法国。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-10-19T13:43:27+00:00",
+      "url": "https://www.bbc.co.uk/news/videos/ckzd60dy746qo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/145f/live/7a0d3230-cbcf-11f1-a64c-550be9e3c66b.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "由于与中国的技术紧张局势持续，美国禁止政府使用 DeepSeek AI",
+      "summary": "DeepSeek是中国推出的一种功能强大、流行且相对便宜的人工智能模型。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-10-19T18:21:54+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/76fb/live/a102f4a0-cbe9-11f1-ad7b-fd8c269705fe.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "地方当局称，胡塞武装对也门营地进行导弹袭击，造成 50 名新兵死亡",
+      "summary": "三枚导弹击中了政府控制的沙布瓦省的一个营地，官员称该营地被用作新兵训练中心。",
+      "source": "BBC World",
+      "published_at": "2026-10-19T16:20:51+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9320/live/759508d0-cbd5-11f1-aba9-2bb2608f11d9.jpg",
+      "is_recent": false
+    }
+  ],
+  "count": 24,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
