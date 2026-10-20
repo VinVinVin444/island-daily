@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "generated_at": "2026-10-20T01:20:32.102746+00:00",
+  "generated_at": "2026-10-20T03:47:09.529946+00:00",
   "ai_generated": false,
   "machine_translated": true,
   "translation_complete": false,
@@ -8,8 +8,8 @@
   "items": [
     {
       "category": "obsidian",
-      "title": "Obsidian 1.14 移动版（公共）",
-      "summary": "包括 Obsidian Desktop v1.14.4 之前的所有新功能和错误修复。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。 iOS 上的快速捕获 在 iOS 26 上，快速捕获可让您立即从锁定屏幕、控制中心、主屏幕小部件或快捷方式创建笔记，而无需等待保管库加载。自定义位置以捕获到 n...",
+      "title": "Obsidian 1.14移动版（公共）",
+      "summary": "包括Obsidian Desktop v1.14.4之前的所有新功能和错误修复。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。iOS上的快速捕获在iOS 26上，快速捕获可让您从锁定屏幕、控制中心、主屏幕小部件或快捷方式即时创建笔记，而无需等待保管库加载。自定义位置以捕获到n…",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-10-05T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
@@ -19,8 +19,8 @@
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 1.14 桌面版（公共）",
-      "summary": "此更新引入了对打开单个 Markdown 文件、Bases 的看板视图以及突出显示颜色的支持。重要提示：打开 Markdown 文件需要最新的安装程序。从我们的网站下载 Obsidian 并重新安装该应用程序。当您在这里时...告诉我们您最喜欢的插件、主题、工具以及使用 Obsidian 的方法：参加 2026 年 Obsidian 状况调查。打开单独的 Markdown 文件 您现在可以打开单独的 Mar...",
+      "title": "Obsidian 1.14台式机（公共）",
+      "summary": "此更新引入了对打开单个Markdown文件、基础的看板视图和高亮颜色的支持。重要提示：打开Markdown文件需要安装最新的安装程序。从我们的网站下载Obsidian并重新安装应用。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。打开单个Markdown文件您现在可以打开单个Markdown文件…",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-10-05T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
@@ -29,8 +29,8 @@
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 2026 年 10 月",
-      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，新的……",
+      "title": "Obsidian2026年10月",
+      "summary": "O_O回来了！每年10月，Obsidian社区都会将“我应该做到这一点”转变为“我做到了！“无论您是在修补插件、主题、保管库、指南还是视频，这个月都是您完成和分享的月份。今年，Obsidian团队也将致力于我们自己的项目，这是一项我们称之为Obsidian状态的新调查。以Obsidian现状调查为例5月，我们推出了新的Obsidian社区，从那时起， NU…",
       "source": "Obsidian 官方博客",
       "published_at": "2026-10-01T00:00:00+00:00",
       "url": "https://obsidian.md/blog/2026-obsidian-october/",
@@ -41,7 +41,7 @@
     {
       "category": "obsidian",
       "title": "Obsidian插件的未来",
-      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自 2020 年 Obsidian API 发布以来，我们出色的社区已经创建了 4,000 多个插件和主题。令人难以置信的是，Obsidian 插件的总下载量已超过 1.2 亿！我们的目标是让任何人都能轻松、安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自2020年Obsidian API发布以来，我们令人惊叹的社区已经创建了4,000多个插件和主题。令人难以置信的是， Obsidian插件的总下载量已经超过了1.2亿次！我们的目标是让任何人都能轻松安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
       "source": "Obsidian 官方博客",
       "published_at": "2026-05-12T00:00:00+00:00",
       "url": "https://obsidian.md/blog/future-of-plugins/",
@@ -51,8 +51,8 @@
     },
     {
       "category": "obsidian",
-      "title": "社区插件移动付费解锁：Obsidian政策和推荐的许可流程？",
-      "summary": "我维护阅读标记，这是一个现有的免费Obsidian社区插件。我正在计划一个移动版本：桌面仍然免费，移动阅读和跳转到标记仍然免费。移动标记创建/编辑、注释、导航控制和导出将通过可选的年度许可证（目前考虑 10 元/年）解锁。我还没有发布付费移动版本。插件公告的未来称外部许可证密钥......",
+      "title": "社区插件移动付费解锁： Obsidian政策和推荐的许可流程？",
+      "summary": "我负责维护Reading Markers ，这是一个现有的免费Obsidian社区插件。我正在计划一个移动版本：桌面仍然是免费的，移动阅读和跳转到标记仍然是免费的。移动标记创建/编辑、备注、导航控件和导出将通过可选的年度许可证解锁（目前考虑10元/年）。我还没有发布付费移动版本。插件的未来公告称，外部许可证密钥……",
       "source": "Obsidian 开发者论坛·社区讨论",
       "published_at": "2026-10-10T07:35:36+00:00",
       "url": "https://forum.obsidian.md/t/community-plugin-mobile-paid-unlocks-obsidian-policy-and-recommended-licensing-flow/119271",
@@ -84,8 +84,8 @@
     },
     {
       "category": "ai",
-      "title": "推进低资源编程语言的编码",
-      "summary": "了解 OpenAI 如何通过针对软件工程、SQLite 和 COBOL 迁移的新评估，跨低资源编程语言改进 ChatGPT。",
+      "title": "推进低资源编程语言编码",
+      "summary": "了解OpenAI如何在低资源编程语言中改进ChatGPT ，并对软件工程、SQLite和COBOL迁移进行新的评估。",
       "source": "OpenAI 官方",
       "published_at": "2026-10-19T12:00:00+00:00",
       "url": "https://openai.com/index/low-resource-programming-languages",
@@ -94,18 +94,18 @@
     },
     {
       "category": "ai",
-      "title": "TorchNeuron：在 AWS Trainium 上运行 HF 模型比以往更容易",
+      "title": "TorchNeuron ：在AWS Trainium上运行高频模型比以往任何时候都更容易",
       "summary": "",
       "source": "Hugging Face",
       "published_at": "2026-10-19T00:00:00+00:00",
       "url": "https://huggingface.co/blog/hf-torchneuron",
       "image": "",
-      "is_recent": false
+      "is_recent": true
     },
     {
       "category": "ai",
-      "title": "Stack Overflow for Agents 使用 ChatGPT 插件使注册人数增加了三倍",
-      "summary": "两名工程师在几周内与 Codex 一起发布了 Stack Overflow for Agents，其 ChatGPT 插件帮助推动代理创建量增长了 10 倍。",
+      "title": "Stack Overflow for Agents使用ChatGPT插件将注册增加三倍",
+      "summary": "两位工程师通过Codex在几周内推出了Stack Overflow for Agents ，其ChatGPT插件帮助推动了高达10倍的代理创建增长。",
       "source": "OpenAI 官方",
       "published_at": "2026-10-16T00:00:00+00:00",
       "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
@@ -114,8 +114,8 @@
     },
     {
       "category": "ai",
-      "title": "Itaú 如何为其整个客户群构建生成式人工智能",
-      "summary": "借助对话界面 ia.i 和 IARA 治理平台，Itaú 正在将其人工智能优先战略应用于巴西监管最严格的行业之一的客户和员工。",
+      "title": "Itaú如何为整个客户群构建生成式人工智能",
+      "summary": "借助对话界面ia.i和IARA治理平台， Itaú正在将其AI First战略应用于巴西监管最严格的行业之一的客户和员工。",
       "source": "OpenAI 官方",
       "published_at": "2026-10-16T19:00:00+00:00",
       "url": "https://openai.com/index/itau-generative-ai",
@@ -124,8 +124,8 @@
     },
     {
       "category": "dev",
-      "title": "GitHub Copilot 模型已于 2026 年 10 月 19 日弃用",
-      "summary": "截至今天，即 2026 年 10 月 19 日，我们已在大多数 GitHub Copilot 体验（包括 Copilot Chat、内联编辑、询问和代理模式以及代码完成）中弃用了以下模型。这些……2026 年 10 月 19 日弃用的 GitHub Copilot 模型的帖子首先出现在 GitHub 博客上。",
+      "title": "GitHub Copilot模型已于2026年10月19日弃用",
+      "summary": "截至2026年10月19日（即今日） ，我们已在大多数GitHub Copilot体验（包括Copilot聊天、内联编辑、提问和代理模式以及代码完成）中弃用了以下模型。这些…… 2026年10月19日弃用的GitHub Copilot模型首次出现在GitHub博客上。",
       "source": "GitHub Changelog",
       "published_at": "2026-10-19T21:27:10+00:00",
       "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
@@ -134,8 +134,8 @@
     },
     {
       "category": "dev",
-      "title": "适用于企业、组织和团队的 Copilot 模型策略 API",
-      "summary": "您现在可以使用 REST API 检索和更新企业、企业团队、企业应用程序和组织的 Copilot 模型策略。现在有什么新的 GET 和 PATCH 端点...适用于企业、组织和团队的后 Copilot 模型策略 API 首先出现在 GitHub 博客上。",
+      "title": "适用于企业、组织和团队的Copilot模型策略API",
+      "summary": "您现在可以使用REST API检索和更新企业、企业团队、企业应用和组织的Copilot模型策略。GET和PATCH端点的新功能……适用于企业、组织和团队的POST Copilot模型策略API首次出现在GitHub博客上。",
       "source": "GitHub Changelog",
       "published_at": "2026-10-19T21:32:18+00:00",
       "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
@@ -144,8 +144,8 @@
     },
     {
       "category": "dev",
-      "title": "macOS 27、Xcode 27 和 Swift 6.4 的 CodeQL 更改",
-      "summary": "从 macOS 27 和 Xcode 27 开始，Apple 不再在 CodeQL 依赖于跟踪构建的某些系统二进制文件和库中包含 Intel (x86_64) 代码。正如……针对 macOS 27、Xcode 27 和 Swift 6.4 的 CodeQL 更改后首先出现在 GitHub 博客上。",
+      "title": "MacOS 27、Xcode 27和Swift 6.4的CodeQL更改",
+      "summary": "从macOS 27和Xcode 27开始， Apple不再将英特尔(x86_64)代码包含在CodeQL跟踪构建所依赖的一些系统二进制文件和库中。由于……针对macOS 27、Xcode 27和Swift 6.4的POST CodeQL更改首次出现在GitHub博客上。",
       "source": "GitHub Changelog",
       "published_at": "2026-10-19T10:29:09+00:00",
       "url": "https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4",
@@ -154,8 +154,8 @@
     },
     {
       "category": "market",
-      "title": "科技股重挫反弹——此外，新的医生调查让我们对礼来公司持乐观态度",
-      "summary": "每个工作日，投资俱乐部都会发布最后冲刺；下午交易最后一小时的可行更新。",
+      "title": "科技股反弹—此外，新的医生调查使我们对礼来持乐观态度",
+      "summary": "每个工作日，投资俱乐部都会发布Homestretch ；这是一个可操作的下午更新，正好赶上交易的最后一个小时。",
       "source": "CNBC",
       "published_at": "2026-10-19T19:13:00+00:00",
       "url": "https://www.cnbc.com/investingclub/2026/10/19/crushed-tech-stocks-bounce-new-doctor-survey-keeps-us-positive-on-lilly.html",
@@ -164,8 +164,18 @@
     },
     {
       "category": "market",
-      "title": "埃隆·马斯克表示，他将把 SpaceX 的股份送给“美国的每个孩子”",
-      "summary": "Anthropic，一个 A.I. SpaceX 的竞争对手早些时候表示，将成立一个“公共福利基金”，其他科技巨头也为儿童储蓄账户捐款。",
+      "title": "“为人工智能敞开大门” ：德国总理敦促企业在英伟达宣布新投资之际拥抱人工智能",
+      "summary": "英伟达宣布计划对四家德国初创公司进行投资，因为总理弗里德里希·默茨（ Friedrich Merz ）敦促企业在柏林举行的行业峰会上拥抱人工智能。",
+      "source": "CNBC",
+      "published_at": "2026-10-20T02:16:25+00:00",
+      "url": "https://www.cnbc.com/2026/10/20/german-chancellor-urges-businesses-to-embrace-ai.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "埃隆·马斯克（ Elon Musk ）表示，他将向“美国的每个孩子”提供SpaceX股份",
+      "summary": "SpaceX的人工智能竞争对手Anthropic早些时候表示，它将成立一个“公益基金” ，其他科技巨头也为儿童储蓄账户做出了贡献。",
       "source": "NYT Business",
       "published_at": "2026-10-19T22:12:02+00:00",
       "url": "https://www.nytimes.com/2026/10/19/technology/elon-musk-spacex-stock-anthropic-giveaway.html",
@@ -174,8 +184,8 @@
     },
     {
       "category": "market",
-      "title": "由于与中国的技术紧张局势持续，美国禁止政府使用 DeepSeek AI",
-      "summary": "DeepSeek是中国推出的一种功能强大、流行且相对便宜的人工智能模型。",
+      "title": "由于与中国的技术紧张局势仍在继续，美国禁止政府使用DeepSeek AI",
+      "summary": "DeepSeek是一种功能强大、流行且相对便宜的中国人工智能模型。",
       "source": "BBC Business",
       "published_at": "2026-10-19T18:21:54+00:00",
       "url": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss",
@@ -183,19 +193,9 @@
       "is_recent": false
     },
     {
-      "category": "market",
-      "title": "埃隆·马斯克 (Elon Musk) 表示，明年他将向美国每个孩子发放 SpaceX 的股份",
-      "summary": "这位 SpaceX 老板周一表示，明年他将把一份公司股票送给美国的每个孩子。他没有透露股份赠予将如何发生。",
-      "source": "CNBC",
-      "published_at": "2026-10-19T16:58:20+00:00",
-      "url": "https://www.cnbc.com/2026/10/19/elon-musk-spacex-shares-giveaway-kids.html",
-      "image": "",
-      "is_recent": false
-    },
-    {
       "category": "digital",
-      "title": "法庭文件称，被指控种植设备的前 OpenAI 员工得到了沙特的支持",
-      "summary": "沙特政府没有立即回应英国广播公司的置评请求。",
+      "title": "法庭文件显示，被指控种植设备的前OpenAI工人得到了沙特的支持",
+      "summary": "沙特政府没有立即回应BBC的评论请求。",
       "source": "BBC Technology",
       "published_at": "2026-10-19T21:12:30+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
@@ -204,8 +204,8 @@
     },
     {
       "category": "digital",
-      "title": "我尝试了一款 99 美元的插头，它承诺跟踪你的汽车并在需要时发送帮助 - 而不出售你的数据",
-      "summary": "我 15 岁的女儿刚刚获得了学习驾照，因此当有人向我推销一款专为青少年司机设计的新设备时，我很感兴趣。 Miles Plug 是一款小型设备，可插入汽车的 OBD-II 端口并监控位置、驾驶习惯和车辆健康状况，以及紧急事故响应和路边援助。这个想法[…]",
+      "title": "我尝试了一个$ 99的插头，承诺在需要时跟踪您的车辆并发送帮助—而不会出售您的数据",
+      "summary": "我15岁的女儿刚拿到学习许可证，所以当我推荐一个为青少年司机量身定制的新小工具时，我很好奇。Miles Plug是一款小型设备，可插入汽车的OBD-II端口，并监控位置、驾驶习惯和车辆健康状况，以及紧急事故响应和路边援助。这个想法[…]",
       "source": "The Verge",
       "published_at": "2026-10-19T21:00:17+00:00",
       "url": "https://www.theverge.com/tech/1013918/miles-plug-vehicle-tracking-data-privacy-specs-price-launch-date",
@@ -214,8 +214,8 @@
     },
     {
       "category": "digital",
-      "title": "苹果预告下周 MacBook Pro 发布会",
-      "summary": "Apple 已发出本月第二次产品发布会的邀请，发布会定于美国东部时间 10 月 28 日下午 1 点在洛杉矶举行。据彭博社报道，苹果将在此次活动中发布新款 Mac 和更新的 iPad Mini。预计此次重大发布将是一款配备 OLED 的新款 MacBook Pro [...]",
+      "title": "苹果下周推出MacBook Pro活动",
+      "summary": "Apple已向本月第二次产品发布发出邀请，计划于美国东部时间10月28日下午1点在洛杉矶推出。据彭博社报道，在这次活动中，苹果将推出新的Mac和更新的iPad Mini。这一重大公告预计将是一款配备OLED的新款MacBook Pro […]",
       "source": "The Verge",
       "published_at": "2026-10-19T16:04:29+00:00",
       "url": "https://www.theverge.com/tech/1013028/apple-second-october-product-launch-announcement",
@@ -224,8 +224,18 @@
     },
     {
       "category": "world",
-      "title": "地方当局称，胡塞武装对也门营地进行导弹袭击，造成 50 名新兵死亡",
-      "summary": "三枚导弹击中了政府控制的沙布瓦省的一个营地，官员称该营地被用作新兵训练中心。",
+      "title": "加拿大军事基地的致命火力“在30到60秒内”移动了一公里",
+      "summary": "据报道，造成四人死亡，数十人受伤的大火以惊人的速度蔓延。",
+      "source": "BBC World",
+      "published_at": "2026-10-20T01:52:43+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2ede/live/03f0b480-cbbd-11f1-bc2e-018d645d8d21.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "当地政府表示，胡塞武装导弹袭击也门难民营，打死50名安全人员",
+      "summary": "三枚导弹击中了政府控制的沙布瓦省的一个营地，官员称该营地被用作新兵培训中心。",
       "source": "BBC World",
       "published_at": "2026-10-19T16:20:51+00:00",
       "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss",
@@ -234,22 +244,12 @@
     },
     {
       "category": "world",
-      "title": "“法国的修正”和“工党削减陆军 20 亿英镑”",
-      "summary": "周二的报纸报道称，法国的暴力骚乱仍在继续，国防部取消了对前线军用车辆的资助。",
+      "title": "“法国修正”和“工党从陆军削减20 £十亿”",
+      "summary": "法国的暴力骚乱仍在继续，国防部减少对前线军用车辆的资助导致了周二的报纸。",
       "source": "BBC Top Stories",
       "published_at": "2026-10-19T23:35:32+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c6r7y0vkz2yno?at_medium=RSS&at_campaign=rss",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e0f/live/3b330f50-cc09-11f1-bc2e-018d645d8d21.jpg",
-      "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "法院裁定加泰罗尼亚前叛乱总统可以返回西班牙",
-      "summary": "法院维持了解除对卡尔斯·普伊格德蒙特 (Carles Puigdemont) 的逮捕令的决定，该逮捕令与他在 2017 年领导的独立运动有关。",
-      "source": "BBC World",
-      "published_at": "2026-10-19T14:06:53+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae13/live/2d561f90-cba4-11f1-9ee2-f74dfb8e54e5.jpg",
       "is_recent": false
     }
   ],
