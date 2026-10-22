@@ -1,10 +1,11 @@
 {
-  "hash": "0b1737092847cb0acd089095a6cfc7d4c79c1c58cfd229dc4f0eb765416c20f9",
+  "hash": "5b7423e13c0a9e8d6e09afc00db90ecf342e842285de89407c6248ad6f0ee965",
   "sections": {
     "active": [
       "Improved Mermaid diagrams",
       "Mobile PDF export",
-      "Obsidian for Work"
+      "Obsidian for Work",
+      "iOS Voice Capture"
     ],
     "planned": [
       "Background Sync on mobile",
@@ -18,10 +19,10 @@
   },
   "article": {
     "category": "obsidian",
-    "title": "Obsidian 官方路线图：当前开发与计划（首次采集快照）",
-    "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。这是本站首次采集的路线图快照，不代表官方今天发布了更新。",
+    "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
+    "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work、iOS Voice Capture；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：iOS Voice Capture。",
     "source": "Obsidian 官方路线图（自动观察）",
-    "published_at": "2026-10-18T12:13:39.040874+00:00",
+    "published_at": "2026-10-22T01:03:54.997108+00:00",
     "date_kind": "observed",
     "url": "https://obsidian.md/roadmap/",
     "image": ""
