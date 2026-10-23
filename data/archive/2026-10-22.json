@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T01:03:54.997108+00:00",
+  "ai_generated": false,
+  "machine_translated": true,
+  "translation_complete": false,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14移动版（公共）",
+      "summary": "包括Obsidian Desktop v1.14.4之前的所有新功能和错误修复。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。iOS上的快速捕获在iOS 26上，快速捕获可让您从锁定屏幕、控制中心、主屏幕小部件或快捷方式即时创建笔记，而无需等待保管库加载。自定义位置以捕获到n…",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-mobile-v1.14.4/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Obsidian 移动端快速记录和兼容性变化，值得测试「我的小岛」序号节点在手机上的触控与适配；这条并未表明官方推出了与你相同的序号功能。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.14台式机（公共）",
+      "summary": "此更新引入了对打开单个Markdown文件、基础的看板视图和高亮颜色的支持。重要提示：打开Markdown文件需要安装最新的安装程序。从我们的网站下载Obsidian并重新安装应用。在这里，请告诉我们您最喜欢的插件、主题、工具和使用Obsidian的方法：参加《Obsidian2026年状况》调查。打开单个Markdown文件您现在可以打开单个Markdown文件…",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-10-05T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "image": "",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian2026年10月",
+      "summary": "O_O回来了！每年10月，Obsidian社区都会将“我应该做到这一点”转变为“我做到了！“无论您是在修补插件、主题、保管库、指南还是视频，这个月都是您完成和分享的月份。今年，Obsidian团队也将致力于我们自己的项目，这是一项我们称之为Obsidian状态的新调查。以Obsidian现状调查为例5月，我们推出了新的Obsidian社区，从那时起， NU…",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-10-01T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/2026-obsidian-october/",
+      "image": "",
+      "author": "silver",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件的未来",
+      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自2020年Obsidian API发布以来，我们令人惊叹的社区已经创建了4,000多个插件和主题。令人难以置信的是， Obsidian插件的总下载量已经超过了1.2亿次！我们的目标是让任何人都能轻松安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "author": "kepano（CEO）",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "社区插件移动付费解锁： Obsidian政策和推荐的许可流程？",
+      "summary": "我负责维护Reading Markers ，这是一个现有的免费Obsidian社区插件。我正在计划一个移动版本：桌面仍然是免费的，移动阅读和跳转到标记仍然是免费的。移动标记创建/编辑、备注、导航控件和导出将通过可选的年度许可证解锁（目前考虑10元/年）。我还没有发布付费移动版本。插件的未来公告称，外部许可证密钥……",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-10-10T07:35:36+00:00",
+      "url": "https://forum.obsidian.md/t/community-plugin-mobile-paid-unlocks-obsidian-policy-and-recommended-licensing-flow/119271",
+      "image": "",
+      "author": "ptwm",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "1.14.4",
+      "summary": "https://obsidian.md/changelog/2026-10-05-desktop-v1.14.4/",
+      "source": "Obsidian GitHub 发行记录",
+      "published_at": "2026-10-05T17:03:28+00:00",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.14.4",
+      "image": "",
+      "author": "lishid",
+      "is_recent": true
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
+      "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work、iOS Voice Capture；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：iOS Voice Capture。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-10-22T01:03:54.997108+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI模型即将加入Google Cloud",
+      "summary": "OpenAI和Google Cloud正在通过Google Cloud Marketplace将前沿模型和Codex工作流程引入Gemini的模型花园。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-21T12:00:00+00:00",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "通过一致的标准实现广泛的访问",
+      "summary": "OpenAI如何与分销合作伙伴合作，以维护一致的保障措施，支持负责任的访问，并在我们的使用政策中明确期望。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-21T21:00:00+00:00",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "AT&T如何与OpenAI重新思考内部法律工作",
+      "summary": "AT&T正在与OpenAI合作，使法律知识更容易获取。了解其LegalEdge团队如何重新考虑录取和扩大法律判决。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-21T17:00:00+00:00",
+      "url": "https://openai.com/index/att-legal",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "ai",
+      "title": "我们如何构建ChatGPT的新型广告堆栈，以获得用户的信任和相关性",
+      "summary": "了解OpenAI如何构建ChatGPT基于LLM的广告堆栈，以了解对话意图，将广告与答案分开，并大规模投放相关广告。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-10-21T07:00:00+00:00",
+      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "dev",
+      "title": "GitHub CLI ：选择启用过期、自动刷新的OAuth令牌",
+      "summary": "现在，您可以在GitHub CLI中使用过期、自动刷新的OAuth凭据作为公共预览的一部分。当您选择加入时， gh会存储一个过期的访问令牌以及……文章GitHub CLI ：选择加入过期的自动刷新OAuth令牌首次出现在GitHub博客上。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-10-21T16:43:23+00:00",
+      "url": "https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "dev",
+      "title": "通往代理规模Git基础设施的桥梁",
+      "summary": "我们将99.99999%的GitHub存储库的副本移至Azure。以下是每个引用仲裁将如何带来其余部分，以及对象存储如何允许读取独立扩展。文章通往代理规模Git基础设施的桥梁首先出现在GitHub博客上。",
+      "source": "GitHub Blog",
+      "published_at": "2026-10-21T16:00:00+00:00",
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "dev",
+      "title": "介绍Cloudflare WAF的完整交易检测",
+      "summary": "Cloudflare的Web应用程序防火墙现在可以将HTTP请求与其响应相关联。全面的事务检测可帮助每位客户发现成功利用漏洞、数据泄露和仅限请求的检查可能遗漏的风险错误配置。",
+      "source": "Cloudflare Blog",
+      "published_at": "2026-10-21T14:10:42+00:00",
+      "url": "https://blog.cloudflare.com/full-transaction-waf/",
+      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M5E1HKVR7WJX7KGB4B8MSK75.png",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "随着债券收益率飙升和股市下跌， CoreWeave的市场信心受到侵蚀",
+      "summary": "CoreWeave的股价在10月份下跌了29% ，其信用违约掉期的利差正在扩大。",
+      "source": "CNBC",
+      "published_at": "2026-10-21T22:50:35+00:00",
+      "url": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "高盛(Goldman Sachs)、摩根大通(JPMorgan)和摩根士丹利(Morgan Stanley)主导着人工智能这是他们的优势",
+      "summary": "华尔街三巨头今年创造了520亿美元的股票交易收入，通过向对冲基金提供不断增加的保证金贷款，占据了大约80%的市场份额。",
+      "source": "CNBC",
+      "published_at": "2026-10-21T15:30:50+00:00",
+      "url": "https://www.cnbc.com/2026/10/21/goldman-sachs-jpmorgan-morgan-stanley-ai-trading.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "SpaceX推动人工智能拉力赛",
+      "summary": "在火箭和人工智能公司超过盈利预期后，科技股上涨--埃隆·马斯克(Elon Musk)证实，它正在权衡与特斯拉的交易。",
+      "source": "NYT Business",
+      "published_at": "2026-10-21T13:37:04+00:00",
+      "url": "https://www.nytimes.com/2026/10/21/business/dealbook/spacex-musk-tesla.html",
+      "image": "https://static01.nyt.com/images/2026/10/21/multimedia/21db-musk-vqjz/21db-musk-vqjz-mediumSquareAt3X.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "market",
+      "title": "苹果iPhone Duo供不应求—加上2只股票推动人工智能反弹",
+      "summary": "每个工作日，投资俱乐部都会发布Homestretch ；这是一个可操作的下午更新，正好赶上交易的最后一个小时。",
+      "source": "CNBC",
+      "published_at": "2026-10-21T19:47:38+00:00",
+      "url": "https://www.cnbc.com/investingclub/2026/10/21/apples-iphone-duo-in-short-supply-plus-2-stocks-fueling-an-ai-rebound.html",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "YouTube表示，它没有测试隐藏“不喜欢”按钮",
+      "summary": "周二，我发表了一篇关于YouTube如何测试隐藏视频上的“不喜欢”按钮的故事， X上至少有两名用户将“不喜欢”按钮的屏幕截图移到了三点菜单中。但YouTube发言人在周三向The Verge发表的一份声明中证实， YouTube “没有测试隐藏[…]",
+      "source": "The Verge",
+      "published_at": "2026-10-21T23:46:45+00:00",
+      "url": "https://www.theverge.com/streaming/1016206/youtube-dislike-button-videos",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "特斯拉表示，客户明年可以将自己的车辆添加到机器人出租车车队中，这会发生吗？",
+      "summary": "多年来，埃隆·马斯克（ Elon Musk ）一直在向特斯拉车主做出关于无人驾驶的巨大承诺，并能够将自己的车辆添加到公司的机器人出租车车队中。在今天的第三季度财报电话会议上，该公司终于给了自己一个截止日期。根据特斯拉自动驾驶副总裁Ashok Elluswamy的说法，特斯拉车主将能够[…]",
+      "source": "The Verge",
+      "published_at": "2026-10-21T23:36:31+00:00",
+      "url": "https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings",
+      "image": "",
+      "is_recent": false
+    },
+    {
+      "category": "digital",
+      "title": "特朗普的绿卡限制测试印度科技工作者的美国梦",
+      "summary": "随着移民限制和科技公司削减外国招聘，美国居留权正成为许多印度人的遥远梦想。",
+      "source": "BBC Technology",
+      "published_at": "2026-10-21T23:06:37+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cqj34j7dk771o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/51e1/live/804b8da0-cc6e-11f1-baeb-8d65d4bcd7ab.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "在俄罗斯同意美国呼吁恢复乌克兰和平谈判后，导弹袭击了基辅",
+      "summary": "莫斯科表示“原则上准备好”恢复和平谈判，美国总统唐纳德特朗普表示，世界“最接近”结束战争。",
+      "source": "BBC World",
+      "published_at": "2026-10-21T21:27:41+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/abac/live/5ed152f0-cd8f-11f1-b1e7-39558e114359.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "Burnham为Jackdaw的决定辩护，因为Badenoch敦促PM推翻对新的石油和天然气许可证的禁令",
+      "summary": "英国政府表示，该油田受到环保人士的反对，可能在本月底之前开采天然气。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-10-21T15:36:31+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zdgk081eo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2643/live/6503a5b0-cd58-11f1-bc2e-018d645d8d21.jpg",
+      "is_recent": false
+    },
+    {
+      "category": "world",
+      "title": "日本以世界级赛事而闻名，但亚运会却一片混乱",
+      "summary": "酒店混乱、交通事故和外交失误引起了组织者和受雇提供游戏的公司的关注。",
+      "source": "BBC World",
+      "published_at": "2026-10-21T22:00:58+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cvze414811jlo?at_medium=RSS&at_campaign=rss",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/329a/live/eef02160-c7a2-11f1-a64c-550be9e3c66b.jpg",
+      "is_recent": false
+    }
+  ],
+  "count": 24,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
