@@ -1,10 +1,11 @@
 {
-  "hash": "5b7423e13c0a9e8d6e09afc00db90ecf342e842285de89407c6248ad6f0ee965",
+  "hash": "8748d846f63eacf9fe662714c809ecfc827525eb1f3c7da960bf6165e674cb4d",
   "sections": {
     "active": [
       "Improved Mermaid diagrams",
       "Mobile PDF export",
       "Obsidian for Work",
+      "Sort search results by relevance",
       "iOS Voice Capture"
     ],
     "planned": [
@@ -13,16 +14,15 @@
       "Calendar view for Bases",
       "Canvas support for Publish",
       "Multiplayer",
-      "PDF annotation",
-      "Sort search results by relevance"
+      "PDF annotation"
     ]
   },
   "article": {
     "category": "obsidian",
     "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
-    "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work、iOS Voice Capture；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：iOS Voice Capture。",
+    "summary": "正在进行：Improved Mermaid diagrams、Mobile PDF export、Obsidian for Work、Sort search results by relevance、iOS Voice Capture；计划中：Background Sync on mobile、Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：Sort search results by relevance。 移出旧列表：Sort search results by relevance。",
     "source": "Obsidian 官方路线图（自动观察）",
-    "published_at": "2026-10-22T01:03:54.997108+00:00",
+    "published_at": "2026-11-01T01:36:25.839243+00:00",
     "date_kind": "observed",
     "url": "https://obsidian.md/roadmap/",
     "image": ""
