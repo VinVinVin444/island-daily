@@ -15,7 +15,7 @@
       "url": "https://obsidian.md/changelog/2026-11-02-mobile-v1.15.0/",
       "image": "",
       "is_recent": true,
-      "impact": "1.15 已正式公开发布：A-Home 应回归测试 Mermaid/Pele 样式、嵌套任务列表与启动性能；不要把旧抢先体验版当成今日发布。"
+      "impact": "移动端 1.15 已公开发布：检查五款插件的手机布局、PDF 导出影响；iOS Quick Capture 是官方功能，不代表 Android 同步具备语音捕捉。"
     },
     {
       "category": "obsidian",
@@ -26,7 +26,7 @@
       "url": "https://obsidian.md/changelog/2026-11-02-desktop-v1.15.0/",
       "image": "",
       "is_recent": true,
-      "impact": "移动端 1.15 已公开发布：检查五款插件的手机布局、PDF 导出影响；iOS Quick Capture 是官方功能，不代表 Android 同步具备语音捕捉。"
+      "impact": "1.15 已正式公开发布：A-Home 应回归测试 Mermaid/Pele 样式、嵌套任务列表与启动性能；不要把旧抢先体验版当成今日发布。"
     },
     {
       "category": "obsidian",
@@ -174,7 +174,7 @@
       "url": "https://www.nytimes.com/2026/11/01/business/after-tech-sell-off-investors-brace-for-more-market-volatility.html",
       "image": "",
       "is_recent": false,
-      "impact": "甲骨文拟融资约200亿美元用于 AI 建设：留意债务、股权稀释及 AI 基建现金流，而非只看算力订单。"
+      "impact": "科技股抛售后波动风险上升；纳指 QDII 应关注科技股集中度与仓位风险，不能把市场评论当成确定性预测。"
     },
     {
       "category": "market",
@@ -185,7 +185,7 @@
       "url": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
       "image": "",
       "is_recent": false,
-      "impact": "中期选举影响行业政策的报道属于前瞻分析；纳指 QDII 更需关注政策对科技企业资本开支和监管的具体影响。"
+      "impact": "甲骨文拟融资约200亿美元用于 AI 建设：留意债务、股权稀释及 AI 基建现金流，而非只看算力订单。"
     },
     {
       "category": "digital",
@@ -196,7 +196,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c6n8dn457ypko?at_medium=RSS&at_campaign=rss",
       "image": "",
       "is_recent": false,
-      "impact": "苹果管理层未给出折叠屏供需平衡日期；购买数码产品不宜按未经确认的供货预测安排预算。"
+      "impact": "折叠屏供应紧张与应用适配相关；小脚步 Android App 应覆盖折叠、分屏及动态尺寸测试。"
     },
     {
       "category": "digital",
@@ -207,7 +207,7 @@
       "url": "https://www.theverge.com/tech/1024915/apple-iphone-duo-supply-chain-constraints",
       "image": "",
       "is_recent": false,
-      "impact": "苹果财报称 iPhone 收入增长；对纳指科技股需区分硬件销售增长与 AI 投资回报。"
+      "impact": "苹果管理层未给出折叠屏供需平衡日期；购买数码产品不宜按未经确认的供货预测安排预算。"
     },
     {
       "category": "digital",
@@ -218,7 +218,7 @@
       "url": "https://www.theverge.com/tech/1024748/apple-q4-2026-iphone-sales-earnings",
       "image": "",
       "is_recent": false,
-      "impact": "美伊冲突出现新的袭击报道：能源风险可能影响通胀和科技股估值；先确认各方说法，不将初报写成定论。"
+      "impact": "苹果财报称 iPhone 收入增长；对纳指科技股需区分硬件销售增长与 AI 投资回报。"
     },
     {
       "category": "world",
@@ -229,7 +229,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&at_campaign=rss",
       "image": "",
       "is_recent": false,
-      "impact": "美国对卢旺达与南非贸易待遇变化可能影响相关供应链；关注正式政策文本和实施日期。"
+      "impact": "美伊冲突出现新的袭击报道：能源风险可能影响通胀和科技股估值；先确认各方说法，不将初报写成定论。"
     },
     {
       "category": "world",
@@ -240,7 +240,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&at_campaign=rss",
       "image": "",
       "is_recent": false,
-      "impact": "朝鲜否认币安攻击指控；涉及归因争议，应区分执法指控与被指方声明，插件更新器仍需保护签名密钥。"
+      "impact": "美国对卢旺达与南非贸易待遇变化可能影响相关供应链；关注正式政策文本和实施日期。"
     },
     {
       "category": "world",
@@ -250,7 +250,8 @@
       "published_at": "2026-11-03T01:23:03+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&at_campaign=rss",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "朝鲜否认币安攻击指控；涉及归因争议，应区分执法指控与被指方声明，插件更新器仍需保护签名密钥。"
     }
   ],
   "count": 22,
