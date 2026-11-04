@@ -155,17 +155,6 @@
     },
     {
       "category": "market",
-      "title": "科技股反弹出现板块轮动，不能视为全面企稳",
-      "summary": "11月3日市场评论关注科技股反弹与板块轮动；这属于分析人士观点，不是独立市场事实。",
-      "source": "CNBC",
-      "published_at": "2026-11-03T23:58:09+00:00",
-      "url": "https://www.cnbc.com/2026/11/03/jim-cramer-sees-signs-of-life-in-tech-stocks-but-not-from-the-usual-winners.html",
-      "image": "",
-      "is_recent": false,
-      "impact": "纳指 QDII 不宜依据单个评论员判断底部；应看科技权重股财报、现金流及指数整体广度。"
-    },
-    {
-      "category": "market",
       "title": "美国中期选举可能影响科技监管与市场预期",
       "summary": "11月3日市场分析讨论美国中期选举可能带来的财政、监管与市场变化；属于前瞻分析，非已公布的选举结果。",
       "source": "CNBC",
@@ -253,7 +242,7 @@
       "impact": "你关注纳指 QDII：反弹主要由 AI 权重股推动，并非普涨；结合苹果利润率压力和 AMD 财报观察盈利质量，避免根据一天上涨判断调整结束。"
     }
   ],
-  "count": 22,
+  "count": 21,
   "source_count": 13,
   "timezone": "Asia/Shanghai"
 }
