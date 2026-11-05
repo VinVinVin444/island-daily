@@ -1,252 +1,248 @@
 {
   "date": "2026-11-05",
-  "generated_at": "2026-11-05T02:56:54.386347+00:00",
-  "ai_generated": false,
-  "machine_translated": true,
-  "translation_complete": false,
+  "generated_at": "2026-11-05T04:03:00.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
   "demo": false,
   "items": [
     {
       "category": "obsidian",
-      "title": "Obsidian 1.15.1移动版（抢先体验）",
-      "summary": "包括Obsidian Desktop v1.15.1之前的所有新功能和错误修复。新添加了Web查看器核心插件。在设置中打开“打开外部链接”后，指向网页的链接将在应用内浏览器中打开，该浏览器会向上滑过您的笔记。Android ：添加了显示备注内容的查看备注主屏幕小部件，取代了打开备注小部件。iOS ：在快速捕获主屏幕小部件中添加了Obsidian磁贴。改进管理…",
+      "title": "Obsidian 1.15.1 移动抢先版：安卓笔记小组件与内置网页浏览器",
+      "summary": "官方新增 Web viewer 核心插件；Android 的 View note 小组件可显示笔记内容，iOS 增加 Quick Capture 磁贴，并改进插件启动和库管理。",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-11-03T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
       "image": "",
       "is_recent": true,
-      "impact": "你的五件套在手机 Obsidian 内运行，但官方桌面小组件并非第三方插件任意创建的接口；可借鉴「显示笔记摘要」设计，别承诺插件可直接生成安卓系统小组件。"
+      "impact": "手机端五件套应测试侧边栏及启动兼容性；官方系统小组件不代表第三方插件已获得任意创建 Android 小组件的 API。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 1.15.1台式机（抢先体验）",
-      "summary": "搜索添加的相关性排序选项，根据查询的最佳匹配对笔记进行排序。其他视图（例如反向链接、轮廓和书签）中的搜索和搜索过滤器现在会忽略口音，因此咖啡馆会查找咖啡馆。搜索和建议现在将ø、ł、đ、ð、钚和ı视为o、l、d、d、h和i ，将ß、æ、œ和Þ视为ss、ae、oe和th ，这有助于德语、法语、丹麦语、挪威语、波兰语、克罗地亚语、塞尔维亚语、越南语、Ic……",
+      "title": "Obsidian 1.15.1 桌面抢先版：搜索相关性与大库体验优化",
+      "summary": "官方新增搜索结果相关性排序，并改进字符匹配、部分大型库及 Canvas 交互体验；属于 Catalyst 抢先体验更新。",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-11-03T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
       "image": "",
       "is_recent": true,
-      "impact": "对「我的小岛」应区分官方 Canvas 加速与自绘 Canvas；测试插件数据迁移、URI 回调、启动时加载和大库性能，尤其不要依赖旧 data.json 自动带入设置。"
+      "impact": "A-Home 应测试大库加载和搜索体验；官方 Canvas 的优化不等于「我的小岛」自绘画布自动加速。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian2026年10月",
-      "summary": "O_O回来了！每年10月，Obsidian社区都会将“我应该做到这一点”转变为“我做到了！“无论您是在修补插件、主题、保管库、指南还是视频，这个月都是您完成和分享的月份。今年，Obsidian团队也将致力于我们自己的项目，这是一项我们称之为Obsidian状态的新调查。以Obsidian现状调查为例5月，我们推出了新的Obsidian社区，从那时起， NU…",
+      "title": "历史回顾｜Obsidian October 2026 社区活动",
+      "summary": "官方于10月1日介绍十月社区创作活动及年度用户调查；这不是11月5日的新公告。",
       "source": "Obsidian 官方博客",
       "published_at": "2026-10-01T00:00:00+00:00",
       "url": "https://obsidian.md/blog/2026-obsidian-october/",
       "image": "",
       "author": "silver",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "可参考社区活动推广付费插件教程，但不要把旧活动宣传当成近期产品政策变化。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian插件的未来",
-      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自2020年Obsidian API发布以来，我们令人惊叹的社区已经创建了4,000多个插件和主题。令人难以置信的是， Obsidian插件的总下载量已经超过了1.2亿次！我们的目标是让任何人都能轻松安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "title": "历史政策｜CEO 讨论 Obsidian 插件未来",
+      "summary": "CEO Steph Ango 于2026年5月12日讨论插件目录、自动审核、付费披露和闭源插件限制；本文为历史政策，不是本日公告。",
       "source": "Obsidian 官方博客",
       "published_at": "2026-05-12T00:00:00+00:00",
       "url": "https://obsidian.md/blog/future-of-plugins/",
       "image": "",
       "author": "kepano（CEO）",
       "is_recent": true,
-      "impact": "A-Home 现有付费插件继续核对 Release 源码标签、审核构建一致性和付费披露；新插件上架政策应以官方当前规则为准。"
+      "impact": "新旧付费插件应分别核对上架政策；继续修复 A-Home Release 构建可验证性和收费信息披露。"
     },
     {
       "category": "obsidian",
-      "title": "1.15.0",
-      "summary": "https://obsidian.md/changelog/2026-11-02-desktop-v1.15.0/",
+      "title": "Obsidian 1.15.0 已正式发行（11月2日）",
+      "summary": "GitHub 官方发行记录确认 v1.15.0 正式版；具体功能包括 Pele 图表与 Bases 筛选器排序，日期为11月2日。",
       "source": "Obsidian GitHub 发行记录",
       "published_at": "2026-11-02T15:39:05+00:00",
       "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.15.0",
       "image": "",
       "author": "lishid",
       "is_recent": true,
-      "impact": "用稳定版 1.15.0 做五件套兼容性回归，优先排查 Pele 样式、编辑器扩展及启动过程。"
+      "impact": "五件套回归测试应以稳定版 1.15.0 为基准，并另测 1.15.1 抢先版。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
-      "summary": "正在进行：Accent-insensitive search、Android Quick Capture、Background Sync on mobile、Date picker、Obsidian for Work；计划中：Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：Accent-insensitive search、Android Quick Capture、Background Sync on mobile、Date picker。 移出旧列表：Improved Mermaid diagrams、Mobile PDF export、iOS Voice Capture、Background Sync on mobile。",
+      "title": "路线图观察｜移动后台同步、Bases 日历仍非正式发布",
+      "summary": "11月3日自动观察记录路线图状态：Android Quick Capture、移动端后台同步等在进行中；Bases 日历、Canvas Publish 等仍属计划。观察时间不等于发布日期。",
       "source": "Obsidian 官方路线图（自动观察）",
       "published_at": "2026-11-03T03:46:23.846164+00:00",
       "date_kind": "observed",
       "url": "https://obsidian.md/roadmap/",
       "image": "",
       "is_recent": true,
-      "impact": "你的移动同步设计不要押注尚未上线的后台同步；「我的梦幻岛」维持独立 Three.js 架构，暂不围绕 Publish Canvas 重构。"
+      "impact": "不要为尚未上线的后台同步或 Canvas Publish 提前重构「我的梦幻岛」架构。"
     },
     {
       "category": "ai",
-      "title": "OpenAI收购Pierre Computer Company, Inc.",
-      "summary": "OpenAI将收购Pierre Computer Company ，扩展Codex用于构建、理解和审查代码的工具。",
+      "title": "OpenAI 宣布拟收购 Pierre，增强 Codex 代码审查工具",
+      "summary": "11月4日 OpenAI 宣布拟收购 Pierre；其 Trees、Diffs 库已用于 Codex 的文件浏览和差异审查，交易尚待交割及监管批准。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-04T14:30:00+00:00",
       "url": "https://openai.com/index/openai-to-acquire-pierre",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "你常用 Codex 多会话改插件，后续可关注更顺畅的差异审查；当前仍应坚持 Git 分支和人工审查。"
     },
     {
       "category": "ai",
-      "title": "少一千条根路径",
-      "summary": "OpenAI构建了一个自主管道，该管道发现、验证并生成了Linux内核中948个本地权限提升漏洞的补丁。",
+      "title": "OpenAI 披露 Linux 内核自动漏洞研究：验证948项本地提权利用",
+      "summary": "官方披露受控研究中自动复现1724个漏洞并生成948个可工作的本地提权利用及候选补丁；成果需维护者进一步审查，并非948项已全部修复。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-04T08:00:00+00:00",
       "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "插件授权与更新器可借鉴‘发现—复现—补丁—人工复核’流程，切勿将 AI 扫描结果直接自动上线。"
     },
     {
       "category": "ai",
-      "title": "Daybreak Red现已在AWS GovCloud （美国东部）中提供",
-      "summary": "Daybreak Red通过Amazon Bedrock将GPT-5.6 Cyber带给AWS GovCloud （美国东部）的批准客户，以进行授权的网络安全工作。",
+      "title": "OpenAI 网络安全模型通过 AWS GovCloud 提供给获批客户",
+      "summary": "官方宣布 Daybreak Red 经 Amazon Bedrock 向 AWS GovCloud 美国东部区域获批客户提供 GPT-5.6 Cyber，用于授权网络防御工作。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-04T07:00:00+00:00",
       "url": "https://openai.com/index/daybreak-red-aws-govcloud",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "这不是个人 Codex 额度更新；你当前的插件安全审查仍可采用普通静态扫描和测试。"
     },
     {
       "category": "ai",
-      "title": "Dharma Field Extractor ：任何文档输入， JSON中的结构化字段输出",
-      "summary": "",
+      "title": "Dharma 发布文档结构化字段提取工具",
+      "summary": "Dharma AI 介绍从多种文档提取结构化 JSON 字段的工具与方法，属于第三方技术文章。",
       "source": "Hugging Face",
       "published_at": "2026-11-04T17:50:10+00:00",
       "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "可借鉴结构化字段提取处理插件说明书或项目记录，但应先评估准确率与数据隐私。"
     },
     {
       "category": "dev",
-      "title": "CodeQL 2.27.4提高了准确性和查询元数据",
-      "summary": "CodeQL是GitHub代码扫描背后的静态分析引擎，它可以发现并修复代码中的安全问题。我们最近发布了CodeQL 2.27.4 ，在几个方面提高了查询准确性…… CodeQL 2.27.4提高了准确性，查询元数据首次出现在GitHub博客上。",
+      "title": "GitHub 发布 CodeQL 2.27.4，改善安全扫描准确率",
+      "summary": "官方更新减少部分 Java、Rust、C/C++ 误报，并修正多语言查询元数据和 CodeQL CLI 输出行为。",
       "source": "GitHub Changelog",
       "published_at": "2026-11-04T20:04:52+00:00",
       "url": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "A-Home 的 CI 可增加 TypeScript 静态安全检查；此版本不直接解决 Release SHA 不一致。"
     },
     {
       "category": "dev",
-      "title": "GitHub Copilot现已在Xcode的编码助手中提供",
-      "summary": "您现在可以直接在Xcode的内置编码助手中使用GitHub Copilot ，将Copilot引入您的本机Xcode工作流程中。集成现在处于公开预览状态，从...开始…… GitHub Copilot的帖子现在可以在Xcode的编码助手中找到，最初出现在GitHub博客上。",
+      "title": "GitHub Copilot 接入 Xcode 内置编程助手（公开预览）",
+      "summary": "GitHub 宣布 Copilot 可以在 Xcode 内置 Coding Assistant 中使用，目前为公开预览。",
       "source": "GitHub Changelog",
       "published_at": "2026-11-04T19:10:40+00:00",
       "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "你主要使用 Windows、TS 和 Android 工具链，无需为此迁移开发环境。"
     },
     {
       "category": "dev",
-      "title": "查看客服代表，设置条款：为个人客服代表提供新的可见性和控制",
-      "summary": "个人人工智能代理改变了用户与网络交互的方式，模糊了自动流量和人流量之间的界限。了解Cloudflare如何为网站所有者提供可见性和控制权限，以管理个人代理访问权限。",
+      "title": "Cloudflare 推出个人 AI 代理访问可见性与控制思路",
+      "summary": "Cloudflare 介绍网站如何识别个人代理访问并为站长提供访问控制能力；这是网站代理治理，不是 Obsidian 官方接口。",
       "source": "Cloudflare Blog",
       "published_at": "2026-11-04T14:00:00+00:00",
       "url": "https://blog.cloudflare.com/personal-agents-visibility-control/",
-      "image": "https://blog.cloudflare.com/_emdash/api/media/file/01M6HZ1ZE3ZTGF9NEGGPF8SZNS.png",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "岛屿晨报站点应保持只读公开新闻与写入鉴权分离，不要把轻量前端密钥误当作真正的服务器访问控制。"
     },
     {
       "category": "market",
-      "title": "特朗普媒体股票在中期选举后跌至创纪录低点",
-      "summary": "在民主党人在中期选举中大幅上涨之后，特朗普媒体与技术集团的股票每天暴跌24%。",
+      "title": "美国中期选举后特朗普媒体股价下跌",
+      "summary": "11月4日媒体报道特朗普媒体股价在选举结果公布后承压；属于个股波动，不代表纳指整体走势。",
       "source": "NYT Business",
       "published_at": "2026-11-04T22:37:45+00:00",
       "url": "https://www.nytimes.com/2026/11/04/business/trump-media-truth-social-midterm-elections.html",
-      "image": "https://static01.nyt.com/images/2026/11/04/multimedia/04biz-trump-media-02-gkwh/04biz-trump-media-02-gkwh-mediumSquareAt3X.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "你的纳指 QDII 关注应以指数权重和科技巨头财报为主，避免被政治主题小盘股干扰。"
     },
     {
       "category": "market",
-      "title": "SNAP股价因第三季度营收下滑而下跌超过10%",
-      "summary": "周三公布的第三季度收益中， Snap的收入和每日活跃用户均出现下滑。",
+      "title": "Snap 第三季度业绩后股价下跌",
+      "summary": "CNBC 报道 Snap 第三季度收入与日活表现不佳，股价出现明显下跌。",
       "source": "CNBC",
       "published_at": "2026-11-05T00:14:47+00:00",
       "url": "https://www.cnbc.com/2026/11/04/snap-q3-earnings-report-2026.html",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "广告平台增长分化可作为科技股观察信号，但 Snap 权重有限，不应单独用于判断纳指方向。"
     },
     {
       "category": "market",
-      "title": "随着民主党人改变对国会的控制，股市上涨",
-      "summary": "由于投资者预见到华盛顿将陷入僵局，市场交易走高，这通常是一个看涨的信号。",
+      "title": "美国中期选举后华尔街反弹，纳指收涨",
+      "summary": "路透社11月4日报道：民主党赢得国会两院后，美股收高，纳指约涨1.4%、标普500约涨1.6%、道指约涨3%；不同科技细分板块走势分化。",
       "source": "NYT Business",
       "published_at": "2026-11-04T21:40:19+00:00",
       "url": "https://www.nytimes.com/2026/11/04/business/midterm-elections-stock-market.html",
-      "image": "https://static01.nyt.com/images/2026/11/03/multimedia/03biz-midterms-stocks-mjvc/03biz-midterms-stocks-mjvc-mediumSquareAt3X.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 不能只看大盘反弹：半导体与数据中心运营商仍承压，应分别观察现金流和估值。"
     },
     {
       "category": "market",
-      "title": "超大规模企业和苹果在选举结果消除投资者不确定性后激增",
-      "summary": "苹果、亚马逊、谷歌、Meta和微软股价在中期结束后上涨，而与特朗普顾问埃隆·马斯克(Elon Musk)和数据中心相关的股票周三下跌。",
+      "title": "大型科技股因选举结果上涨，数据中心股票分化",
+      "summary": "11月4日多家大型科技公司股价走强，投资者预期数据中心扩张受限可能提升现有算力资产价值；部分负债较高的基础设施企业反而下跌。",
       "source": "CNBC",
       "published_at": "2026-11-04T19:37:43+00:00",
       "url": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "观察 AI 投资回报时要区分现金充足的平台公司和依赖借贷扩张的数据中心运营商。"
     },
     {
       "category": "digital",
-      "title": "随着智能手机销量下滑，高通正大举押注数据中心",
-      "summary": "与2025年相比，智能手机销量下降了约20% ，高通正在寻求数据中心来帮助提升利润。在2026年第四季度的财报电话会议上，该公司制定了计划，通过与亚马逊和Meta等公司的合作，在人工智能数据中心业务中大放异彩[…]",
+      "title": "高通加码数据中心业务以降低手机市场依赖",
+      "summary": "The Verge 报道高通在智能手机市场承压背景下寻求数据中心增长，相关计划仍需看实际产品与客户落地。",
       "source": "The Verge",
       "published_at": "2026-11-04T22:42:15+00:00",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
       "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "digital",
-      "title": "谷歌Pixel 11手机最高可享27%折扣",
-      "summary": "在11月8日之前，您可以在Google的Pixel 11手机上节省大量资金，无论您想要的是最便宜的Pixel 11 ，还是拍摄更好照片的稍贵的Pixel 11 Pro。即使是配备更耐用电池的大型Pixel 11 Pro XL ，其原价也比原价低了数百英镑。Pixel 11 […]",
-      "source": "The Verge",
-      "published_at": "2026-11-04T19:00:00+00:00",
-      "url": "https://www.theverge.com/gadgets/1025370/google-pixel-11-pro-phone-deal-sale",
-      "image": "",
-      "is_recent": false
-    },
-    {
-      "category": "digital",
-      "title": "我如何学会爱上令人讨厌的手机握把",
-      "summary": "就像一个很棒的食谱一样，它始于一块黄油。这不是真正的黄油；这是朋友的新手机手柄，还有一个带有大胆条纹的手机壳。黄油现在很流行，或者至少是一个12岁的孩子几个月前告诉我的。这块黄油被标记为[…]",
-      "source": "The Verge",
-      "published_at": "2026-11-04T21:30:00+00:00",
-      "url": "https://www.theverge.com/tech/1026743/bright-colorful-phone-grip-case",
-      "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "你关注本地 AI 与硬件，但短期购机仍以现有显卡显存、性能和价格为准。"
     },
     {
       "category": "world",
-      "title": "万斯用严厉的选举批评来批评特朗普指责伊朗战争",
-      "summary": "副总统对共和党选举失败的直言不讳的评估标志着最近记忆中与现任总统最尖锐的突破之一。",
+      "title": "美国中期选举后，万斯批评选举表现与伊朗战争争议",
+      "summary": "BBC 11月5日报道美国政界围绕中期选举结果与伊朗战争责任出现公开争论；政治评论不等于正式政策变化。",
       "source": "BBC Top Stories",
       "published_at": "2026-11-05T02:48:14+00:00",
       "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5a90/live/459aef00-d8c3-11f1-ab60-f74c593b560a.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "美国政策不确定性可能影响纳指风险偏好，但不宜直接据此判断指数涨跌。"
     },
     {
       "category": "world",
-      "title": "克里斯·梅森：美国大选将改变特朗普--伯纳姆将如何应对？",
-      "summary": "英国政府面临的一个大问题是，国内的失败是否会使特朗普总统在国外变得更加愤怒？",
+      "title": "美国中期选举改变国会权力格局",
+      "summary": "BBC 11月4日分析选举结果将如何影响特朗普政府的政策推进；分析文章应与正式立法结果区分。",
       "source": "BBC Top Stories",
       "published_at": "2026-11-04T21:02:58+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c615j8pw1y81o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f93b/live/eda3b1f0-d8be-11f1-81c3-ed825029a92b.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "关注科技监管、AI 数据中心审批与财政政策的实际变化，而非只凭选举标题调整 QDII 计划。"
     },
     {
       "category": "world",
-      "title": "英国承诺就奴隶制道歉进行“有时限”的谈判",
-      "summary": "克里斯·梅森（ Chris Mason ）写道，安迪·伯纳姆（ Andy Burnham ）签署了一项更广泛的程序，以解决跨大西洋奴隶贸易的“历史危害”。",
+      "title": "英国拟就奴隶制历史道歉问题开展限期谈判",
+      "summary": "BBC 11月5日报道英国承诺就奴隶制历史道歉相关议题进行有时限的谈判；谈判不代表已达成赔偿协议。",
       "source": "BBC Top Stories",
       "published_at": "2026-11-05T02:17:18+00:00",
       "url": "https://www.bbc.co.uk/news/articles/cqdr872jkk7vo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d167/live/fa72efc0-d8b6-11f1-aa81-e1435663d61c.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "属于国际政策议题，对当前插件开发和纳指配置没有可确认的直接影响，不应强行解读为投资信号。"
     }
   ],
-  "count": 23,
+  "count": 21,
   "source_count": 18,
   "timezone": "Asia/Shanghai"
 }
