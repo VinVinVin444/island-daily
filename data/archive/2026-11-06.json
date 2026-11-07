@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T12:10:00+08:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "market",
+      "title": "纳指11月5日暴跌5.52%，进入技术性回调",
+      "summary": "纳斯达克综合指数收于约24315点，单日跌5.52%；标普500跌4.36%至7353.73，道指跌3.44%。市场担忧AI数据中心扩张面临监管及回报压力。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "纳指QDII短期波动显著扩大；不要把这次跌幅简单当作低估信号，应观察AI资本开支预期与风险承受能力。"
+    },
+    {
+      "category": "market",
+      "title": "半导体指数单日下跌逾12%，英伟达跌逾9%",
+      "summary": "11月5日AI芯片及数据中心相关股票遭集中抛售，费城半导体指数跌逾12%，英伟达跌逾9%。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "AI算力投资链的估值弹性高于大盘，观察芯片订单、监管变化和现金流，避免用单日走势推断长期需求。"
+    },
+    {
+      "category": "market",
+      "title": "IREN延后部分微软AI基础设施交付并计划巨额投入",
+      "summary": "因网络设计调整及供应商进度，IREN部分对微软交付延后；公司计划本财年余下时间约150亿美元资本开支。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/technology/neocloud-firm-iren-tops-quarterly-revenue-estimates-shares-jump-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "AI基础设施项目有交付和融资风险，分析纳指相关企业时需区分已实现收入与未来合同承诺。"
+    },
+    {
+      "category": "ai",
+      "title": "研究称Anthropic模型任务能力进步速度可能加快",
+      "summary": "METR研究估计Anthropic模型在所测任务上的进步速度较此前约快1.9倍，但研究者强调估计高度不确定，AI仍无法自主完成所有关键模型研发阶段。",
+      "source": "路透社 / METR研究报道",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/technology/anthropics-models-improving-nearly-twice-fast-with-help-ai-study-finds-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Codex辅助开发可能继续迅速变化；大型插件仍需AGENTS规则、源码地图和自动化测试，不能把能力增长等同于可靠交付。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub推出新版Pull Request总览页公开预览",
+      "summary": "GitHub于11月5日宣布新版Pull Request总览页面进入公开预览，改善代码协作入口。",
+      "source": "GitHub官方更新日志",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://github.blog/changelog/",
+      "image": "",
+      "is_recent": true,
+      "impact": "多个Codex工作分支可借助PR总览统一审核，但不应直接将自动生成的代码合并到插件发布分支。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub增强Secret Scanning检测并增加合作伙伴",
+      "summary": "GitHub于11月5日公布Secret Scanning检测能力升级，并新增合作伙伴；具体支持范围以官方更新说明为准。",
+      "source": "GitHub官方更新日志",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://github.blog/changelog/",
+      "image": "",
+      "is_recent": true,
+      "impact": "为插件授权及晨报仓库开启密钥扫描；公开news.json只保留新闻与公开影响分析，不写Token或Worker密码。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1移动抢先版：Android笔记内容小组件",
+      "summary": "11月3日Catalyst版本新增Web viewer核心插件、Android View note桌面小组件与iOS Quick Capture磁贴；不是11月6日新发布。",
+      "source": "Obsidian官方Changelog（历史版本）",
+      "published_at": "2026-11-03T00:00:00+08:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "官方Android组件不等于第三方插件拥有任意系统组件API；五件套应测试移动侧边栏和启动兼容性。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1桌面抢先版优化搜索和启动",
+      "summary": "11月3日Catalyst桌面版本增加相关性排序并改善大型笔记库搜索、索引和阅读性能；非今日新版本。",
+      "source": "Obsidian官方Changelog（历史版本）",
+      "published_at": "2026-11-03T00:00:00+08:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home应在大库测试任务检索及插件启动；内置Canvas优化不会自动加速小岛自绘Canvas。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian官方路线图：仅作11月6日状态观察",
+      "summary": "官方路线图用于观察计划与进行中项目，未给出统一交付日期；本条为状态快照而非今日新公告。",
+      "source": "Obsidian官方路线图（2026-11-06观察）",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Bases与Canvas相关计划不应被当成已开放API；我的梦幻岛继续保持独立Three.js架构。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件政策：历史文章，非今日更新",
+      "summary": "CEO Steph Ango此前的插件战略文章涉及审核、收费披露及闭源插件政策；需以原文发布日期为准，不能作为新发布消息。",
+      "source": "Obsidian官方博客（历史政策）",
+      "published_at": "2026-05-12T00:00:00+08:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五款付费插件应优先解决Release可复现构建和源码tag校验，不把论坛讨论当成官方政策放宽。"
+    },
+    {
+      "category": "digital",
+      "title": "约60万颗英伟达H200芯片据报滞留香港等待进口批准",
+      "summary": "路透社称约60万颗H200芯片等待进入中国大陆的审批；报道涉及供应链和监管情况，非英伟达正式交付公告。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/world/china/nvidia-chips-pile-up-hong-kong-china-withholds-import-approval-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "本地AI显卡选购需区分消费级显卡与数据中心H200，后者供应消息不能直接推导二手2080Ti价格。"
+    },
+    {
+      "category": "world",
+      "title": "第九届中国国际进口博览会在上海开幕",
+      "summary": "11月5日第九届进博会开幕，背景是全球贸易失衡及中国扩大进口与市场开放的讨论。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-largest-import-expo-opens-shanghai-amid-record-trade-imbalances-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可观察国内消费和数码供应链合作机会，但意向签约金额不等于已经实现的订单或收入。"
+    },
+    {
+      "category": "world",
+      "title": "中国表示扩大美国农产品采购取决于对等关税安排",
+      "summary": "中方表示愿扩大美国农产品采购，但强调双方落实对等关税减让；相关采购方案尚未最终落实。",
+      "source": "路透社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/world/china/china-ties-more-us-farm-imports-reciprocal-tariff-cuts-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "贸易政策变化可能影响汇率与市场风险偏好，纳指QDII观察时应区分政策表态与已实施措施。"
+    },
+    {
+      "category": "world",
+      "title": "中国对马兴瑞提起受贿公诉",
+      "summary": "新华社经路透社报道，中国检方对前政治局委员马兴瑞以涉嫌受贿提起公诉；这是起诉阶段，非终审定罪。",
+      "source": "路透社 / 新华社",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "url": "https://www.reuters.com/world/china/china-indicts-ex-politburo-member-ma-bribery-2026-11-05/",
+      "image": "",
+      "is_recent": true,
+      "impact": "属于国内重大政治司法新闻，对插件开发没有直接技术影响，不应牵强套用投资结论。"
+    }
+  ],
+  "count": 14,
+  "source_count": 7,
+  "timezone": "Asia/Shanghai"
+}
