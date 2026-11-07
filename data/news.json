@@ -1,262 +1,223 @@
 {
   "date": "2026-11-07",
-  "generated_at": "2026-11-07T02:27:10.379028+00:00",
-  "ai_generated": false,
-  "machine_translated": true,
-  "translation_complete": false,
+  "generated_at": "2026-11-07T04:04:20.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
   "demo": false,
   "items": [
     {
       "category": "obsidian",
-      "title": "Obsidian 1.15.1 移动版（抢先体验）",
-      "summary": "包括 Obsidian Desktop v1.15.1 之前的所有新功能和错误修复。新增 添加了 Web 查看器核心插件。在其设置中打开“打开外部链接”后，网页链接将在应用程序内浏览器中打开，该浏览器会在笔记上向上滑动。 Android：添加了“查看笔记”主屏幕小部件，用于显示笔记的内容，取代了“打开笔记”小部件。 iOS：在快速捕获主屏幕小部件中添加了Obsidian图块。改进管理...",
+      "title": "Obsidian 1.15.1 移动抢先版：Android 笔记小组件与内置网页浏览",
+      "summary": "11月3日官方抢先体验版增加 Web viewer 核心插件；Android 的 View note 小组件可直接显示笔记内容；手机侧边栏及插件启动流程亦有调整。",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-11-03T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
       "image": "",
       "is_recent": true,
-      "impact": "官方Android组件不等于第三方插件拥有任意系统组件API；五件套应测试移动侧边栏和启动兼容性。"
+      "impact": "应测试五件套的移动端侧边栏 CSS 与启动行为；官方小组件不等于开放第三方桌面小组件 API。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 1.15.1 桌面版（抢先体验）",
-      "summary": "搜索 添加了相关性排序选项，可根据查询的最佳匹配对注释进行排序。其他视图（例如反向链接、大纲和书签）中的搜索和搜索过滤器现在会忽略重音符号，因此咖啡馆会找到咖啡馆。搜索和建议现在将 ø 、 ł 、 đ 、 ð 、 ħ 和 ı 视为 o 、 l 、 d 、 d 、 h 和 i ，并将 ß 、 æ 、 œ 和 þ 视为 ss 、 ae 、 oe 和 th ，这有助于德语、法语、丹麦语、挪威语、波兰语、克罗地亚语、塞尔维亚语、越南语、Ic…",
+      "title": "Obsidian 1.15.1 桌面抢先版优化搜索",
+      "summary": "11月3日官方抢先体验版加入搜索相关性排序，改进多语言字符匹配及大型笔记库体验。",
       "source": "Obsidian 官方更新日志",
       "published_at": "2026-11-03T00:00:00+00:00",
       "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
       "image": "",
       "is_recent": true,
-      "impact": "A-Home应在大库测试任务检索及插件启动；内置Canvas优化不会自动加速小岛自绘Canvas。"
+      "impact": "A-Home 应在大型笔记库验证任务检索与启动性能；不能将官方 Canvas 优化等同于自绘画布加速。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 2026 年 10 月",
-      "summary": "O_O回来了！每年十月，Obsidian社区都会将“我应该做到这一点”变成“我做到了！”无论您一直在修改插件、主题、库、指南还是视频，这个月都是您完成并分享它的时候。今年，Obsidian团队还将开展我们自己的项目，这是一项我们称之为“Obsidian状态”的新调查。进行Obsidian现状调查 五月份，我们推出了新的Obsidian社区，从那时起，新的……",
-      "source": "Obsidian 官方博客",
-      "published_at": "2026-10-01T00:00:00+00:00",
-      "url": "https://obsidian.md/blog/2026-obsidian-october/",
-      "image": "",
-      "author": "silver",
-      "is_recent": true
-    },
-    {
-      "category": "obsidian",
-      "title": "Obsidian插件的未来",
-      "summary": "今天，我们很高兴推出Obsidian社区，这是Obsidian插件和主题的新目录和开发人员仪表板。自 2020 年 Obsidian API 发布以来，我们出色的社区已经创建了 4,000 多个插件和主题。令人难以置信的是，Obsidian 插件的总下载量已超过 1.2 亿！我们的目标是让任何人都能轻松、安全地构建、分发、发现和使用插件和主题。今天的发布会是……",
+      "title": "Obsidian CEO 讨论付费插件与审核制度（历史政策）",
+      "summary": "2026年5月12日发布的官方战略文章讨论社区插件目录、付费类别、审核及闭源插件政策；本条为历史背景，非11月新政策。",
       "source": "Obsidian 官方博客",
       "published_at": "2026-05-12T00:00:00+00:00",
       "url": "https://obsidian.md/blog/future-of-plugins/",
       "image": "",
-      "author": "kepano（CEO）",
       "is_recent": true,
-      "impact": "五款付费插件应优先解决Release可复现构建和源码tag校验，不把论坛讨论当成官方政策放宽。"
+      "impact": "五款付费插件应优先核对公开 Release 的源码 tag、构建产物和收费披露。"
     },
     {
       "category": "obsidian",
-      "title": "Obsidian 1.15.0 贬低了 es5 语法，例如旧类没有提及变更日志",
-      "summary": "仍然有一些旧插件使用 es5 作为目标，而 obsidian 1.15 使用新的 es6 语法会导致问题。大多数存在此问题的插件都没有维护，导致它们无法工作。我不确定解决方案是什么，如果这不是有意的，要么恢复到 es5，要么通知每个插件/让某人接管该插件。 1 篇文章 - 1 名参与者 阅读完整主题",
+      "title": "社区报告：Obsidian 1.15 与旧 ES5 插件存在兼容问题",
+      "summary": "11月5日开发者论坛用户报告，部分以 ES5 为目标的旧插件在 1.15 版本中可能无法正常工作；尚无官方确认的普遍性结论或修复承诺。",
       "source": "Obsidian 开发者论坛·社区讨论",
       "published_at": "2026-11-05T23:33:15+00:00",
       "url": "https://forum.obsidian.md/t/obsidian-1-15-0-depreciates-es5-syntax-e-g-the-old-classes-without-mentioning-it-changelog/121657",
       "image": "",
-      "author": "superle3",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "检查五件套 esbuild 编译目标与运行兼容性；不要将单个社区报告写成官方破坏性变更。"
     },
     {
       "category": "obsidian",
-      "title": "1.15.0",
-      "summary": "https://obsidian.md/changelog/2026-11-02-desktop-v1.15.0/",
-      "source": "Obsidian GitHub 发行记录",
-      "published_at": "2026-11-02T15:39:05+00:00",
-      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.15.0",
-      "image": "",
-      "author": "lishid",
-      "is_recent": true
-    },
-    {
-      "category": "obsidian",
-      "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
-      "summary": "正在进行：Accent-insensitive search、Android Quick Capture、Background Sync on mobile、Date picker、Obsidian for Work；计划中：Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：Accent-insensitive search、Android Quick Capture、Background Sync on mobile、Date picker。 移出旧列表：Improved Mermaid diagrams、Mobile PDF export、iOS Voice Capture、Background Sync on mobile。",
+      "title": "Obsidian 官方路线图状态观察（非发布日期）",
+      "summary": "11月3日自动观察：官方路线图列有移动后台同步、Android Quick Capture、Bases 日历视图、Canvas Publish 等不同阶段项目；路线图不保证交付时间。",
       "source": "Obsidian 官方路线图（自动观察）",
       "published_at": "2026-11-03T03:46:23.846164+00:00",
       "date_kind": "observed",
       "url": "https://obsidian.md/roadmap/",
       "image": "",
       "is_recent": true,
-      "impact": "Bases与Canvas相关计划不应被当成已开放API；我的梦幻岛继续保持独立Three.js架构。"
+      "impact": "Bases/Canvas 计划不代表开放了第三方 API；我的梦幻岛继续保持独立 Three.js 架构。"
     },
     {
       "category": "ai",
-      "title": "与 Hacktron 合作寻找 OpenAI 系统中的漏洞",
-      "summary": "OpenAI 正在与 Hacktron 合作，寻找漏洞、测试与第三方服务的连接，并利用前沿人工智能加强防御。",
+      "title": "OpenAI 与 Hacktron 合作测试跨服务安全漏洞",
+      "summary": "11月6日 OpenAI 宣布与 Hacktron 合作，对系统与第三方服务的交互边界进行安全测试，并扩大研究者使用前沿模型的范围。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-06T08:00:00+00:00",
       "url": "https://openai.com/index/partnering-with-hacktron",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "检查插件激活云函数与第三方服务的授权边界；密钥、设备信息和更新流程应分开审查。"
     },
     {
       "category": "ai",
-      "title": "ToyBlocks：用于机器人学习和评估的受控世界",
-      "summary": "",
+      "title": "Ai2 发布 ToyBlocks 机器人学习模拟环境",
+      "summary": "11月6日 Ai2 介绍开源 ToyBlocks，利用机械臂和积木构建可控模拟任务，自动生成演示数据以评估机器人规划与动作能力。",
       "source": "Hugging Face",
       "published_at": "2026-11-06T14:00:48+00:00",
       "url": "https://huggingface.co/blog/allenai/toyblocks",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "梦幻岛动物生态可借鉴‘高层任务规划—低层动作执行’分层方式，但无需引入重型机器人训练框架。"
     },
     {
       "category": "ai",
-      "title": "GPT-6 Cyber​​：推进一致的网络安全代理的前沿",
-      "summary": "隆重推出 GPT-6 Cyber​​，这是 OpenAI 的网络安全模型，用于查找可利用的漏洞并开发修复程序，并经过培训以保持在授权范围内。",
+      "title": "GPT-6 Cyber 聚焦授权范围内的安全研究（11月5日）",
+      "summary": "OpenAI 于11月5日介绍 GPT-6 Cyber，用于漏洞验证和候选修复；官方公布了安全基准与授权范围遵守测试结果，受限安全能力不等于普通 Codex 已开放。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-05T09:00:00+00:00",
       "url": "https://openai.com/index/introducing-gpt-6-cyber",
       "image": "",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "可参考其‘限定测试范围—验证漏洞—人工审查补丁’流程，审计插件授权和更新器，不应假设个人账户已获得该模型。"
     },
     {
       "category": "ai",
-      "title": "衡量人工智能代理如何处理日常湿实验室科学",
-      "summary": "OpenAI 推出了 BioBasicsBench，这是一个包含 100 项任务的基准测试，用于衡量 AI 代理解释原始实验数据和处理日常湿实验室科学的能力。",
+      "title": "OpenAI 发布 BioBasicsBench 实验室任务基准",
+      "summary": "11月6日 OpenAI 介绍用于评估 AI 代理处理日常湿实验室数据和任务的 BioBasicsBench；该研究不代表新编程模型上线。",
       "source": "OpenAI 官方",
       "published_at": "2026-11-06T00:00:00+00:00",
       "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
       "image": "",
-      "is_recent": true
+      "is_recent": true,
+      "impact": "评估 AI 编程工具时应使用实际项目构建通过率和返工率，避免把跨领域基准成绩直接等同于插件开发能力。"
     },
     {
       "category": "dev",
-      "title": "GitHub Copilot 每周发布 — 11 月 2 日",
-      "summary": "本周，Copilot 推出了 JetBrains Air 和 Xcode 的编码助手，并进行了更新，可帮助您管理拉取请求、设置和代理会话。 GitHub Copilot 应用程序设置代理合并...GitHub Copilot 每周发布 — 11 月 2 日的帖子首先出现在 GitHub 博客上。",
+      "title": "GitHub 汇总 Copilot 新功能：多会话与审查体验改进",
+      "summary": "11月6日 GitHub 周报介绍 Copilot App 的 PR 审查、上下文压缩、会话管理和辅助授权，以及 CLI 设置页和 VS Code 代理更新。",
       "source": "GitHub Changelog",
       "published_at": "2026-11-06T21:00:26+00:00",
       "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "多 Codex 对话应采用独立工作树、变更审查与自动化测试；可以借鉴上下文压缩和会话隔离设计。"
     },
     {
       "category": "dev",
-      "title": "Copilot 影响仪表板添加了聊天和 VS Code 代理使用情况",
-      "summary": "Copilot 影响仪表板中的代理采用图表现在包括 Copilot 聊天和 VS Code 代理窗口，因此您可以查看九种 Copilot 体验的参与度。采用...后 Copilot 影响仪表板添加了聊天和 VS Code 代理使用情况，首先出现在 GitHub 博客上。",
+      "title": "GitHub Copilot 影响仪表板扩展代理使用统计",
+      "summary": "11月6日 GitHub 更新 Copilot 影响仪表板，将聊天与 VS Code 代理使用纳入采用情况统计；属于企业管理指标，不是个人订阅额度变更。",
       "source": "GitHub Changelog",
       "published_at": "2026-11-06T22:17:28+00:00",
       "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "若将来开发团队化的小脑袋，可借鉴任务使用统计；当前更应记录构建成功率而非单纯调用次数。"
     },
     {
       "category": "dev",
-      "title": "超越代码生成：代理工程开发人员指南",
-      "summary": "编写代码变得更快。周围的工作却没有。了解如何使用 GitHub Copilot 计划、编写代码、审查更改和调查生产问题，以及哪些工作仍需要您的判断。 《超越代码生成：代理工程开发人员指南》一文首先出现在 GitHub 博客上。",
+      "title": "GitHub 发布代理式软件工程工作流指南",
+      "summary": "11月6日 GitHub 工程指南提出规划、构建、验证和观察的代理开发流程，并强调代码审查与人工判断。",
       "source": "GitHub Blog",
       "published_at": "2026-11-06T22:15:59+00:00",
       "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "把 AGENTS.md、源码地图、任务验收标准与 CI 串起来，避免 AI 每次修改按钮时重建 UI 风格。"
     },
     {
       "category": "market",
-      "title": "市值蒸发数万亿美元后，人工智能股票攀升",
-      "summary": "投资者一直在抛售科技股，部分原因是担心民主党选举胜利将意味着人工智能发展放缓。",
+      "title": "AI 科技股在前期大跌后反弹",
+      "summary": "11月6日 BBC 报道，科技与 AI 相关股票在此前大幅抛售后出现反弹；本条不提供未经独立核实的纳指收盘点位。",
       "source": "BBC Business",
       "published_at": "2026-11-06T21:06:25+00:00",
       "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fdde/live/9036f7e0-da01-11f1-93e1-3b657b665bcf.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 应区分单日技术反弹与企业盈利改善，重点跟踪 AI 资本支出和现金流。"
     },
     {
       "category": "market",
-      "title": "随着人工智能的出现，全球股市跟随美国抛售消费恐惧蔓延",
-      "summary": "由于短时间内需要处理大量信息，许多市场观察人士表示，这种走势是极端的——双向的。",
+      "title": "全球股市受美国科技股剧烈波动影响",
+      "summary": "11月6日《纽约时报》报道，美国 AI 股票抛售情绪向全球市场扩散，市场波动加剧；报道为市场观察，非投资建议。",
       "source": "NYT Business",
       "published_at": "2026-11-06T21:11:05+00:00",
       "url": "https://www.nytimes.com/2026/11/06/business/global-stocks-markets-tech-ai.html",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "定投纳指应预先设定仓位与资金安排，不要因为连续几日的波动临时追涨杀跌。"
     },
     {
       "category": "market",
-      "title": "市场抛售重创：顾问称“坚持到底，关注买入”",
-      "summary": "随着散户投资者从个股中撤资，CNBC 的快速民意调查中超过四分之三的顾问表示，投资者应该根据自己的目标检查其配置或继续投资。",
+      "title": "市场顾问讨论科技股抛售后的资产配置",
+      "summary": "11月6日 CNBC 报道，受访理财顾问建议投资者结合个人目标审视资产配置；调查意见不能保证市场反弹。",
       "source": "CNBC",
       "published_at": "2026-11-06T13:56:39+00:00",
       "url": "https://www.cnbc.com/2026/11/06/market-sell-off-hits-hard-advisors-say-stay-the-course-with-an-eye-on-buying-.html",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "对长期纳指投资，更应关注风险承受能力和定投纪律，而不是根据调查意见判断底部。"
     },
     {
       "category": "market",
-      "title": "稳定的劳动力市场使美联储有望逐步加息",
-      "summary": "美联储在上周的会议上决定不加息，但人们普遍预计美联储将在 12 月再次采取行动，以帮助抑制通胀。",
+      "title": "美国劳动力市场与美联储利率预期受到关注",
+      "summary": "11月6日《纽约时报》分析劳动力市场稳定与美联储后续政策路径的关系；具体利率决定须以美联储公告为准。",
       "source": "NYT Business",
       "published_at": "2026-11-06T13:45:01+00:00",
       "url": "https://www.nytimes.com/2026/11/06/business/economy/stable-labor-market-to-keep-fed-on-track-to-raise-rates-gradually.html",
-      "image": "https://static01.nyt.com/images/2026/11/06/multimedia/06biz-jobs-report-fed-pbtv/06biz-jobs-report-fed-pbtv-mediumSquareAt3X.jpg",
-      "is_recent": false
-    },
-    {
-      "category": "digital",
-      "title": "据报道，中国招募人工智能高管来监视黄仁勋",
-      "summary": "据《纽约时报》报道，中国情报机构招募了 Megaspeed 高管 Alice Huang 来监视 Nvidia 首席执行官 Jensen Huang。国家安全部（MSS）邀请她收集有关美国人工智能芯片的信息，并“可能影响该公司推动其最先进的芯片向中国提供”。兆速[...]",
-      "source": "The Verge",
-      "published_at": "2026-11-06T23:00:44+00:00",
-      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "关注就业与通胀对纳指估值的影响，避免把市场预期写成已确定的加息决定。"
     },
     {
       "category": "digital",
-      "title": "竞争对手 Anthropic 即将 IPO，OpenAI 估值达 1.25 万亿美元",
-      "summary": "据彭博社报道，OpenAI 在新一轮融资中目前估值为 1.25 万亿美元，该轮融资又筹集了 110 亿美元。这将使其成为世界上最有价值的公司之一，不久之后，该公司于 3 月份以 8520 亿美元的估值从投资者那里筹集了 1220 亿美元。呼应《金融时报》和《华尔街日报》[...]",
+      "title": "OpenAI 估值与新融资引发关注（媒体报道）",
+      "summary": "11月6日 The Verge 转述媒体报道，OpenAI 新融资与估值可能进一步上升；数字和交易进度属于媒体报道，非已完成交易的官方确认。",
       "source": "The Verge",
       "published_at": "2026-11-06T23:46:18+00:00",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "AI 基础设施融资热度与商业化回报可能脱节，分析科技股时应关注现金流而非只看估值。"
     },
     {
       "category": "digital",
-      "title": "Starlink Mobile：有关 SpaceX 主要移动运营商雄心的所有新闻",
-      "summary": "SpaceX 宣布将让 Starlink Mobile 成为“主要”移动运营商。这家埃隆·马斯克 (Elon Musk) 旗下的公司已经部署了数千颗直接接入蜂窝的卫星，但其下一个重大挑战是在地球上建设 5G 网络。作为与 AT&T、Verizon 和 T-Mobile 竞争计划的一部分，SpaceX 签署了一项协议 [...]",
+      "title": "Starlink Mobile 扩张移动通信业务的计划",
+      "summary": "11月6日 The Verge 汇总 SpaceX Starlink Mobile 的运营商业务布局及地面 5G 网络挑战；部分内容仍是公司规划。",
       "source": "The Verge",
       "published_at": "2026-11-06T22:45:43+00:00",
       "url": "https://www.theverge.com/science/1029162/spacex-starlink-mobile-elon-musk-news",
       "image": "",
-      "is_recent": false
+      "is_recent": false,
+      "impact": "移动网络变化可作为小脚步未来离线优先设计的背景，但短期无需更换 Android 数据同步架构。"
     },
     {
       "category": "world",
-      "title": "巴拉圭总统因银行倒闭而被弹劾",
-      "summary": "圣地亚哥·佩纳因银行业危机而被赶下台，这场危机导致数百万人无法获得资金。",
-      "source": "BBC Top Stories",
-      "published_at": "2026-11-07T01:07:56+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/64c1/live/a38644c0-da3a-11f1-959c-e95bd2c2a35f.jpg",
-      "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "2028 年白宫竞选的四个中期要点",
-      "summary": "关于总统选举的热议已经开始——以下是我们本周了解到的情况。",
+      "title": "美国中期选举后出现2028年总统选举前景分析",
+      "summary": "11月6日 BBC 分析中期选举对2028年美国总统竞选的影响；属于政治分析，不是已确定的候选人名单或结果。",
       "source": "BBC World",
       "published_at": "2026-11-06T16:12:22+00:00",
       "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/613a/live/900577b0-d9ed-11f1-b441-2b33b063138f.png",
-      "is_recent": false
-    },
-    {
-      "category": "world",
-      "title": "斯蒂芬·米勒选择特朗普，准备战斗",
-      "summary": "美国总统提拔忠诚的党派煽动者米勒担任新任幕僚长，这可能会与国会发生冲突。",
-      "source": "BBC Top Stories",
-      "published_at": "2026-11-06T23:24:15+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/492d/live/41326240-da17-11f1-bba7-b50f1faa7672.jpg",
-      "is_recent": false
+      "image": "",
+      "is_recent": false,
+      "impact": "对纳指投资应区分政治评论与已实施的科技监管政策，不据推测调整长期配置。"
     }
   ],
-  "count": 24,
+  "count": 19,
   "source_count": 18,
   "timezone": "Asia/Shanghai"
 }
