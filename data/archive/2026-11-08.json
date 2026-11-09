@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T04:00:54.560Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面抢先版改善搜索性能",
+      "summary": "11月3日发布的 Catalyst 抢先体验版新增按相关性排序，改善大量搜索结果的响应速度；不是11月8日新版本。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-03T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home 可测试大型笔记库检索与加载，但内置 Canvas 优化不会直接提升自绘画布性能。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 移动抢先版新增笔记桌面组件",
+      "summary": "11月3日官方抢先版为 Android 增加显示笔记内容的 View note 组件，并加入 Web viewer；未宣布开放第三方插件任意创建系统组件的 API。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-03T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "检查五件套移动侧边栏和 WebView 兼容性；小脚步 Android 原生组件仍需单独实现。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15 正式版支持新的 Mermaid 渲染",
+      "summary": "11月2日正式版采用 Pele 渲染 Mermaid，Bases 筛选器可重新排序，并增加向指定标题追加内容的 URI/CLI 命令。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-02T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-02-desktop-v1.15.0/",
+      "image": "",
+      "is_recent": true,
+      "impact": "对五件套进行主题 CSS、嵌套列表和 URI 命令兼容性回归测试。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 插件政策：历史官方战略文章",
+      "summary": "CEO Steph Ango 2026年5月12日文章介绍社区插件审核、付费分类及分发政策；属于历史政策资料，并非本日新公告。",
+      "source": "Obsidian 官方博客／CEO 文章",
+      "published_at": "2026-05-12T00:00:00Z",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home Release 验证仍要检查源码 tag、构建可复现性与收费披露，不能把论坛推测当政策变动。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 路线图持续列出 Bases 与 Canvas 规划",
+      "summary": "11月8日观察：官方路线图展示 Bases 日历视图、Canvas Publish 等计划项；页面状态可能变化，观察日不是功能发布日期。",
+      "source": "Obsidian 官方路线图（观察）",
+      "published_at": "2026-11-08T04:00:00Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "我的梦幻岛继续使用独立 Three.js；未发布的规划不等于插件 API 已可调用。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 代码审查开放更多管理 API",
+      "summary": "11月6日 GitHub Changelog 宣布可通过 REST/GraphQL 管理 Copilot 代码审查设置，并改进审查总览评论。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-06T00:00:00Z",
+      "url": "https://github.blog/changelog/month/11-2026/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可借鉴代码审查配置流程；A-Home 的发布验证仍需单独 CI 和 SHA 核查。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 每周更新涉及代理会话与 PR",
+      "summary": "11月6日发布的周报总结 Copilot 在代理会话、PR 管理及开发客户端方面的更新，部分功能有适用范围限制。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-06T21:00:26Z",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "image": "",
+      "is_recent": true,
+      "impact": "多 Codex 会话建议采用 Git worktree、独立提交和审查，避免覆盖同一工作目录。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 发布代理式工程实践指南",
+      "summary": "11月6日技术文章强调 AI 代码生成之外仍需要规划、代码审查、验证和生产问题排查。",
+      "source": "GitHub 官方博客",
+      "published_at": "2026-11-06T22:15:59Z",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "image": "",
+      "is_recent": true,
+      "impact": "把 AGENTS.md、源码地图、UI 规范和自动化验收结合，减少重复返工。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 与 Hacktron 合作研究系统安全",
+      "summary": "11月6日官方公告介绍与安全研究公司 Hacktron 合作，重点检查漏洞及与第三方服务交互的风险。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-06T08:00:00Z",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "image": "",
+      "is_recent": true,
+      "impact": "重点审查许可证云函数、设备激活与更新器之间的权限边界。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 发布 BioBasicsBench 研究基准",
+      "summary": "11月6日官方介绍用于衡量 AI 代理处理常见湿实验室科学任务的100项任务基准；不等于代码模型能力直接提升。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-06T00:00:00Z",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "image": "",
+      "is_recent": true,
+      "impact": "比较 Codex 时应记录插件构建通过率、改动正确率和返工成本，而不是跨领域分数。"
+    },
+    {
+      "category": "ai",
+      "title": "环保组织使用 AI 处理野生动物影像与历史数据",
+      "summary": "11月7日路透社采访15家环保组织，发现其均使用 AI，也普遍担忧数据中心能源和水资源消耗；报道展示图像分析与文档数字化实例。",
+      "source": "Reuters",
+      "published_at": "2026-11-07T12:00:00Z",
+      "url": "https://www.reuters.com/sustainability/cop/environmental-groups-embrace-ai-even-they-warn-data-center-impacts-2026-11-07/",
+      "image": "",
+      "is_recent": false,
+      "impact": "我的梦幻岛生态模拟优先采用规则状态机和轻量模型，不必为每只动物调用云端大模型。"
+    },
+    {
+      "category": "market",
+      "title": "纳指周五反弹约1.1%，但连续第四周下跌",
+      "summary": "11月6日美股收盘，纳指上涨约1.1%，半导体指数上涨约4.2%；纳指全周仍下跌约3.4%，这是周五交易结果，不是周末行情。",
+      "source": "Reuters",
+      "published_at": "2026-11-06T21:00:00Z",
+      "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
+      "image": "",
+      "is_recent": true,
+      "impact": "纳指 QDII 应同时观察周度回撤与科技企业现金流，不宜因单日反弹判断调整结束。"
+    },
+    {
+      "category": "market",
+      "title": "伯克希尔第三季度回购增加，营业利润下降",
+      "summary": "11月7日路透社报道，伯克希尔第三季度回购约96亿美元股票，营业利润同比下降6%，显示其资本配置与保险业务表现分化。",
+      "source": "Reuters",
+      "published_at": "2026-11-07T14:00:00Z",
+      "url": "https://www.reuters.com/business/finance/berkshire-hathaway-accelerates-stock-buybacks-operating-profit-falls-2026-11-07/",
+      "image": "",
+      "is_recent": false,
+      "impact": "比较纳指与多元化资产时，应看估值、现金流和行业集中度，不把短期跑赢视为长期保证。"
+    },
+    {
+      "category": "market",
+      "title": "美股 AI 投资链承受融资与政策双重压力",
+      "summary": "11月7日金融时报分析美国中期选举后 AI 相关股票的抛售，指出高资本开支、借贷成本及政策预期共同影响市场；属于分析而非已实施的新法规。",
+      "source": "Financial Times",
+      "published_at": "2026-11-07T12:00:00Z",
+      "url": "https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注大型科技公司 AI 投资回报与负债扩张的差异，避免把所有 AI 股票视为同一风险。"
+    },
+    {
+      "category": "digital",
+      "title": "英伟达 H200 对华芯片销售审批受到质疑",
+      "summary": "11月7日 The Verge 转述关于获批采购方尽调的调查，相关指控仍应区分媒体调查与监管最终认定。",
+      "source": "The Verge",
+      "published_at": "2026-11-07T15:43:45Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "image": "",
+      "is_recent": false,
+      "impact": "数据中心芯片政策不等于消费级二手显卡价格会同步变化，购机仍看实际报价。"
+    },
+    {
+      "category": "world",
+      "title": "以色列总统委托反对党领袖尝试组阁",
+      "summary": "11月7日 BBC 报道，以色列总统责成反对党领袖艾森科特组建政府；此前各阵营未取得多数，组阁结果尚未确定。",
+      "source": "BBC World",
+      "published_at": "2026-11-07T22:19:59Z",
+      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注地缘政治对能源与全球风险偏好的间接影响，不能把组阁委托当作政府已经成立。"
+    },
+    {
+      "category": "world",
+      "title": "美国悬赏征集伊朗核计划信息",
+      "summary": "11月7日 BBC 报道美国宣布悬赏征集伊朗核计划相关信息；属于政策与安全动态，不代表获得了新证据。",
+      "source": "BBC World",
+      "published_at": "2026-11-07T18:14:38Z",
+      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo",
+      "image": "",
+      "is_recent": false,
+      "impact": "国际紧张局势可能影响能源价格与纳指风险偏好，但不能据此预测具体涨跌。"
+    }
+  ],
+  "count": 17,
+  "source_count": 10,
+  "timezone": "Asia/Shanghai"
+}
