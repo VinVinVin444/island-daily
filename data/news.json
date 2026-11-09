@@ -142,17 +142,6 @@
     },
     {
       "category": "world",
-      "title": "苹果据报加速 Siri 代理能力开发",
-      "summary": "11月8日 The Verge 转述媒体报道，苹果内部正推动 Siri 更强的 AI 代理能力；属于媒体报道，不是已发布的新功能。",
-      "source": "BBC Top Stories",
-      "published_at": "2026-11-09T00:31:03+00:00",
-      "url": "https://www.bbc.co.uk/news/articles/cx30eg5593gmo?at_medium=RSS&at_campaign=rss",
-      "image": "",
-      "is_recent": false,
-      "impact": "小脚步可以参考自然语言任务入口，但现阶段应优先完成稳定的本地功能与数据备份。"
-    },
-    {
-      "category": "world",
       "title": "俄罗斯称袭击乌克兰电力设施，停电影响扩大",
       "summary": "11月8日路透社报道，俄罗斯声称袭击乌克兰电力设施和黑海附近船只；部分军事说法无法独立核实，乌克兰能源企业报告大规模停电。",
       "source": "Reuters",
@@ -183,6 +172,17 @@
       "image": "",
       "is_recent": false,
       "impact": "属于重大公共安全新闻，与插件开发或纳指无直接已证实关联，不作牵强投资推断。"
+    },
+    {
+      "category": "digital",
+      "title": "苹果据报推动 Siri 向 AI 代理发展",
+      "summary": "11月8日 The Verge 转述媒体报道，苹果正推动 Siri 具备更强的 AI 代理能力；属于报道中的开发方向，不是已经推出的功能。",
+      "source": "The Verge",
+      "published_at": "2026-11-08T19:18:19+00:00",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "image": "",
+      "is_recent": false,
+      "impact": "小脚步可关注自然语言入口的交互设计，但不必为尚未发布的 Siri 能力调整 Android 技术架构。"
     }
   ],
   "count": 16,
