@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T12:00:00+08:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 上线 Claude Fable 5.2",
+      "summary": "GitHub 11月9日宣布 Claude Fable 5.2 已在 Copilot 中正式可用，面向复杂多步骤代码任务；逐步推送，按提供商定价计费，默认需要数据留存用于安全分类。",
+      "source": "GitHub 官方更新",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对多个 Codex 项目而言可作为代码审查对照模型，但须核对费用和代码数据留存政策，不能假设当前订阅自动包含。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Actions 日志密钥扫描进入公开预览",
+      "summary": "GitHub 11月9日宣布企业版可扫描工作流日志中的部分密钥模式；仅启用后新完成的日志适用，预览阶段不主动发送告警，且并非面向全部免费仓库。",
+      "source": "GitHub 官方更新",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs/",
+      "image": "",
+      "is_recent": false,
+      "impact": "岛屿晨报 Actions 与插件 Release 工作流应避免输出 Token；当前新功能受企业许可限制，不能代替现有密钥遮罩与最小权限。"
+    },
+    {
+      "category": "market",
+      "title": "纳指11月9日收涨2.74%，英伟达逆势下跌",
+      "summary": "11月9日美股收盘纳指报25253.14点，上涨2.74%；标普500上涨2.35%，道指上涨2.15%。半导体指数上涨6.9%，英伟达下跌4.2%。",
+      "source": "路透社",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 的指数反弹与英伟达个股风险并存；应关注权重分化和 AI 资本开支，而非把单日上涨视为调整结束。"
+    },
+    {
+      "category": "market",
+      "title": "花旗将美国股票评级下调至中性",
+      "summary": "11月9日花旗策略师将美国股票配置观点由超配降至中性，理由包括 AI 股票情绪与仓位风险；属于机构观点而非确定走势。",
+      "source": "路透社",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://www.reuters.com/business/citigroup-downgrades-us-equities-neutral-ai-concerns-2026-11-09/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对长期定投纳指而言，机构分歧提示短期波动风险；比追随评级更重要的是定投期限和可承受回撤。"
+    },
+    {
+      "category": "market",
+      "title": "多家华尔街机构认为 AI 股抛售可能过度",
+      "summary": "11月9日路透社报道摩根士丹利、瑞银等机构认为此前 AI 板块抛售可能过度，监管变化未必终止数据中心投资；这是分析师判断。",
+      "source": "路透社",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://www.reuters.com/business/finance/wall-st-brokerages-say-ai-selloff-overdone-downplay-democrat-regulation-risks-2026-11-09/",
+      "image": "",
+      "is_recent": false,
+      "impact": "与花旗谨慎观点并读，说明市场尚无一致结论；重点跟踪大型云厂商订单、融资和现金流。"
+    },
+    {
+      "category": "ai",
+      "title": "Google 推出两款自研 TPU 芯片变体",
+      "summary": "11月9日路透社报道 Google 推出面向受监管场景的 8tx 和面向大上下文 AI 工作负载的 8i Max，扩展云端 AI 芯片选择。",
+      "source": "路透社",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/",
+      "image": "",
+      "is_recent": false,
+      "impact": "AI 编程算力供应正趋于多元，但这属于云端基础设施，不是能在 GTX 950M 上本地运行的新模型。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 移动抢先版加入笔记桌面组件",
+      "summary": "11月3日官方 Catalyst 版增加 Android View note 小组件、移动 Web viewer 和侧边栏调整；截至11月10日核查未见更新的官方版本公告。",
+      "source": "Obsidian 官方 Changelog（11月3日旧闻）",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套应回归测试移动侧边栏；官方组件不等于第三方插件可以创建任意 Android 系统小组件。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面抢先版优化搜索和大型 Canvas",
+      "summary": "11月3日官方 Catalyst 版增加搜索相关性排序，改善大型库索引和内置 Canvas 性能；不是今日新版本。",
+      "source": "Obsidian 官方 Changelog（11月3日旧闻）",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home 可测大库搜索；我的小岛独立画布不会自动享有内置 Canvas 性能改进。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 路线图：Bases 日历与 Canvas Publish 仍为计划项",
+      "summary": "11月10日观察官方路线图，Bases 日历、Canvas Publish、多人协作仍在 Planned；移动后台同步位于 Active。此为状态快照，非当日发布公告。",
+      "source": "Obsidian 官方路线图（11月10日观察）",
+      "published_at": "2026-11-10T00:00:00+08:00",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "我的梦幻岛不应依赖未发布的 Canvas 能力；任务模块可独立实现日期与里程碑交互。"
+    },
+    {
+      "category": "world",
+      "title": "国际油价回落带动全球股市反弹",
+      "summary": "11月9日路透社报道，随着美伊和谈继续及美国总统表示不太可能发动新袭击，布伦特原油价格下跌约5.85%，全球股市反弹。",
+      "source": "路透社",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "url": "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/",
+      "image": "",
+      "is_recent": false,
+      "impact": "油价变化影响通胀与利率预期，进而影响纳指估值；不宜将地缘政治表态当作已达成和平协议。"
+    }
+  ],
+  "count": 10,
+  "source_count": 10,
+  "timezone": "Asia/Shanghai"
+}
