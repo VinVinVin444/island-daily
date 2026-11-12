@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T07:05:00+08:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "ai",
+      "title": "Google推出Gemini 4 Carbon及多代理协作预览",
+      "summary": "Google推出面向复杂长任务的Gemini 4 Carbon，并预览Antigravity中由单个提示协调多个代理的功能；官方基准测试仍需独立验证。",
+      "source": "The Verge",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "image": "",
+      "is_recent": false,
+      "impact": "对我的小岛多模块开发，可小规模测试多代理分工与验收，但先核算API费用，避免直接迁移Codex工作流。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI推出企业认证Business Agents测试功能",
+      "summary": "OpenAI推出企业认证代理测试服务，允许部分美国商家在ChatGPT中提供独立标记的企业对话；目前并非全面开放。",
+      "source": "The Verge",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "image": "",
+      "is_recent": false,
+      "impact": "海外销售Obsidian插件可观察AI内的商家发现入口，但当前测试范围有限，不能当作已可使用的销售渠道。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot正式支持Gemini 4 Carbon",
+      "summary": "GitHub于11月10日宣布Gemini 4 Carbon已在Copilot中正式提供，定位复杂编程与代理推理任务。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://github.blog/changelog/month/11-2026/",
+      "image": "",
+      "is_recent": false,
+      "impact": "可用同一套TypeScript插件回归测试比较Copilot和Codex的改动正确率、构建成功率及成本。"
+    },
+    {
+      "category": "dev",
+      "title": "Dependabot将暂停部分长期不活跃仓库的告警",
+      "summary": "GitHub宣布从12月8日起暂停多数过去一年没有活动的仓库的Dependabot告警，已有告警归档而非删除。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://github.blog/changelog/month/11-2026/",
+      "image": "",
+      "is_recent": false,
+      "impact": "A-Home-Releases等发布仓库若长期不更新，不能只依赖自动告警；应定期检查依赖与工作流安全。"
+    },
+    {
+      "category": "market",
+      "title": "美国10月通胀高于预期，纳指11月10日收跌",
+      "summary": "美国10月CPI高于市场预期；11月10日纳指收于25065.87点，下跌约0.7%，标普500收于7520.93点，下跌约0.4%。",
+      "source": "Associated Press",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://apnews.com/article/a97eb31c415811065561f2c2ac552cd7",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指QDII短期同时受利率预期与AI估值影响；避免把前一天反弹当成趋势反转。"
+    },
+    {
+      "category": "market",
+      "title": "台积电董事会批准投资OpenAI和Anthropic",
+      "summary": "台积电董事会批准对OpenAI及Anthropic各最多投资5亿美元，反映晶圆代工厂在供应链之外进一步参与AI产业资本布局。",
+      "source": "Reuters",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.reuters.com/world/china/tsmc-invest-up-1-billion-anthropic-openai-2026-11-10/",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注AI芯片需求与资本交叉持股带来的估值关联，不能仅据投资公告推断纳指长期收益。"
+    },
+    {
+      "category": "market",
+      "title": "英伟达与AI基础设施股票承压",
+      "summary": "路透社11月10日报道，美国通胀数据高于预期及英伟达相关不确定性令科技股承压，英伟达盘中跌幅明显；盘中数字不作为收盘价。",
+      "source": "Reuters",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/",
+      "image": "",
+      "is_recent": false,
+      "impact": "需要区分单家公司治理风险、AI基建融资风险和芯片长期需求，不宜把三者混为一个投资判断。"
+    },
+    {
+      "category": "world",
+      "title": "欧盟承诺5000万欧元推进黑海安全枢纽",
+      "summary": "欧盟委员会主席宣布投入5000万欧元，加快保加利亚和罗马尼亚黑海海上安全枢纽建设，以加强海上监测与信息共享。",
+      "source": "Reuters",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.reuters.com/world/eus-von-der-leyen-pledges-50-million-speed-up-security-hub-black-sea-2026-11-10/",
+      "image": "",
+      "is_recent": false,
+      "impact": "黑海航运风险可能传导至能源和贸易成本，关注对科技股通胀预期的间接影响。"
+    },
+    {
+      "category": "world",
+      "title": "美俄乌在阿布扎比举行三方谈判",
+      "summary": "11月10日美俄乌代表在阿布扎比举行谈判，美方称会谈富有成效，但各方仍未宣布最终和平协议。",
+      "source": "The Guardian",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://www.theguardian.com/world/live/2026/nov/10/ukraine-russia-war-us-talks-abu-dhabi-europe-latest-news-updates",
+      "image": "",
+      "is_recent": false,
+      "impact": "若地缘冲突风险下降，可能影响能源价格和市场风险偏好，但谈判进展不能直接等同于停火。"
+    },
+    {
+      "category": "world",
+      "title": "澳大利亚计划设立AI安全监管机构",
+      "summary": "澳大利亚政府宣布计划设立AI安全监管机构，此前发生AI代理未经授权访问政府信息门户事件；相关处罚规则仍待确定。",
+      "source": "Associated Press",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://apnews.com/article/a5dfe5379c0f7458e44b72a9073833c6",
+      "image": "",
+      "is_recent": false,
+      "impact": "开发具备联网和自动操作能力的AI工具时，应强化最小权限、审计日志与用户授权边界。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian正式版仍为1.15.0，抢先版为1.15.1",
+      "summary": "11月11日复核官方更新日志和发行记录：公开桌面版为11月2日发布的1.15.0，11月3日发布1.15.1 Catalyst抢先版；没有核实到11月10日新正式版本。",
+      "source": "Obsidian Changelog",
+      "published_at": "2026-11-03T00:00:00Z",
+      "url": "https://obsidian.md/changelog/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套应分别测试公开版和Catalyst版本，避免把抢先体验API行为当作稳定兼容承诺。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian开发者论坛出现移动端布局反馈",
+      "summary": "开发者论坛11月10日有关于iOS手机底部空白空间的讨论；属于社区UI反馈，并非官方移动端API计划。",
+      "source": "Obsidian Developers Forum",
+      "published_at": "2026-11-10T00:00:00Z",
+      "url": "https://forum.obsidian.md/c/developers-api/14",
+      "image": "",
+      "is_recent": false,
+      "impact": "移动端插件布局应保留安全区和底部导航空间，不应根据论坛反馈推断官方即将改变布局API。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian插件战略政策仍以5月官方文章为参考",
+      "summary": "官方博客最近列出的插件战略文章发布于2026年5月12日；截至本次检查未见新的官方政策公告。此条为历史政策追踪，非今日新闻。",
+      "source": "Obsidian Blog",
+      "published_at": "2026-05-12T00:00:00Z",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "付费插件继续优先解决可验证Release、许可证披露和审核合规；不要依据社区传言修改销售方案。"
+    }
+  ],
+  "count": 13,
+  "source_count": 13,
+  "timezone": "Asia/Shanghai"
+}
