@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T04:02:00+00:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "开发者讨论：Modal 暂不能直接复用设置定义列表",
+      "summary": "11月11日论坛问答指出，PluginSettingTab 的列表定义无法直接在 Modal 中渲染；社区建议以 SettingGroup、Setting 与增删按钮手动实现。这是社区经验，不是官方新 API 承诺。",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-11-11T05:19:38+00:00",
+      "url": "https://forum.obsidian.md/t/how-do-i-add-a-settings-definition-list-to-a-modal-or-otherwise-allow-the-user-to-edit-a-list/121809",
+      "image": "",
+      "author": "martinellison",
+      "is_recent": false,
+      "impact": "A-Home 的任务编辑弹窗及 Agent Studio 条目编辑器可采用独立列表组件，避免依赖 PluginSettingTab 私有结构。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 移动抢先版：内置网页浏览与笔记小组件",
+      "summary": "11月3日官方抢先版增加 Web viewer 和 Android View note 小组件，并调整移动端行为；这是历史版本回顾，非11月12日新发布。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套测试移动端侧栏和插件启动；官方小组件不等于开放第三方 Android 桌面小组件 API。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面抢先版改进搜索",
+      "summary": "11月3日官方抢先版改进搜索相关性及多语言匹配；不是今日发布的正式版。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-03T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-03-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "对 A-Home 做大库检索兼容测试，插件自建检索不应假定能自动享受核心搜索优化。"
+    },
+    {
+      "category": "obsidian",
+      "title": "CEO 历史文章：插件分发与审核战略",
+      "summary": "Steph Ango 于2026年5月12日发表插件生态战略文章，涉及新社区目录及审核方向。此条仅作历史政策参考，并非本日新公告。",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "author": "kepano（CEO）",
+      "is_recent": true,
+      "impact": "五件套付费分发继续以官方规则和可复现 Release 为依据，不因论坛猜测更改许可证方案。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.0 官方正式版发行记录",
+      "summary": "GitHub 官方发行记录对应11月2日的 1.15.0 正式版，供核对正式版与 Catalyst 抢先版。",
+      "source": "Obsidian GitHub 发行记录",
+      "published_at": "2026-11-02T15:39:05+00:00",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.15.0",
+      "image": "",
+      "author": "lishid",
+      "is_recent": true,
+      "impact": "对五件套同时验证正式版与抢先版，避免将 Catalyst 特性当作稳定兼容承诺。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 路线图观察：Bases 日历与 Canvas Publish 仍属计划",
+      "summary": "11月12日复核官网：Android Quick Capture、移动后台同步、日期选择器属 Active；Bases 日历、Canvas Publish、多人协作属 Planned。该条为状态观察，非功能发布日期。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-11-03T03:46:23.846164+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true,
+      "impact": "岛程任务系统不必等待 Bases 日历；独立 Three.js 梦幻岛也不应把 Canvas Publish 计划当作可用接口。"
+    },
+    {
+      "category": "ai",
+      "title": "Google DeepMind 发布 AlphaGenome 2",
+      "summary": "11月11日 Google DeepMind 介绍新一代 DNA 序列模型，预测遗传变异对多种人体细胞类型的影响；研究模型不等于临床诊断工具。",
+      "source": "Google DeepMind",
+      "published_at": "2026-11-11T15:00:15+00:00",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对 AI 发展方向有参考意义，但与现有 Codex 插件开发无直接替换关系，不宜因此调整开发路线。"
+    },
+    {
+      "category": "ai",
+      "title": "BotPsy 展示设备端小参数个人助理",
+      "summary": "11月11日 Hugging Face 博客介绍不到十亿参数的设备端个人助理研究，属于项目发布而非成熟通用商用产品。",
+      "source": "Hugging Face",
+      "published_at": "2026-11-11T05:01:16+00:00",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "image": "",
+      "is_recent": false,
+      "impact": "可关注离线助理思路，但旧笔记本与手机上应先测试延迟、内存和准确率，不急于嵌入小脚步。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 个人仓库正式支持 Issue 类型与自定义字段",
+      "summary": "11月11日 GitHub 宣布个人账号仓库可使用 Bug、Task、Feature 类型及 Priority、Effort 等字段，并支持 API 与项目视图。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-11T17:16:46+00:00",
+      "url": "https://github.blog/changelog/2026-11-11-issue-types-and-fields-are-available-for-personal-accounts",
+      "image": "",
+      "is_recent": false,
+      "impact": "可以直接为 A-Home、我的小岛、Agent Studio 建立统一问题分类与优先级，减少 Codex 多任务沟通成本。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 已接入 Gemini 4 Carbon",
+      "summary": "11月10日 GitHub 官方宣布 Gemini 4 Carbon 在 Copilot 中正式可用；不是 Codex 的模型更新。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-10T19:26:51+00:00",
+      "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
+      "image": "",
+      "is_recent": true,
+      "impact": "选择跨文件 TypeScript 修复任务与 Codex 对照测试，比较构建通过率和返工，而不是只看宣传基准。"
+    },
+    {
+      "category": "market",
+      "title": "纳指11月11日收涨1.60%，科技板块反弹",
+      "summary": "美股周三收盘：纳指报25466.19点，涨1.60%；标普500报7619.38点，涨约1.3%；道指报52486.49点，涨约0.5%。",
+      "source": "美联社",
+      "published_at": "2026-11-11T21:30:00Z",
+      "url": "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 观察应区分反弹与趋势反转，结合估值和利率预期，不因单日上涨改变长期定投纪律。"
+    },
+    {
+      "category": "market",
+      "title": "CoreWeave 财报提振 AI 基建股，股价大涨",
+      "summary": "路透社报道 CoreWeave 11月11日上涨约24.7%，公司预计2028年上半年实现调整后盈利，AI 基建与芯片股同步走强；盈利预测并非已实现利润。",
+      "source": "路透社",
+      "published_at": "2026-11-11T21:30:00Z",
+      "url": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
+      "image": "",
+      "is_recent": false,
+      "impact": "判断 AI 数据中心企业不能只看订单和股价，还应检查资本开支、融资成本、实际自由现金流。"
+    },
+    {
+      "category": "market",
+      "title": "英伟达盘后受 CEO 去留报道冲击",
+      "summary": "路透社全球市场报道指出，英伟达常规交易上涨约2.9%，随后因有关董事会与 CEO 的媒体报道在盘后大跌约8%；报道尚非董事会正式决议，盘后价格也不是正式收盘价。",
+      "source": "路透社",
+      "published_at": "2026-11-12T01:00:00Z",
+      "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注公司治理风险但避免根据未证实的人事传闻预测英伟达长期盈利，尤其要区分盘后波动与纳指正式收盘。"
+    },
+    {
+      "category": "digital",
+      "title": "英国 AI 推理芯片公司 Fractile 融资7.2亿美元",
+      "summary": "11月11日路透社报道 Fractile 完成7.2亿美元 C 轮融资，估值约70亿美元，计划明年推出首款商用 AI 推理芯片。",
+      "source": "路透社",
+      "published_at": "2026-11-11T12:00:00Z",
+      "url": "https://www.reuters.com/legal/transactional/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-funding-round-2026-11-11/",
+      "image": "",
+      "is_recent": false,
+      "impact": "这属于数据中心推理芯片竞争，不意味着当前消费级显卡选购应改变，关注长期算力成本下降即可。"
+    },
+    {
+      "category": "world",
+      "title": "俄乌谈判聚焦战后安全安排，尚无突破",
+      "summary": "11月11日 BBC 报道俄乌相关谈判讨论战后安全问题，但会谈未取得突破性结果；不能将谈判等同于和平协议达成。",
+      "source": "BBC World",
+      "published_at": "2026-11-11T18:04:58+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+      "image": "",
+      "is_recent": false,
+      "impact": "地缘风险仍可能影响能源价格与美股情绪，投资判断需以实际协议和市场数据为准。"
+    },
+    {
+      "category": "world",
+      "title": "德国 Helsing 推出多源战场数据分析软件 Clarity",
+      "summary": "11月11日路透社报道 Helsing 推出 Clarity，将无人机、卫星和报告数据交叉比对并标注置信度；公司未明确已有多少客户部署，人类仍负责批准打击。",
+      "source": "路透社",
+      "published_at": "2026-11-11T12:00:00Z",
+      "url": "https://www.reuters.com/technology/helsing-enters-market-battlefield-software-built-combat-data-2026-11-11/",
+      "image": "",
+      "is_recent": false,
+      "impact": "可借鉴多源信息核验和置信度设计，用于岛屿晨报新闻聚合，但不应将模型推断直接当作事实。"
+    }
+  ],
+  "count": 16,
+  "source_count": 11,
+  "timezone": "Asia/Shanghai"
+}
