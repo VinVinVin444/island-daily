@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T04:04:49.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面公开版：搜索与大型库性能改进",
+      "summary": "官方新增搜索相关性排序、重音不敏感匹配；加快大型笔记库索引、阅读模式与内置 Canvas 的操作。11月12日发布，非今日新版本。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-12T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-12-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套应在1.15.1公开版进行启动、搜索与多窗口兼容测试；内置Canvas性能提升不会自动加速我的小岛自绘画布。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 移动公开版加入 Web viewer 和 Android 笔记小组件",
+      "summary": "11月12日公开版新增应用内网页查看器，Android View note 小组件可直接展示笔记内容；不等于开放第三方系统小组件 API。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-12T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-12-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "检查我的小岛和A-Home手机端侧栏、弹窗与Web viewer共存；不要以官方小组件推断插件可直接创建Android小组件。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 官方 GitHub 发行记录确认公开版",
+      "summary": "官方发行仓库于11月12日发布 v1.15.1 标签；应与此前 Catalyst 抢先版区分。",
+      "source": "Obsidian 官方 GitHub Releases",
+      "published_at": "2026-11-12T15:43:18Z",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.15.1",
+      "image": "",
+      "is_recent": true,
+      "impact": "将v1.15.1作为插件兼容性矩阵的稳定测试基线，记录构建产物与发布验证结果。"
+    },
+    {
+      "category": "obsidian",
+      "title": "路线图观察：Bases 日历和 Canvas Publish 仍为计划项",
+      "summary": "截至11月14日观察，Android Quick Capture、移动后台同步与日期选择器处于 Active；Bases 日历、Canvas Publish、多人协作仍在 Planned。此为观察快照而非新公告。",
+      "source": "Obsidian 官方路线图（观察）",
+      "published_at": "2026-11-14T04:04:49Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "岛程可以独立实现任务日历；我的梦幻岛不要依赖尚未发布的Canvas Publish接口。"
+    },
+    {
+      "category": "obsidian",
+      "title": "CEO 插件生态政策：2026年5月12日历史文章",
+      "summary": "Steph Ango 在5月12日的官方文章介绍社区插件目录、开发者分发与审核方向；这是历史政策资料，不是11月新承诺。",
+      "source": "Obsidian 官方博客 / CEO Steph Ango",
+      "published_at": "2026-05-12T00:00:00Z",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "付费五件套发布仍需优先排查Release可验证构建、分发与审核要求；不要把历史文章当新放宽政策。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 发布 ChatGPT Wallet：代理支付需逐笔确认",
+      "summary": "11月13日官方宣布 ChatGPT Wallet，初期向美国符合条件的 ChatGPT Pro 用户通过 dots 提供；每笔购买需要用户审查并完成安全验证，代理不接触真实卡信息。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-13T15:00:00Z",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "image": "",
+      "is_recent": false,
+      "impact": "海外插件销售可关注代理购物入口，但当前既非插件市场也未证明能直接销售Obsidian激活码，不宜立即改造收款系统。"
+    },
+    {
+      "category": "ai",
+      "title": "llama.cpp 与 ggml 发布 v1.0.0 库版本",
+      "summary": "11月13日 ggml-org 宣布 libllama、libggml 1.0.0，并采用更明确的 API/ABI 语义化版本规则；不意味着所有模型或后端性能同步提升。",
+      "source": "ggml-org / Hugging Face",
+      "published_at": "2026-11-13T14:05:22Z",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "image": "",
+      "is_recent": false,
+      "impact": "若未来在小脚步加入离线AI，可优先评估稳定的本地推理接口；GTX950M与2080Ti仍需按具体模型和显存测试。"
+    },
+    {
+      "category": "ai",
+      "title": "Google Gemini 4 Hydrogen 进入 GitHub Copilot",
+      "summary": "11月13日 GitHub 宣布 Gemini 4 Hydrogen Flash 模型在 Copilot 中正式可用，强调快速工具调用、多步骤编程；逐步开放并按提供商标价计费。",
+      "source": "GitHub 官方",
+      "published_at": "2026-11-13T18:23:48Z",
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot/",
+      "image": "",
+      "is_recent": false,
+      "impact": "可用A-Home同一跨文件任务对比Codex与Copilot的测试通过率和返工次数；该更新不代表Codex自动获得新模型。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 将于12月14日弃用部分模型",
+      "summary": "11月13日 GitHub 公告将于12月14日在 Copilot 的聊天、编辑、代理等体验中弃用部分模型；使用固定模型的工作流需核对公告清单。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-13T20:40:05Z",
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 若保存固定Copilot模型配置，需提供模型不可用时的提示与回退，而非硬编码旧名称。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub AI Scan 增加 REST API 开关",
+      "summary": "11月13日 GitHub 为仓库代码扫描 AI Scan 增加组织与仓库级 REST API 开关，处于公开预览。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-13T00:00:00Z",
+      "url": "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套CI可关注自动化安全扫描配置，但此功能不解决Release SHA不一致，且应先确认仓库权限与可用性。"
+    },
+    {
+      "category": "market",
+      "title": "11月13日纳指收跌0.91%，本周仍上涨",
+      "summary": "美股周五纳指下跌0.91%至25136.27点，标普500下跌约0.4%至7561.67点，道指微涨至52347.55点；纳指全周上涨约2.3%。",
+      "source": "美联社",
+      "published_at": "2026-11-13T22:00:00Z",
+      "url": "https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指QDII应区分周五回撤与全周上涨，不根据单日波动推断趋势；下一交易日前不会编造周末行情。"
+    },
+    {
+      "category": "market",
+      "title": "英伟达管理层变动引发 AI 基建融资担忧",
+      "summary": "路透社11月13日报道，英伟达管理层变动使投资者重新评估供应商融资、数据中心扩张与AI芯片需求；报道中的市场担忧不等于合同已终止。",
+      "source": "路透社",
+      "published_at": "2026-11-13T21:00:00Z",
+      "url": "https://www.reuters.com/business/neoclouds-ai-stocks-slide-again-nvidia-turmoil-rattles-sector-2026-11-13/",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注AI数据中心客户的现金流和芯片订单兑现，而不是仅把英伟达股价变化归因于个人事件。"
+    },
+    {
+      "category": "market",
+      "title": "美国10月生产者价格涨幅加剧利率担忧",
+      "summary": "路透社11月13日收盘报道，美国10月生产者价格同比上涨6.5%，投资者对12月利率政策趋于谨慎；股市科技板块承压。",
+      "source": "路透社",
+      "published_at": "2026-11-13T22:30:00Z",
+      "url": "https://www.reuters.com/business/nasdaq-futures-dip-nvidia-tumult-keeps-investors-edge-2026-11-13/",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指QDII估值对利率预期敏感；应结合通胀、盈利与持有期限判断，而非单凭指数下跌加仓。"
+    },
+    {
+      "category": "digital",
+      "title": "新款 Apple TV 4K 首批用户遇到 YouTube 启动报错",
+      "summary": "11月13日 The Verge 报道，部分新款 Apple TV 4K 用户打开 YouTube 时出现二维码与暂不可用提示；属于产品兼容问题报道。",
+      "source": "The Verge",
+      "published_at": "2026-11-13T16:55:57Z",
+      "url": "https://www.theverge.com/tech/1033076/apple-tv-4k-youtube-error",
+      "image": "",
+      "is_recent": false,
+      "impact": "对小脚步等应用发布有提醒：新系统或新设备上线应做真实设备兼容性验证，不能仅依赖模拟器。"
+    },
+    {
+      "category": "world",
+      "title": "白宫称美中俄领导人拟下周举行会谈",
+      "summary": "11月14日凌晨 BBC 报道，白宫发言人表示特朗普、普京与习近平计划下周在中国会谈，议题涉及核武器削减；这是计划与声明，尚非已举行的会议或达成协议。",
+      "source": "BBC",
+      "published_at": "2026-11-14T02:05:55Z",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do",
+      "image": "",
+      "is_recent": false,
+      "impact": "国际关系若影响科技出口限制和市场风险偏好，应等待实际会谈结果及正式政策，不依据会前表态交易。"
+    },
+    {
+      "category": "world",
+      "title": "美国财政部长就英伟达相关出口管制争议表态",
+      "summary": "11月13日 BBC 报道，财政部长 Bessent 谈及政府内部围绕相关企业实体清单的分歧；属于公开表态，不能当作最终监管决定。",
+      "source": "BBC",
+      "published_at": "2026-11-13T19:53:57Z",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注实际出口管制清单与生效文件，再评估对AI芯片产业链及纳指权重股的影响。"
+    }
+  ],
+  "count": 16,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
