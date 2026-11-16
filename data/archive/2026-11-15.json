@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-15",
+  "generated_at": "2026-11-15T04:00:18+00:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "社区开发者推出 Obsidian 插件构建与发布工具包",
+      "summary": "开发者分享 obsidian-plugin-dev-kit（opdk）：整合 esbuild 构建、移动端 Node API 检查、社区扫描、发布校验及真实 Obsidian 端到端测试。作者表示目前只在自己维护的三款插件上验证，尚非 Obsidian 官方工具。",
+      "source": "Obsidian 开发者论坛·社区讨论",
+      "published_at": "2026-11-14T15:00:08+00:00",
+      "url": "https://forum.obsidian.md/t/obsidian-plugin-dev-kit-build-scan-test-and-release-a-plugin-from-one-dev-dependency/121945",
+      "image": "",
+      "is_recent": false,
+      "impact": "对 A-Home 等五件套尤其值得研究 release check 的逐字节比对和构建证明流程；先在独立分支验证，不能把社区工具当官方审核保证。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 移动公开版：内置网页查看器与 Android 笔记小组件",
+      "summary": "11月12日官方发布的历史版本：新增 Web viewer 核心插件；Android View note 小组件可展示笔记内容，并调整笔记库管理及社区插件加载。并非11月15日新版本。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-12-mobile-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "在手机上回归测试我的小岛、A-Home 的弹窗和侧栏；官方小组件不意味着第三方插件可以自行创建 Android 系统小组件。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面公开版优化搜索",
+      "summary": "11月12日官方历史更新：增加按相关性排序，改进多语言字符匹配和搜索结果性能；并非今日新发布。",
+      "source": "Obsidian 官方更新日志",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "url": "https://obsidian.md/changelog/2026-11-12-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "为五件套增加 1.15.1 兼容性基线和大笔记库搜索测试；不要把内置搜索优化当成自研任务索引自动提速。"
+    },
+    {
+      "category": "obsidian",
+      "title": "CEO 插件生态政策：历史战略文章",
+      "summary": "原文发表于2026年5月12日，介绍 Obsidian Community、开发者仪表板和插件审核方向。这是 CEO 署名的历史官方博客文章，不是本周政策变更。",
+      "source": "Obsidian 官方博客",
+      "published_at": "2026-05-12T00:00:00+00:00",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "付费五件套发布仍须关注审核、构建可验证性和分发规范；不要依据旧文章推断最新收费政策已经放宽。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 路线图观察：Bases 日历与 Canvas Publish 仍属计划",
+      "summary": "根据自动采集于2026年11月13日03:00 UTC 的路线图快照，Bases 日历、Canvas Publish、多人协作列为计划项目；该时间是观察时间，不是功能发布日期。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-11-13T03:00:39.196323+00:00",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true,
+      "impact": "岛程任务日历可先独立实现；我的梦幻岛保持 Three.js 架构，不要依赖尚未正式发布的 Canvas Publish 接口。",
+      "date_kind": "observed"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 介绍 ChatGPT Wallet",
+      "summary": "11月13日官方介绍面向代理购买的支付功能，强调用户批准与支付信息保护；可用范围和具体条件以官方公告为准。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "image": "",
+      "is_recent": true,
+      "impact": "关注代理商业化对海外插件销售入口的长期影响，但目前不能把它当作已支持 Obsidian 激活码交易的平台。"
+    },
+    {
+      "category": "ai",
+      "title": "Amplitude 分享 AI 产品代理开发流程",
+      "summary": "11月12日 OpenAI 客户案例介绍 Amplitude 的 Wave 产品代理如何发现改进机会、辅助编码并衡量效果；案例中的效率描述属于企业自述。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-12T20:00:00+00:00",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio 可借鉴需求—实现—验证—效果回顾闭环，为 Codex 任务记录返工率，而非直接套用客户案例的效率数字。"
+    },
+    {
+      "category": "ai",
+      "title": "Shield 分享 AI 处理传统企业系统的实践",
+      "summary": "11月13日 OpenAI 客户案例介绍 Shield 通过代理辅助技术人员操作传统门户并交接工作；案例不代表所有系统都能安全自动化。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-13T08:00:00+00:00",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "image": "",
+      "is_recent": true,
+      "impact": "如果以后给小脚步加入跨应用自动化，应将权限授权、操作日志和人工确认作为前置条件。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 公布12月14日模型弃用清单",
+      "summary": "GitHub 11月13日宣布12月14日弃用 Claude Fable 5、Gemini 3.8 Flash、Gemini 4 Argon 等指定模型，并列出建议替代型号；部分订阅存在例外。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-13T20:40:05+00:00",
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio 如保存模型配置，需要模型失效提示与可配置回退；这是 Copilot 政策，不等于 Codex 模型同时下架。"
+    },
+    {
+      "category": "dev",
+      "title": "Gemini 4 Hydrogen 接入 GitHub Copilot",
+      "summary": "11月13日 GitHub 公告称 Gemini 4 Hydrogen 已在 Copilot 中提供，侧重快速代理式编程和多步骤工具使用。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-13T18:23:48+00:00",
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+      "image": "",
+      "is_recent": true,
+      "impact": "可以用 A-Home 同一跨文件任务与 Codex 对比测试成功率、代码质量和工具调用成本，不必仅凭宣传迁移。"
+    },
+    {
+      "category": "market",
+      "title": "ETF 专家讨论英伟达治理变化对 AI 投资的影响",
+      "summary": "11月14日 CNBC 采访 ETF 专家，讨论英伟达领导层不确定性和美国国会格局可能改变 AI 产业链的资金流向；属于市场观点而非已发生的收益预测。",
+      "source": "CNBC",
+      "published_at": "2026-11-14T15:50:43+00:00",
+      "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 应区分指数集中度与个股治理风险，不能把专家情景分析当成买卖信号；周末无新增美股收盘价。"
+    },
+    {
+      "category": "market",
+      "title": "CNBC 回顾科技股震荡及纳指周表现",
+      "summary": "11月14日 CNBC 投资栏目回顾英伟达管理层变动后的市场波动，报道纳指前一交易周上涨约2.3%；这是周末复盘而非周六新行情。",
+      "source": "CNBC",
+      "published_at": "2026-11-14T18:48:39+00:00",
+      "url": "https://www.cnbc.com/investingclub/2026/11/14/nvidias-leadership-crisis-rattles-wall-street-how-were-adjusting.html",
+      "image": "",
+      "is_recent": false,
+      "impact": "定投纳指时更应观察长期估值与现金流，避免把周末分析文章误当作当日市场涨跌。"
+    },
+    {
+      "category": "digital",
+      "title": "SpaceX 首次用发射塔机械臂捕获星舰飞船",
+      "summary": "11月14日 The Verge 报道 SpaceX 首次使用发射塔机械臂成功捕获 Starship 飞船；此次任务的助推器回收尝试中止，不能称整个任务完全成功。",
+      "source": "The Verge",
+      "published_at": "2026-11-14T21:44:44+00:00",
+      "url": "https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch",
+      "image": "",
+      "is_recent": false,
+      "impact": "可关注大型工程的分阶段验证方式：我的梦幻岛复杂动画与交互也应分模块验收，而不是只以最终演示是否运行判断质量。"
+    },
+    {
+      "category": "world",
+      "title": "美国全国航班停飞事件调查聚焦通信设备升级",
+      "summary": "11月14日 BBC 报道，美国交通部门正在调查一次涉及铜线升级的全国性航班停飞事件，尚在确认是设备故障还是操作失误。",
+      "source": "BBC World",
+      "published_at": "2026-11-14T19:12:25+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss",
+      "image": "",
+      "is_recent": false,
+      "impact": "岛屿晨报网站自动发布链路应保留故障回滚与手工复核机制；事故原因未查明前不要定性。"
+    },
+    {
+      "category": "world",
+      "title": "英国道德监督机构负责人因不当行为指控暂时离职",
+      "summary": "11月14日 BBC 报道，英国政府称 Stuart Sterling 因涉及2000年代初的性行为不当指控暂时停止履职；指控不等于已经查证属实。",
+      "source": "BBC Top Stories",
+      "published_at": "2026-11-14T21:14:52+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cmewv2kzq2e5o?at_medium=RSS&at_campaign=rss",
+      "image": "",
+      "is_recent": false,
+      "impact": "这类争议性新闻应严格区分指控、调查与裁决，晨报自动摘要不得将指控写成既定事实。"
+    }
+  ],
+  "count": 15,
+  "source_count": 10,
+  "timezone": "Asia/Shanghai"
+}
