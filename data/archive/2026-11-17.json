@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T04:03:18.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 11月16日起弃用三款旧模型",
+      "summary": "GitHub确认Claude Opus 4.8、Opus 5及GPT-5.6 Terra于11月16日在多数Copilot体验中弃用，列出Claude Opus 5.5、GPT-6.1 Sol或GPT-6 Luna等替代项；部分年度个人订阅存在例外。",
+      "source": "GitHub Changelog（官方）",
+      "published_at": "2026-11-16",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio若配置Copilot模型，不应硬编码旧型号；此变动不代表Codex客户端的模型也同步下架。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub更新Copilot多会话收件箱与模型对比",
+      "summary": "GitHub 11月16日周报介绍VS Code 1.146实验性Agent会话Inbox、Compare Models工具及可独立弹出的聊天窗口；部分功能仍处预览或实验阶段。",
+      "source": "GitHub Changelog（官方）",
+      "published_at": "2026-11-16",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可借鉴Inbox按待处理会话排序的设计，完善自研Codex对话目录与多会话管理工具；勿当作Codex已支持的原生功能。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1仍是官方最新GitHub公开发行版",
+      "summary": "截至11月17日北京时间复核，obsidian-releases最新Release为11月12日发布的1.15.1；没有核实到11月16日的新公开Release。此条是版本状态复核，不是新发布。",
+      "source": "Obsidian GitHub 官方发行记录",
+      "published_at": "2026-11-12",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套仍可将1.15.1作为正式版回归测试基线，避免误以为今天有新版本需要紧急适配。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian团队回应移动端SecretStorage跨库隔离疑问",
+      "summary": "开发者8月29日反馈移动端不同仓库使用同名SecretStorage键时疑似互相覆盖；11月12日有开发者复现，11月13日团队成员WhiteNoise表示将复核。尚无正式修复承诺。",
+      "source": "Obsidian 开发者论坛（社区反馈及团队回复）",
+      "published_at": "2026-11-13",
+      "url": "https://forum.obsidian.md/t/secretstorage-appears-to-be-shared-across-vaults-on-mobile-but-vault-scoped-on-desktop/117793",
+      "image": "",
+      "is_recent": true,
+      "impact": "插件许可证与凭据存储需测试同设备多仓库场景，避免把移动端SecretStorage隔离性视作已保证；不要在公开仓库记录实际凭据。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Bases结果可通过CLI查询的社区实践",
+      "summary": "11月10日开发者论坛回复介绍Obsidian CLI的base:query可按视图输出JSON、CSV、Markdown等；同时指出部分Bases可能返回空数组。此为社区实践说明，不是新增API公告。",
+      "source": "Obsidian 开发者论坛（社区技术讨论）",
+      "published_at": "2026-11-10",
+      "url": "https://forum.obsidian.md/t/bases-make-rendered-data-available-programatically/104089",
+      "image": "",
+      "is_recent": true,
+      "impact": "未来岛程任务和Bases互通可先验证CLI查询；插件内订阅Bases变化仍不能假设已有稳定公开API。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian路线图仍将Bases日历与Canvas Publish列为计划中",
+      "summary": "11月17日观察快照显示Android Quick Capture、移动后台同步、日期选择器为Active；Bases日历、Canvas Publish及多人协作为Planned。观察时间不是路线图项目发布日期。",
+      "source": "Obsidian 官方路线图（观察快照）",
+      "published_at": "2026-11-17",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "岛程日历和梦幻岛Three.js功能应保持独立实现，不将Planned项目当作现成API或确定交付日期。"
+    },
+    {
+      "category": "market",
+      "title": "纳指11月16日下跌约2.5%，英伟达领跌科技股",
+      "summary": "美联社报道纳指收于24509.76，跌约2.5%；标普500收7416.59，跌1.9%；道指收51608.17，跌1.4%。英伟达下跌约4.1%，AI科技股承压。",
+      "source": "美联社 AP",
+      "published_at": "2026-11-16",
+      "url": "https://apnews.com/article/35786b8f539ec95f16ae0500f71cfcc7",
+      "image": "",
+      "is_recent": true,
+      "impact": "纳指QDII面临科技龙头集中度和AI估值风险，单日大跌不能直接作为抄底或止损依据；关注下一份英伟达财报与现金流。"
+    },
+    {
+      "category": "market",
+      "title": "美联储官员警示AI融资与自动化交易的金融稳定风险",
+      "summary": "美联储理事Michael Barr指出AI相关融资、网络攻击、交易算法趋同和代理账户授权可能带来金融稳定隐患；这是风险讨论，并非新的利率决议。",
+      "source": "路透社 Reuters",
+      "published_at": "2026-11-16",
+      "url": "https://www.reuters.com/world/feds-barr-warns-ai-risks-financial-system-2026-11-16/",
+      "image": "",
+      "is_recent": true,
+      "impact": "投资纳指应同时跟踪AI资本支出融资质量和估值；开发自动化支付或账户代理时需明确授权边界。"
+    },
+    {
+      "category": "market",
+      "title": "欧洲央行副行长警告AI资本投入与债务风险",
+      "summary": "欧洲央行副行长Boris Vujcic指出AI巨额融资、集中度、网络安全及主权债务风险可能共同影响金融稳定；属于官员风险评估。",
+      "source": "路透社 Reuters",
+      "published_at": "2026-11-16",
+      "url": "https://www.reuters.com/legal/transactional/ecb-vp-says-ai-debt-have-become-prominent-stability-risks-2026-11-16/",
+      "image": "",
+      "is_recent": true,
+      "impact": "对纳指长期投资，AI需求增长应与融资成本、现金流及潜在债务压力一起判断，避免只看营收增长。"
+    },
+    {
+      "category": "ai",
+      "title": "企业因AI驱动网络威胁增加安全投入",
+      "summary": "印度IT服务商Mphasis称客户正提高网络安全预算，尤其加强身份权限和自动化代理的访问控制；这属于企业观察而非全行业确定统计。",
+      "source": "路透社 Reuters",
+      "published_at": "2026-11-16",
+      "url": "https://www.reuters.com/legal/government/indias-mphasis-says-clients-boost-cybersecurity-spending-ai-driven-threats-rise-2026-11-16/",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home授权云函数及岛屿晨报工作流应坚持最小权限、密钥隔离和审计日志，尤其防止AI代理误读或泄露令牌。"
+    },
+    {
+      "category": "digital",
+      "title": "OpenAI与Jony Ive硬件团队据报扩大旧金山办公空间",
+      "summary": "旧金山纪事报报道OpenAI与Jony Ive的AI硬件团队租用约11.5万平方英尺办公空间；产品形态和上市时间尚未正式公布，不能视为设备发布。",
+      "source": "San Francisco Chronicle",
+      "published_at": "2026-11-16",
+      "url": "https://www.sfchronicle.com/realestate/article/openai-jony-ive-san-francisco-ai-hardware-office-22533657.php",
+      "image": "",
+      "is_recent": true,
+      "impact": "可关注AI原生设备对交互入口的长期影响，但目前没有足够依据为小脚步或插件调整硬件适配路线。"
+    },
+    {
+      "category": "world",
+      "title": "美国与九个伙伴宣布协调保护AI供应链",
+      "summary": "美国国务院称美国与澳大利亚、印度、日本、韩国、英国等九个伙伴签署声明，协调保护AI关键技术及基础设施供应链；具体实施细则尚不充分。",
+      "source": "路透社 Reuters",
+      "published_at": "2026-11-16",
+      "url": "https://www.reuters.com/world/china/us-allies-team-up-protect-ai-tech-infrastructure-amid-china-rivalry-2026-11-16/",
+      "image": "",
+      "is_recent": true,
+      "impact": "国际AI供应链政策可能影响云端算力与芯片供给，但目前不能据此预测消费显卡或纳指的具体价格变化。"
+    }
+  ],
+  "count": 12,
+  "source_count": 12,
+  "timezone": "Asia/Shanghai"
+}
