@@ -1,0 +1,168 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T04:00:42+00:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "ai",
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol",
+      "summary": "OpenAI 11月17日发布 Astra 与 Sol，分别定位复杂专业任务和高效率日常工作，官方强调代码、前端与多步骤任务能力；性能比较属于厂商公布的测试结果。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-17T17:45:00Z",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "image": "",
+      "is_recent": false,
+      "impact": "为 Agent Studio 和 Three.js 梦幻岛建立固定测试任务，对比跨文件改动、界面质量及额度消耗，不直接将官方基准视为项目实测。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 推出 ChatGPT for Sales",
+      "summary": "OpenAI 发布面向销售工作的 ChatGPT 插件与合作伙伴集成，涉及客户研究、推介准备及 CRM 更新。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-17T08:00:00Z",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "image": "",
+      "is_recent": false,
+      "impact": "如果未来拓展插件海外销售，可研究销售线索整理流程；目前不代表可直接销售 Obsidian 激活码。"
+    },
+    {
+      "category": "ai",
+      "title": "加州就 AI 模型安全问题起诉 OpenAI",
+      "summary": "加州检方指控 OpenAI 在模型测试安全措施上存在不足；OpenAI 表示已采取调查、披露和防护改进。诉讼指控并非法院认定事实。",
+      "source": "华盛顿邮报",
+      "published_at": "2026-11-16T00:00:00Z",
+      "url": "https://www.washingtonpost.com/technology/2026/11/16/california-sues-openai-arguing-it-tested-models-without-adequate-safeguards/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Codex 自动化操作公开仓库和云端服务时，应设置写入范围、密钥隔离和人工审核，避免代理越权。"
+    },
+    {
+      "category": "dev",
+      "title": "GPT-6.2 Astra 和 Sol 进入 GitHub Copilot",
+      "summary": "GitHub 11月17日宣布两款新模型在 Copilot 正式可用，面向代理式编码与代码审查。",
+      "source": "GitHub 官方 Changelog",
+      "published_at": "2026-11-17T20:20:29Z",
+      "url": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+      "image": "",
+      "is_recent": false,
+      "impact": "可与 Codex 用同一 Obsidian 插件修复任务对照评测，但 Copilot 上线不代表 Codex 客户端模型配置同步变化。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot 代码审查增加自适应深度和密钥检测",
+      "summary": "GitHub 11月17日介绍代码审查改进：根据 Pull Request 调整审查投入，并增强密钥发现能力。",
+      "source": "GitHub 官方 Changelog",
+      "published_at": "2026-11-17T18:00:00Z",
+      "url": "https://github.blog/changelog/month/11-2026/",
+      "image": "",
+      "is_recent": false,
+      "impact": "五件套 Release 前可以增加 PR 审查和密钥扫描，但不能代替产物 SHA 比对和真实 Obsidian 环境测试。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Copilot Evals 进入公开预览",
+      "summary": "GitHub 11月17日公布 Copilot Evals 公开预览，帮助比较提示词、模型、技能和工具组合的表现。",
+      "source": "GitHub 官方 Changelog",
+      "published_at": "2026-11-17T18:00:00Z",
+      "url": "https://github.blog/changelog/month/11-2026/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 可借鉴可重复评测设计，为 AGENTS.md、Skill 改动建立固定用例和回归测试。"
+    },
+    {
+      "category": "market",
+      "title": "11月17日纳指下跌约0.74%",
+      "summary": "美联社报道11月17日美股收盘：纳指24328.38点，标普500为7340.53点，道指50759.42点；AI 股票和金融股承压。",
+      "source": "美联社",
+      "published_at": "2026-11-17T21:00:00Z",
+      "url": "https://apnews.com/article/ff6caef4d9289cf7f1e6ee48a706eddc",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 关注连续回撤和持仓集中度，不以单日跌幅推断长期 AI 需求或立即择时。"
+    },
+    {
+      "category": "market",
+      "title": "AI 股票估值与英伟达财报引发市场谨慎",
+      "summary": "11月17日美股市场继续关注英伟达财报和 AI 资本开支回报，投资者担心 AI 产业链的高估值与融资依赖。",
+      "source": "华尔街日报",
+      "published_at": "2026-11-17T21:00:00Z",
+      "url": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-ai-doubts-fester-a0979bdb",
+      "image": "",
+      "is_recent": false,
+      "impact": "观察英伟达真实业绩、毛利率及数据中心客户现金流，区分情绪驱动回撤与经营基本面变化。"
+    },
+    {
+      "category": "digital",
+      "title": "欧洲推动光子计算芯片研究",
+      "summary": "BBC 报道欧洲希望在利用光处理数据的下一代芯片领域取得优势，相关方向仍需商业化验证。",
+      "source": "BBC Technology",
+      "published_at": "2026-11-18T00:00:24Z",
+      "url": "https://www.bbc.co.uk/news/articles/cqglwjd450k0o",
+      "image": "",
+      "is_recent": false,
+      "impact": "这是中长期芯片技术方向，不会立即改变本地 AI 对 NVIDIA CUDA 和显存的依赖。"
+    },
+    {
+      "category": "world",
+      "title": "中智领导人讨论 AI 与深海、极地合作",
+      "summary": "路透社报道中国与智利领导人在 APEC 峰会前讨论人工智能、极地与深海研究及经贸合作，智利总统强调新技术监管规则。",
+      "source": "路透社",
+      "published_at": "2026-11-17T12:00:00Z",
+      "url": "https://www.reuters.com/world/xi-urges-china-chile-cooperation-ai-polar-deep-sea-exploration-2026-11-17/",
+      "image": "",
+      "is_recent": false,
+      "impact": "跨国 AI 监管与产业合作可能影响长期科技供应链，但不能直接据此预测纳指短期涨跌。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 社区讨论组织账号头像设置",
+      "summary": "11月17日开发者论坛有用户建议社区插件目录为组织账号提供头像设置，属于社区建议，并非官方功能承诺。",
+      "source": "Obsidian 开发者论坛·社区建议",
+      "published_at": "2026-11-17T22:27:08Z",
+      "url": "https://forum.obsidian.md/t/community-directory-let-organizations-set-an-avatar/122033",
+      "image": "",
+      "is_recent": false,
+      "impact": "如果五件套未来以工作室品牌发行，可关注组织资料展示，但不要据此规划尚未发布的目录 API。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面与移动版仍为近期公开更新",
+      "summary": "11月12日公开版改进桌面搜索相关性和多语言匹配；移动版加入 Web viewer 与 Android 查看笔记小组件。本条为历史更新回顾，不是11月18日发布。",
+      "source": "Obsidian 官方 Changelog",
+      "published_at": "2026-11-12T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-12-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套继续对 1.15.1 做兼容性回归；官方 Android 小组件不代表插件能自由创建系统小组件。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图：Bases 日历与 Canvas Publish 仍属计划",
+      "summary": "11月18日观察官方路线图：Android Quick Capture、移动端后台同步、日期选择器为 Active；Bases 日历、Canvas Publish、多人协作为 Planned。此为观察快照，非功能发布日期。",
+      "source": "Obsidian 官方路线图·观察快照",
+      "published_at": "2026-11-18T04:00:42Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "岛程的日历与梦幻岛 Three.js 应继续独立实现，不把 Planned 项目当成现成 API 或交付承诺。",
+      "date_kind": "observed"
+    },
+    {
+      "category": "obsidian",
+      "title": "CEO 插件生态文章仍是历史政策参考",
+      "summary": "Obsidian 官方博客最新可见文章为2026年10月1日；CEO Steph Ango 5月12日发布的插件生态文章介绍社区目录与开发者仪表板，本次未发现新政策公告。",
+      "source": "Obsidian 官方博客·CEO 历史文章",
+      "published_at": "2026-05-12T00:00:00Z",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "继续按现有审核和发布要求维护五件套，重点排查 Release 产物验证问题，不将历史政策误读为新变更。"
+    }
+  ],
+  "count": 14,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
