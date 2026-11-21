@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-20",
+  "generated_at": "2026-11-20T04:04:00.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 路线图新增 MCP：官方正在推进 Agent 连接仓库",
+      "summary": "官方路线图 Active 栏列出 MCP：面向不支持 Obsidian CLI 或 Headless 的代理连接笔记库。这是进行中计划，尚非已发布的通用插件 API；首次观察为2026-11-20。",
+      "source": "Obsidian 官方路线图（观察）",
+      "published_at": "2026-11-20T03:46:44Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对 Agent Studio 和五件套的 AI 集成具有直接意义：先保持 CLI/本地文件接口抽象，等待 MCP 正式规格后再增加适配器。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方路线图将 Skills 列入已发布项目",
+      "summary": "路线图 Launched 栏的2026年11月新增 Skills，官方描述为帮助代理连接和操作仓库的 Skills 与插件。路线图未提供精确发布日期，本条为2026-11-20观察记录，不当作今日发布。",
+      "source": "Obsidian 官方路线图（观察）",
+      "published_at": "2026-11-20T03:46:44Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "优先研究官方 Skills 的指令组织方式，比较 Agent Studio 的 AGENTS.md 和技能目录设计，避免重复造轮子。"
+    },
+    {
+      "category": "obsidian",
+      "title": "开发者请求允许插件审核扫描跳过指定目录",
+      "summary": "11月19日开发者论坛出现功能请求，希望插件能声明审核扫描器跳过的目录。属于社区建议，非官方审核政策或已实现功能。",
+      "source": "Obsidian 开发者论坛·社区建议",
+      "published_at": "2026-11-19T00:00:00Z",
+      "url": "https://forum.obsidian.md/t/feature-request-let-a-plugin-name-folders-the-review-scanner-should-skip/122029",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home 发布包应继续控制无关文件和扫描噪音，不能假设审核器现已支持排除目录。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 仍是最新公开发行版本",
+      "summary": "官方 GitHub Releases 最新版本为11月12日发布的1.15.1，桌面更新包括搜索相关性排序等；本条为历史版本状态核查，非11月20日新版本。",
+      "source": "Obsidian GitHub 官方发行记录",
+      "published_at": "2026-11-12T15:43:18Z",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.15.1",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套继续以1.15.1为兼容性测试基线；不因路线图新增 MCP 就假设现有版本已开放对应能力。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 公开 Codex 驱动的性能故障自动修复系统",
+      "summary": "OpenAI 11月19日介绍 Performance Factory：告警触发任务，Codex 代理诊断、提出修复，由工程师审查，部署后另一个代理验证恢复。官方称三个多月追踪1700余次调查并定位600余例根因。",
+      "source": "OpenAI 官方工程博客",
+      "published_at": "2026-11-19T08:00:00Z",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 可借鉴事件触发、可复用 Skill、独立复核代理与验收记录，先用于五件套构建失败和性能回归，不直接允许代理自动发布。"
+    },
+    {
+      "category": "ai",
+      "title": "Anthropic 首日上市上涨17%，AI 商业化接受市场检验",
+      "summary": "路透社11月19日报道 Anthropic 纳斯达克首日以97.17美元收盘，较83美元发行价上涨约17%，IPO募资逾810亿美元；公司仍面临巨大算力支出与盈利压力。",
+      "source": "Reuters",
+      "published_at": "2026-11-19T22:00:00Z",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Claude Code 所在公司的上市让 AI 编程商业化收入与成本更透明；评估开发工具时应重视价格稳定性和服务连续性，而非股价。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Actions 的 RHEL 9/10 大型运行器镜像正式可用",
+      "summary": "GitHub 11月19日宣布 RHEL 9和10镜像在 Team及Enterprise Cloud的大型托管运行器正式可用，适用于需要与生产环境匹配的工作流。",
+      "source": "GitHub 官方 Changelog",
+      "published_at": "2026-11-19T18:48:46Z",
+      "url": "https://github.blog/changelog/2026-11-19-red-hat-enterprise-linux-runner-images-now-generally-available/",
+      "image": "",
+      "is_recent": false,
+      "impact": "五件套目前以常规构建为主，不需要为该企业级功能增加成本；继续优先解决 Release SHA 一致性。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub CLI 新增等待 PR 事件功能",
+      "summary": "11月18日 GitHub 宣布 CLI 支持等待 PR 审查和检查状态变化的事件监听，减少脚本反复轮询；这是前一日更新，保留原发布日期。",
+      "source": "GitHub 官方 Changelog",
+      "published_at": "2026-11-18T00:00:00Z",
+      "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可为 Agent Studio 增加 PR CI 完成后的通知或验收钩子，但仍需明确构建失败时的人工确认。"
+    },
+    {
+      "category": "market",
+      "title": "纳指11月19日收跌约2.25%，半导体股承压",
+      "summary": "11月19日美股收盘报道显示纳斯达克综合指数约23879点，跌2.25%；标普500约7176点，跌2.02%。英伟达下跌约3.30%，AMD下跌约7.72%。",
+      "source": "The Motley Fool / Yahoo Finance",
+      "published_at": "2026-11-19T22:20:00Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-19-222025646.html",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 短期波动明显；区分市场估值压缩和 AI 需求基本面，不以单日大跌作为加仓的充分依据。"
+    },
+    {
+      "category": "market",
+      "title": "美联储官员警告 AI 数据中心投资可能加剧通胀",
+      "summary": "路透社11月19日报道，芝加哥联储主席 Goolsbee 指出巨额数据中心建设和投资可能短期推高需求与通胀，长期生产率效应仍不确定。",
+      "source": "Reuters",
+      "published_at": "2026-11-19T18:00:00Z",
+      "url": "https://www.reuters.com/business/feds-goolsbee-says-ai-surge-could-strain-us-capacity-overheat-economy-2026-11-19/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对纳指 QDII，AI 资本开支不只有增长利好，还可能通过利率预期抬高折现率；应同时观察通胀、债券收益率与企业自由现金流。"
+    },
+    {
+      "category": "digital",
+      "title": "AI 推理芯片和算力需求带来更高硬件成本关注",
+      "summary": "Anthropic IPO 后的报道显示企业对计算资源有长期巨额投入承诺，但这不能直接推断消费级显卡短期价格。",
+      "source": "Reuters",
+      "published_at": "2026-11-19T22:00:00Z",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "image": "",
+      "is_recent": false,
+      "impact": "本地 AI 装机继续优先比较现有2080Ti显存与实际推理速度，不因企业级算力投资新闻立即更换硬件。"
+    }
+  ],
+  "count": 11,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
