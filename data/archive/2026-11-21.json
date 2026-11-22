@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T04:01:00.000Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "market",
+      "title": "纳指11月20日收跌5.28%，科技股遭集中抛售",
+      "summary": "纳斯达克综合指数周五收于22617.73点，下跌5.28%；标普500跌约3.70%，道指跌1.93%。这是美国11月20日正式收盘数据。",
+      "source": "Investing.com",
+      "published_at": "2026-11-20T16:30:00-05:00",
+      "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指QDII面临显著波动；在缺少稳定现金流时，优先核对生活费储备、基金赎回到账时间和持仓集中度，不宜把大跌自动视为抄底信号。"
+    },
+    {
+      "category": "market",
+      "title": "英伟达周五下跌约14%，AI芯片股承压",
+      "summary": "11月20日英伟达股价下跌约14%，半导体板块普遍下挫；市场担忧AI资本开支的回报、估值和行业不确定性。",
+      "source": "华盛顿邮报",
+      "published_at": "2026-11-20T17:00:00-05:00",
+      "url": "https://www.washingtonpost.com/business/2026/11/20/us-stock-market-slumps-amid-rising-tech-ai-worries/",
+      "image": "",
+      "is_recent": false,
+      "impact": "对纳指科技股风险判断，应区分芯片需求与估值压缩；短期避免把单日跌幅外推为企业盈利的同幅变化。"
+    },
+    {
+      "category": "market",
+      "title": "Anthropic上市第二日回落，AI新股情绪降温",
+      "summary": "Anthropic在上市首日上涨后，11月20日股价回落约9%，全球AI相关股票同时承压。",
+      "source": "卫报",
+      "published_at": "2026-11-20T18:00:00Z",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "image": "",
+      "is_recent": false,
+      "impact": "AI编程产品商业化前景与上市估值是两回事；对插件定价及Codex工具选择，继续以实际付费需求和成本为依据。"
+    },
+    {
+      "category": "market",
+      "title": "Alphabet发行约42亿美元等值加元债券",
+      "summary": "Alphabet通过四档加元债券融资60亿加元，约合41.9亿美元；资金用途为一般公司用途，不能认定全部用于AI数据中心。",
+      "source": "路透社",
+      "published_at": "2026-11-20T12:00:00Z",
+      "url": "https://www.reuters.com/business/alphabet-aims-raise-419-billion-canadian-debt-offering-2026-11-20/",
+      "image": "",
+      "is_recent": false,
+      "impact": "跟踪科技巨头债务融资和自由现金流，有助于判断纳指AI资本开支的可持续性，不能把融资额直接当成新增利润。"
+    },
+    {
+      "category": "world",
+      "title": "美国总统提出惩罚海外数据中心建设的设想",
+      "summary": "美国总统表示拟对在海外建设数据中心的美国企业施加高额税负；报道属于政策表态，尚不能当作正式生效的税法。",
+      "source": "路透社",
+      "published_at": "2026-11-20T15:00:00Z",
+      "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
+      "image": "",
+      "is_recent": false,
+      "impact": "若落实，可能改变AI云计算区域成本及芯片供应链；目前不应据此直接调整插件云函数部署或投资持仓。"
+    },
+    {
+      "category": "digital",
+      "title": "中国云厂商推动国产AI芯片替代，但供应链仍受限",
+      "summary": "路透社Breakingviews分析阿里巴巴、腾讯对国产AI芯片的投入，同时指出晶圆产能、设备及高带宽内存供应限制。此为评论分析而非官方政策公告。",
+      "source": "路透社Breakingviews",
+      "published_at": "2026-11-20T10:00:00Z",
+      "url": "https://www.reuters.com/commentary/breakingviews/alibaba-puts-quixotic-faith-made-in-china-chips-2026-11-20/",
+      "image": "",
+      "is_recent": false,
+      "impact": "本地AI开发仍应依据现有NVIDIA显卡的CUDA兼容性、显存和模型量化测试选工具，不宜把国产芯片产业新闻等同于个人电脑立即可用。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian官方路线图将MCP列为进行中",
+      "summary": "官方路线图当前将MCP列入Active，目标是让不支持Obsidian CLI或Headless的代理连接笔记库。本站11月21日复核；并非11月21日新发布。",
+      "source": "Obsidian官方路线图",
+      "published_at": "2026-11-20T00:00:00Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio可预留MCP服务器配置与权限管理入口，但应继续兼容现有Markdown和CLI方案，不能假设正式API已上线。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian官方Skills列入2026年11月已发布项目",
+      "summary": "官方路线图Launched栏目列出2026年11月Skills，说明有帮助代理操作笔记库的官方技能与插件；具体发布日期未核实。",
+      "source": "Obsidian官方路线图",
+      "published_at": "2026-11-01T00:00:00Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true,
+      "impact": "为Agent Studio增加官方Skill模板导入和版本兼容检查，比自行发明专用指令格式更稳妥。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian公开版仍为1.15.1",
+      "summary": "官方GitHub发行记录显示最新公开Release为11月12日的1.15.1；截至11月21日核查未见更新的公开Release。历史版本状态，不是今日发布。",
+      "source": "Obsidian官方GitHub Releases",
+      "published_at": "2026-11-12T15:43:00Z",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套可继续以1.15.1作为兼容测试基线，优先检查移动端弹窗、搜索交互和发布包构建一致性。"
+    },
+    {
+      "category": "obsidian",
+      "title": "开发者请求插件审核扫描器支持排除目录",
+      "summary": "开发者论坛11月19日出现让审核扫描器跳过指定目录的功能请求；目前只是社区建议，不是官方承诺。",
+      "source": "Obsidian开发者论坛",
+      "published_at": "2026-11-19T00:00:00Z",
+      "url": "https://forum.obsidian.md/t/feature-request-let-a-plugin-name-folders-the-review-scanner-should-skip/122029",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home发布验证仍需处理实际构建文件与Release哈希一致性，不应等待尚未批准的扫描器例外规则。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub CLI支持等待PR事件",
+      "summary": "GitHub于11月18日介绍CLI等待拉取请求事件的能力，可监听审查和检查状态；本期作为历史开发工具更新，不是今日新品。",
+      "source": "GitHub官方Changelog",
+      "published_at": "2026-11-18T00:00:00Z",
+      "url": "https://github.blog/changelog/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可在五件套CI流程中使用事件等待减少轮询，但不能代替Release文件逐字节验证。"
+    }
+  ],
+  "count": 11,
+  "source_count": 11,
+  "timezone": "Asia/Shanghai"
+}
