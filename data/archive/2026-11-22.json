@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T03:55:00+00:00",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方 MCP 仍处于开发中",
+      "summary": "官方路线图把 MCP 列为 Active，目标是让不支持 Obsidian CLI 或 Headless 的 Agent 连接笔记库；这不是已发布接口。",
+      "source": "Obsidian 官方路线图（11月22日观察）",
+      "published_at": "2026-11-22T03:55:00Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 可预留 MCP 连接配置与权限管理，但现阶段继续支持本地 Markdown/CLI。",
+      "date_kind": "observed"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 官方 Skills 已列入已发布",
+      "summary": "官方路线图的 Launched 栏标注 November 2026，列出帮助 AI Agent 操作笔记库的官方 Skills；具体发布日期未单独核实。",
+      "source": "Obsidian 官方路线图（11月22日观察）",
+      "published_at": "2026-11-22T03:55:00Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 应研究官方 Skills 格式并支持导入，不必自己创造与官方冲突的格式。",
+      "date_kind": "observed"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 1.15.1 桌面版更新搜索",
+      "summary": "11月12日公开版增加搜索相关性排序、改善多语言搜索；本条为旧版本回顾，不是今天发布。",
+      "source": "Obsidian 官方 Changelog",
+      "published_at": "2026-11-12T00:00:00Z",
+      "url": "https://obsidian.md/changelog/2026-11-12-desktop-v1.15.1/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套的兼容测试可继续以1.15.1为基线，优先检查搜索和弹窗交互。"
+    },
+    {
+      "category": "obsidian",
+      "title": "社区插件开发工具 obsidian-plugin-dev-kit",
+      "summary": "11月14日开发者论坛分享构建、扫描、测试与发布工具；属于第三方社区项目，非官方审核标准。",
+      "source": "Obsidian 开发者论坛",
+      "published_at": "2026-11-14T15:00:08Z",
+      "url": "https://forum.obsidian.md/t/obsidian-plugin-dev-kit-build-scan-test-and-release-a-plugin-from-one-dev-dependency/121945",
+      "image": "",
+      "is_recent": true,
+      "impact": "A-Home Release 构建验证失败可借鉴产物逐字节比对，在测试分支先验证。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 公布对抗性蒸馏防护研究",
+      "summary": "11月20日 OpenAI 介绍通过训练、分类器、API 防护与调查阻止未授权能力提取，尤其保护模型内部推理。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-20T10:00:00Z",
+      "url": "https://openai.com/index/combatting-adversarial-distillation/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio 的日志与分享功能应避免收集或公开敏感模型推理与凭据。"
+    },
+    {
+      "category": "ai",
+      "title": "Codex Performance Factory 自动诊断性能回归",
+      "summary": "11月19日 OpenAI 工程文章介绍 Codex 辅助性能告警调查、定位、修复建议和验证的内部流程；不是通用成功率承诺。",
+      "source": "OpenAI 官方",
+      "published_at": "2026-11-19T08:00:00Z",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可为五件套 CI 增加自动复现、构建检查、人工审核和结果留痕。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 安全公告细粒度权限正式可用",
+      "summary": "11月20日 GitHub 允许符合条件的组织通过自定义仓库角色授予安全公告与私有漏洞报告权限，无须赋予完整管理员权限。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-20T21:49:29Z",
+      "url": "https://github.blog/changelog/2026-11-20-security-advisory-permissions-are-now-generally-available/",
+      "image": "",
+      "is_recent": true,
+      "impact": "若未来多人维护插件仓库，可分配最小权限；个人私库暂不必升级企业套餐。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 仪表板支持固定收藏仓库",
+      "summary": "11月20日 GitHub 新仪表板允许手动选择最多25个收藏仓库，并与 GitHub Mobile 同步。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-20T14:12:05Z",
+      "url": "https://github.blog/changelog/2026-11-20-pin-your-favorite-repositories-to-your-dashboard/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可固定 A-Home、Agent Studio、岛屿晨报等常用仓库，减少多项目切换成本。"
+    },
+    {
+      "category": "market",
+      "title": "11月20日纳指跌5.28%，AI 股抛售扩大",
+      "summary": "美国周五正式收盘纳指22617.73点，跌5.28%；标普500跌3.70%，道指跌1.93%。周末没有新的正式收盘。",
+      "source": "美联社",
+      "published_at": "2026-11-20T22:00:00Z",
+      "url": "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
+      "image": "",
+      "is_recent": true,
+      "impact": "纳指 QDII 持仓要重视科技股集中风险和现金流，勿把暴跌直接等同于抄底机会。"
+    },
+    {
+      "category": "market",
+      "title": "CoreWeave 高负债暴露 AI 算力融资风险",
+      "summary": "11月21日卫报分析 CoreWeave 依赖大量借款扩建 AI 数据中心，利息负担与 GPU 折旧增加经营不确定性；为媒体分析非公司新指引。",
+      "source": "The Guardian",
+      "published_at": "2026-11-21T12:00:00Z",
+      "url": "https://www.theguardian.com/business/2026/nov/21/debt-laden-cloud-computing-company-coreweave-ai-boom",
+      "image": "",
+      "is_recent": false,
+      "impact": "判断 AI 科技股时除营收外应看自由现金流、债务期限与资本开支。"
+    },
+    {
+      "category": "digital",
+      "title": "韩国推进蔚山 AI 数据中心项目",
+      "summary": "11月21日韩国总统参观 SK 集团与 AWS 合作建设的数据中心，计划2027年下半年开始运营；预计投资约7万亿韩元至2029年。",
+      "source": "Reuters",
+      "published_at": "2026-11-21T12:00:00Z",
+      "url": "https://www.reuters.com/business/media-telecom/south-koreas-lee-says-speed-is-vital-ai-race-data-centre-visit-2026-11-21/",
+      "image": "",
+      "is_recent": false,
+      "impact": "企业级算力建设持续，但不能直接推断个人 NVIDIA 显卡短期价格变化。"
+    },
+    {
+      "category": "world",
+      "title": "联合国自主武器谈判延长但未达成约束规则",
+      "summary": "11月21日美联社报道，日内瓦谈判同意继续讨论自主致命武器两年，尚未就有约束力的规则达成一致。",
+      "source": "Associated Press",
+      "published_at": "2026-11-21T12:00:00Z",
+      "url": "https://apnews.com/article/ebe057d2a47cde53100970c8f648e7fa",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 涉及自动操作时仍应采用权限边界与人工确认，而不是假定行业已有统一规范。"
+    }
+  ],
+  "count": 12,
+  "source_count": 9,
+  "timezone": "Asia/Shanghai"
+}
