@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T03:55:43Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "插件能否下载原生 ONNX 运行时？开发者请求政策澄清",
+      "summary": "开发者在11月22日询问：插件经用户确认下载固定版本的 onnxruntime-node，是否违反不得自行安装依赖的政策。帖子列出哈希校验和不执行安装脚本等措施；目前没有看到官方裁决。",
+      "source": "Obsidian 开发者论坛·社区提问",
+      "published_at": "2026-11-22T17:18:21Z",
+      "url": "https://forum.obsidian.md/t/can-a-plugin-download-a-pinned-native-runtime-onnxruntime-node-at-setup-or-is-that-installing-dependencies/122159",
+      "image": "",
+      "is_recent": false,
+      "impact": "五件套若考虑本地 AI 模型，先采用随包兼容方案或外部独立程序，不要把自动下载原生依赖视为已获官方许可。"
+    },
+    {
+      "category": "obsidian",
+      "title": "官方路线图：MCP 仍在开发，Skills 已列为发布项目",
+      "summary": "11月23日观察官方路线图：MCP 属于 Active，官方 Skills 位于2026年11月 Launched；Bases 日历、Canvas Publish、多人协作仍属于 Planned。这是状态观察而非新发布日期。",
+      "source": "Obsidian 官方路线图·2026-11-23观察",
+      "published_at": "2026-11-23T03:55:43Z",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": false,
+      "impact": "Agent Studio 可支持导入官方 Skills 并预留 MCP 配置，但不要以尚未发布的 MCP 接口作为五件套的运行前提。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian 公开版仍为1.15.1",
+      "summary": "截至11月23日核查，官方 GitHub Releases 最新公开版为11月12日发布的1.15.1；没有确认新的公开版。这是版本状态核查，不是今日新发布。",
+      "source": "Obsidian GitHub 官方发行记录·状态核查",
+      "published_at": "2026-11-23T03:55:43Z",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases",
+      "image": "",
+      "is_recent": false,
+      "impact": "五件套继续以1.15.1做回归测试，发布前核对 manifest、Release 文件与构建产物一致性。"
+    },
+    {
+      "category": "obsidian",
+      "title": "CEO 五月插件战略文章仍是历史政策资料",
+      "summary": "官方博客当前最新列出的文章为10月1日 Obsidian October；CEO kepano 的《The future of Obsidian plugins》原文发表于2026年5月12日，不能作为11月23日新政策。个人 RSS 本次未成功读取。",
+      "source": "Obsidian 官方博客·历史资料核查",
+      "published_at": "2026-05-12T00:00:00Z",
+      "url": "https://obsidian.md/blog/future-of-plugins/",
+      "image": "",
+      "is_recent": true,
+      "impact": "规划插件销售和审核流程时可参考既有政策，但不应据此宣称最近新增了审核或商业化限制。"
+    },
+    {
+      "category": "ai",
+      "title": "OpenAI 首席科学家提出用困惑度追踪模型能力进展",
+      "summary": "OpenAI 首席科学家 Jakub Pachocki 于11月22日发文，主张以困惑度或交叉熵损失作为跨模型实验室讨论预训练进展及安全边界的参考指标，并明确指出跨数据集可比性等局限。这是研究主张，不是新模型发布。",
+      "source": "OpenAI 官方研究文章",
+      "published_at": "2026-11-22T00:00:00Z",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "image": "",
+      "is_recent": true,
+      "impact": "选择 Codex 模型时不要把单一困惑度当作编码质量排名；Agent Studio 应继续用真实 TypeScript 修复、测试和误改率评估模型。"
+    },
+    {
+      "category": "ai",
+      "title": "Codex Performance Factory：自动诊断性能回归的工程案例",
+      "summary": "OpenAI 11月19日介绍内部由 Codex 辅助的性能问题诊断与修复工作流；这是历史工程案例，非11月23日新品。",
+      "source": "OpenAI 官方工程博客·11月19日",
+      "published_at": "2026-11-19T08:00:00Z",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可以为五件套 Release 增加自动构建、哈希对比、错误复现与人工审批的闭环，而不是让代理未经审查直接发布。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 扩展安全公告的细粒度权限",
+      "summary": "GitHub 11月20日宣布，支持自定义仓库角色的组织可以单独授予安全公告及私有漏洞报告的管理权限，而无需授予完整仓库管理员权限；仅适用于符合条件的组织计划。",
+      "source": "GitHub 官方 Changelog·11月20日",
+      "published_at": "2026-11-20T21:49:29Z",
+      "url": "https://github.blog/changelog/2026-11-20-security-advisory-permissions-are-now-generally-available/",
+      "image": "",
+      "is_recent": true,
+      "impact": "若未来五件套有协作者，优先采用最小权限角色；当前个人仓库不必为此升级企业计划。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Enterprise Server 3.23 候选版增强依赖防护",
+      "summary": "GitHub 11月20日公布 GHES 3.23 候选版，包含 Dependabot 默认三天更新冷却期、更多恶意包数据库覆盖及企业内部 AI 密钥检测预览；候选版并非所有 GitHub.com 用户已启用。",
+      "source": "GitHub 官方 Changelog·11月20日",
+      "published_at": "2026-11-20T20:41:26Z",
+      "url": "https://github.blog/changelog/2026-11-20-github-enterprise-server-3-23-release-candidate/",
+      "image": "",
+      "is_recent": true,
+      "impact": "五件套可以借鉴依赖更新冷却期和锁文件检查，但不能误认为 GitHub.com 的 Actions 已获得这些 GHES 功能。"
+    },
+    {
+      "category": "market",
+      "title": "感恩节交易周前市场关注 AI 板块与美联储预期",
+      "summary": "CNBC 11月22日发布展望文章，关注 AI 交易能否反弹、零售消费及美联储政策讨论。属于市场展望，不是新的交易日收盘数据。",
+      "source": "CNBC Investing Club·市场展望",
+      "published_at": "2026-11-23T00:42:54Z",
+      "url": "https://www.cnbc.com/investingclub/2026/11/22/3-big-things-were-watching-in-the-market-this-thanksgiving-week.html",
+      "image": "",
+      "is_recent": false,
+      "impact": "纳指 QDII 应将这类评论视作情景分析，留意假期流动性与汇率影响，不据此猜测周日不存在的收盘涨跌。"
+    },
+    {
+      "category": "digital",
+      "title": "柯达品牌小型照片显示挂件引起关注",
+      "summary": "The Verge 11月23日介绍 Kodak SlideTag：小型数码照片显示挂件，兼顾定位追踪用途。此为媒体产品报道，具体上市地区和价格未独立核实。",
+      "source": "The Verge·数码报道",
+      "published_at": "2026-11-23T03:00:00Z",
+      "url": "https://www.theverge.com/tech/1038650/kodak-slidetag-keychain-photo-display-tracker-find-my-hub-google-apple-e-ink",
+      "image": "",
+      "is_recent": false,
+      "impact": "对小脚步的小组件设计，可参考低功耗、单一信息展示的思路；不必据此改变现有 Android 技术路线。"
+    },
+    {
+      "category": "world",
+      "title": "利比亚港口俄罗斯船只爆炸，原因仍待核实",
+      "summary": "BBC 11月23日报道，利比亚东部当局认为停靠补给的俄罗斯船只爆炸可能由无人机袭击造成。袭击原因属于当局说法，尚不能当作独立证实的调查结论。",
+      "source": "BBC World·11月23日报道",
+      "published_at": "2026-11-23T02:59:35Z",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+      "image": "",
+      "is_recent": false,
+      "impact": "这类地缘事件暂不构成调整纳指或科技基金仓位的直接依据，应等待独立调查和对能源运输的实际影响。"
+    }
+  ],
+  "count": 11,
+  "source_count": 18,
+  "timezone": "Asia/Shanghai"
+}
