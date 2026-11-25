@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T04:00:36Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "ai",
+      "title": "Astra 辅助搜寻系外行星候选体",
+      "summary": "OpenAI 介绍公民科学家使用 Astra 编写搜索软件、分析公开望远镜数据，初步筛出49个候选体，尚待进一步验证。",
+      "source": "OpenAI",
+      "published_at": "2026-11-24",
+      "url": "https://openai.com/index/searching-for-distant-planets-with-astra/",
+      "image": "",
+      "is_recent": true,
+      "impact": "可借鉴候选结果与独立验证分离的流程，为 Codex 生成的代码设置独立测试。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 通知规则更加一致",
+      "summary": "团队提及通知随成员关系变化，通知原因采用固定优先级，邮件头包含全部适用原因。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-24",
+      "url": "https://github.blog/changelog/2026-11-24-more-predictable-notifications-on-github-com/",
+      "image": "",
+      "is_recent": true,
+      "impact": "若开发跨仓库通知聚合工具，应检查按通知原因筛选的逻辑。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub Issue 状态与仓库看板进入公开预览",
+      "summary": "11月23日发布，Issue 支持待办、进行中、审查中等状态，仓库保存视图支持看板，API 和 MCP 可读写状态。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-23",
+      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio 可将编码任务映射到 Issue 状态，PR 进入审查不等于测试通过。"
+    },
+    {
+      "category": "dev",
+      "title": "GitHub 覆盖率上传开始拒绝错误格式",
+      "summary": "11月23日发布，GitHub Code Quality 上传步骤检查 Cobertura XML，适用于符合条件的 Team 和 Enterprise Cloud 仓库。",
+      "source": "GitHub Changelog",
+      "published_at": "2026-11-23T15:28:36Z",
+      "url": "https://github.blog/changelog/2026-11-23-code-coverage-uploads-now-flag-invalid-report-formats/",
+      "image": "",
+      "is_recent": true,
+      "impact": "插件 CI 可独立校验覆盖率文件，避免上传成功却没有报告。"
+    },
+    {
+      "category": "market",
+      "title": "纳指回落1.48%，芯片股回吐涨幅",
+      "summary": "美国11月24日收盘，纳指23733.54点，标普500跌0.50%，道指涨0.85%，英伟达跌5.9%。",
+      "source": "Reuters",
+      "published_at": "2026-11-24",
+      "url": "https://www.reuters.com/business/wall-st-futures-dip-chip-stocks-cool-after-nvidia-fueled-rally-2026-11-24/",
+      "image": "",
+      "is_recent": true,
+      "impact": "纳指QDII应区分单日反弹与持续趋势，并考虑汇率及净值确认时间。"
+    },
+    {
+      "category": "digital",
+      "title": "微软据报道启动重大故障整改",
+      "summary": "路透社援引内部备忘录称，微软在11月12日至13日服务中断后启动Code Red整改，涉及Exchange Online等服务。",
+      "source": "Reuters",
+      "published_at": "2026-11-24T16:11:00Z",
+      "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+      "image": "",
+      "is_recent": false,
+      "impact": "插件授权及同步服务应设计离线容错和故障恢复，避免单点云服务阻断使用。"
+    },
+    {
+      "category": "world",
+      "title": "美国据报道拟公布新关税方案",
+      "summary": "路透社援引知情人士称，美国政府拟公布涉及16个贸易伙伴的产能调查结果及新关税方案，具体税率尚未确认。",
+      "source": "Reuters",
+      "published_at": "2026-11-24T16:19:00Z",
+      "url": "https://www.reuters.com/world/us/trump-administration-set-unveil-new-tariffs-after-probe-on-excess-factory-2026-11-24/",
+      "image": "",
+      "is_recent": false,
+      "impact": "关注正式税率和实施日期对硬件供应链及科技企业利润的影响。"
+    },
+    {
+      "category": "obsidian",
+      "title": "Obsidian MCP 仍在开发：历史路线图观察",
+      "summary": "首次观察于2026年11月20日；11月25日复核，MCP仍为Active，Bases日历与Canvas Publish仍为Planned，非新发布。",
+      "source": "Obsidian 官方路线图（自动观察）",
+      "published_at": "2026-11-20T03:46:44.565026+00:00",
+      "date_kind": "observed",
+      "url": "https://obsidian.md/roadmap/",
+      "image": "",
+      "is_recent": true,
+      "impact": "Agent Studio 可支持导入官方 Skills 并预留 MCP 配置，但不要以尚未发布的 MCP 接口作为五件套的运行前提。"
+    }
+  ],
+  "count": 8,
+  "source_count": 4,
+  "timezone": "Asia/Shanghai"
+}
