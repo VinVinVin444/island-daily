@@ -1,13 +1,13 @@
 {
-  "hash": "9fa69312c1757517c1807f68762703a3fd8779472c7696fb1ae2c65b4feb9703",
+  "hash": "644fbcda6de607d65039f13388b0176d6c800f7b77190e334f7cd8cc052578bc",
   "sections": {
     "active": [
       "Android Quick Capture",
       "Background Sync on mobile",
       "Date picker",
       "MCP",
-      "Obsidian for Work",
-      "iOS native interface"
+      "Native interface for mobile",
+      "Obsidian for Work"
     ],
     "planned": [
       "Bases support for Publish",
@@ -20,9 +20,9 @@
   "article": {
     "category": "obsidian",
     "title": "Obsidian 官方路线图：检测到状态列表变化（非发布日期）",
-    "summary": "正在进行：Android Quick Capture、Background Sync on mobile、Date picker、MCP、Obsidian for Work；计划中：Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：MCP。",
+    "summary": "正在进行：Android Quick Capture、Background Sync on mobile、Date picker、MCP、Native interface for mobile；计划中：Bases support for Publish、Calendar view for Bases、Canvas support for Publish、Multiplayer、PDF annotation。观察到列表变化。 新出现：Native interface for mobile。 移出旧列表：iOS native interface。",
     "source": "Obsidian 官方路线图（自动观察）",
-    "published_at": "2026-11-20T03:46:44.565026+00:00",
+    "published_at": "2026-11-27T04:38:12.714124+00:00",
     "date_kind": "observed",
     "url": "https://obsidian.md/roadmap/",
     "image": ""

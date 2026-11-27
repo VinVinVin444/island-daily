@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T03:56:35Z",
+  "ai_generated": true,
+  "machine_translated": false,
+  "translation_complete": true,
+  "demo": false,
+  "items": [
+    {
+      "category": "obsidian",
+      "title": "macOS 空目录删除 API 疑似回归",
+      "summary": "11月22日社区报告 Obsidian 1.15.1 的 FileSystemAdapter.rmdir(path,false) 删除空目录失败；11月26日团队成员 WhiteNoise 回复认为似乎是回归，尚未宣布修复。",
+      "source": "Obsidian 开发者论坛",
+      "published_at": "2026-11-26T04:44:00Z",
+      "url": "https://forum.obsidian.md/t/filesystemadapter-rmdir-path-false-fails-for-empty-directories-on-macos-in-1-15-1/122145",
+      "image": "",
+      "is_recent": false,
+      "impact": "插件清理目录时增加 macOS 回归测试，不要为绕过错误直接启用递归删除。"
+    },
+    {
+      "category": "obsidian",
+      "title": "插件下载统计疑似包含自动化请求",
+      "summary": "11月4日原帖提出 manifest.json 请求可能影响下载统计；11月26日社区成员补充历史版本同步增长的观察。尚无官方统计口径答复。",
+      "source": "Obsidian 开发者论坛",
+      "published_at": "2026-11-26T11:00:00Z",
+      "url": "https://forum.obsidian.md/t/official-plugin-download-stats-bulk-manifest-json-fetches-of-the-10-latest-versions-dropped-85-around-nov-1-what-are-they-and-are-they-filtered/121588",
+      "image": "",
+      "is_recent": false,
+      "impact": "不要把插件下载次数直接视为独立用户或潜在付费客户，结合安装趋势和实际授权转化分析。"
+    },
+    {
+      "category": "ai",
+      "title": "美国算力限制或拖慢国产大模型研发",
+      "summary": "路透社援引知情人士称，先进芯片算力限制及反蒸馏措施可能推迟 GLM-5.5 和 Kimi K4 的研发进度；具体发布日期尚未确认。",
+      "source": "Reuters",
+      "published_at": "2026-11-26",
+      "url": "https://www.reuters.com/world/china/us-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-2026-11-26/",
+      "image": "",
+      "is_recent": true,
+      "impact": "AI 编程工具应保持模型供应商可切换，避免将尚未发布的模型作为交付依赖。"
+    },
+    {
+      "category": "ai",
+      "title": "瑞士政府称五起网络攻击使用了 AI Agent",
+      "summary": "路透社报道瑞士政府披露五起涉及 AI 代理的网络攻击。",
+      "source": "Reuters",
+      "published_at": "2026-11-26T12:25:00Z",
+      "url": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
+      "image": "",
+      "is_recent": false,
+      "impact": "为编程代理限制文件、网络和命令权限，发布操作单独审批。"
+    },
+    {
+      "category": "dev",
+      "title": "Copilot 代码审查默认计费将调整",
+      "summary": "11月25日 GitHub 公告：符合条件且未设置计费选项的 Business 或 Enterprise 组织，自12月30日起默认由仓库所属组织承担代码审查费用，存在例外。",
+      "source": "GitHub 官方",
+      "published_at": "2026-11-25",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/",
+      "image": "",
+      "is_recent": true,
+      "impact": "团队使用自动审查前检查 AI Credits 计费策略；个人 Codex 额度不应据此推断。"
+    },
+    {
+      "category": "market",
+      "title": "感恩节美股休市，欧洲股市上涨",
+      "summary": "11月26日路透社报道欧洲股市上涨，市场消化关税消息；华尔街因感恩节休市，没有新的纳指正式收盘。",
+      "source": "Reuters",
+      "published_at": "2026-11-26T01:35:00Z",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-26/",
+      "image": "",
+      "is_recent": true,
+      "impact": "QDII 需核对基金净值确认安排，不能将欧洲市场走势当作纳指收益。"
+    },
+    {
+      "category": "market",
+      "title": "惠誉认为芯片限制将拖慢亚洲数据中心投资",
+      "summary": "路透社11月26日报道惠誉对美国芯片限制影响亚洲数据中心投资的判断，属于评级机构展望。",
+      "source": "Reuters",
+      "published_at": "2026-11-26T11:18:00Z",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
+      "image": "",
+      "is_recent": false,
+      "impact": "跟踪 CPO 与半导体企业实际订单、客户地域和资本开支，不能仅凭行业展望交易。"
+    },
+    {
+      "category": "digital",
+      "title": "Snap 智能眼镜开始发货",
+      "summary": "VR.org 11月26日报道 Snap 商店显示 Specs 开始发货，新订单预计2027年初发货，标价2195美元。",
+      "source": "VR.org",
+      "published_at": "2026-11-26",
+      "url": "https://vr.org/articles/snap-specs-starting-to-ship-preorders-new-orders-early-2027",
+      "image": "",
+      "is_recent": true,
+      "impact": "关注可穿戴设备的记录交互，但无需为日记插件提前投入昂贵硬件。"
+    },
+    {
+      "category": "world",
+      "title": "美国东海岸感恩节风暴扰乱交通",
+      "summary": "路透社11月26日报道风暴造成大范围停电及航班取消延误。",
+      "source": "Reuters",
+      "published_at": "2026-11-26T19:54:00Z",
+      "url": "https://www.reuters.com/business/environment/thanksgiving-storm-knocks-out-power-disrupts-flights-us-east-coast-2026-11-26/",
+      "image": "",
+      "is_recent": false,
+      "impact": "云端服务应考虑区域性基础设施中断，保留本地数据与离线使用能力。"
+    }
+  ],
+  "count": 9,
+  "source_count": 4,
+  "timezone": "Asia/Shanghai"
+}
